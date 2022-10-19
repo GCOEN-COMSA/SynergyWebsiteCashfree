@@ -2,7 +2,6 @@ import type { PageLoad } from "./$types";
 import { events } from "$lib/data/events";
 import { error } from "@sveltejs/kit";
 import { supabaseClient } from "$lib/db";
-import type { db_registration } from "$lib/types";
 export const load: PageLoad = async ({ params }) => {
   const { data: db_1 } = await supabaseClient
     .from("registrations")

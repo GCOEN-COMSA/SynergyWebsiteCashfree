@@ -54,15 +54,16 @@
       loading = false;
       return;
     }
-    if (data.players > 1) {
-      team.forEach((member) => {
-        if (member.length < 3) {
-          alert("Please enter a valid team member name.");
-          loading = false;
-          return;
-        }
-      });
-    }
+    // if (data.players > 1) {
+    //   team.forEach((member) => {
+    //     debugger;
+    //     // if (member.length < 3) {
+    //     //   alert("Please enter a valid team member name.");
+    //     //   loading = false;
+    //     //   return;
+    //     // }
+    //   });
+    // }
     let _data: db_registration = {
       created_at: new Date(),
       name,
