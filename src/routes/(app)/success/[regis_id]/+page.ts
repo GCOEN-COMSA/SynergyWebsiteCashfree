@@ -4,13 +4,14 @@ import { error } from "@sveltejs/kit";
 import { supabaseClient } from "$lib/db";
 import type { db_registration } from "$lib/types";
 export const load: PageLoad = async ({ params }) => {
-  const { data } = await supabaseClient
+  const { data: db_1 } = await supabaseClient
     .from("registrations")
     .select("*")
     .eq("id", params.regis_id)
     .limit(1)
     .single();
-  if (data) return { db: data, event: events.find((e) => e.id === data.event) };
+  
+  if (db_1) return { db: db_1, event: events.find((e) => e.id === db_1.event) };
   else throw error(404, "Registration ID not found");
 };
 

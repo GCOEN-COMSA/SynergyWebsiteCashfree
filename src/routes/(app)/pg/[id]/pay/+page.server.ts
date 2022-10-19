@@ -34,13 +34,17 @@ export const load: PageServerLoad = async (event) => {
         "customer_name": data.name,
         "customer_email": data.email,
         "customer_phone": data.phone
+      },
+      "order_meta": {
+        // TODO: 
+        "return_url": "http://localhost:5173/pg/process_return?cf_id={order_id}&cf_token={order_token}"
       }
     }),
   });
   const _data = await _req.json();
   ({data} = await supabaseClient.from('registrations').update({cf_id: _data.cf_order_id, cf_token: _data.order_token, cf_status: _data.order_status}).eq('id', data.id).select().single());
-  console.log(data);
-  console.log(_data);
+  if(dev){console.log(data);
+  console.log(_data);}
   if (data && _data) return { db: data, pg: _data };
   else throw error(404, "Registration ID not found");
 };

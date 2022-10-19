@@ -39,6 +39,11 @@
       loading = false;
       return;
     }
+    if (phone.length != 10) {
+      alert("Please enter a valid phone number.");
+      loading = false;
+      return;
+    }
     if (college.length < 3) {
       alert("Please enter a valid college name.");
       loading = false;
@@ -72,9 +77,10 @@
     let { data: __data, error } = await supabaseClient
       .from("registrations")
       .upsert<db_registration>(_data)
-      .select();
+      .select().single();
     // @ts-ignore
-    goto(`/pg/${__data?.id}`);
+    debugger;
+    goto(`/pg/${__data.id}/pay`);
     console.log(__data);
     loading = false;
   }

@@ -18,7 +18,7 @@
       onSuccess: (e) => {
         /* {"order":{"status":"PAID","orderId":"1_1666199073","message":"Order is Paid","errorText":null,"activePaymentMethod":"upi-collect"},"transaction":{"txStatus":"SUCCESS","txMsg":"Simulated response message","transactionId":885691095,"transactionAmount":104}} */
         //console.log(e);
-        goto(`/success/${data.db.id}`);
+        goto(`/pg/process_return?cf_id=${e.order.orderId}&cf_token=${data.pg.order_token}`);
       },
       onFailure: (e) => {
         /* 

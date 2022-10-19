@@ -17,19 +17,21 @@ export const GET: RequestHandler = async ({ url }) => {
         "Content-Type": "application/json",
         "x-client-id": CF_API_KEY,
         "x-client-secret": CF_SECRET_KEY,
+        "x-api-version": "2022-01-01"
       },
     });
-    if (res.status === 200) {
+    console.log(await res.clone().json(), res.clone().status, cf_token);
+    if (res.status == 200) {
       const data = await res.json();
-      if (data && data.status === "PAID") {
+      if (data && data.order_status === "PAID") {
         // update in supabase
         const { data: _data, error: _error } = await supabaseClient
           .from("registrations")
-          .update({ cf_status: data.status, cf_token: cf_token })
-          .eq("cf_id", cf_id)
+          .update({ cf_status: data.order_status, cf_token: cf_token })
+          .eq("id", cf_id.split("_")[0])
           .select()
           .single();
-
+        console.log(_data, _error);
         if (_data && !_error && _data.cf_status === "PAID") {
           throw redirect(307, "/success/" + _data.id);
         }
@@ -38,7 +40,9 @@ export const GET: RequestHandler = async ({ url }) => {
         }
       }
     }
+    throw error(500, "Incorrect cf_id or cf_token");
   }
+  throw error(500, "Missing cf_token and cf_id");
 };
 
 export const sample = {
