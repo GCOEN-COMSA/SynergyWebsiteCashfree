@@ -37,7 +37,7 @@ export const load: PageServerLoad = async (event) => {
       },
       "order_meta": {
         // TODO: 
-        "return_url": "http://localhost:5173/pg/process_return?cf_id={order_id}&cf_token={order_token}"
+        "return_url": "http://synergy-22-cf.vercel.app/pg/process_return?cf_id={order_id}&cf_token={order_token}"
       }
     }),
   });
