@@ -1,0 +1,78 @@
+import { CF_API_KEY, CF_SECRET_KEY } from "$env/static/private";
+import { error, redirect } from "@sveltejs/kit";
+import type { RequestHandler } from "./$types";
+import { supabaseClient } from "$lib/db";
+
+// TODO: const PG_URL = (dev) ? 'https://sandbox.cashfree.com/pg/orders':""
+const PG_URL = "https://sandbox.cashfree.com/pg/orders/";
+
+export const GET: RequestHandler = async ({ url }) => {
+  const cf_id = url.searchParams.get("cf_id");
+  const cf_token = url.searchParams.get("cf_token");
+
+  if (cf_id && cf_token) {
+    const res: Response = await fetch(PG_URL + cf_id, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        "x-client-id": CF_API_KEY,
+        "x-client-secret": CF_SECRET_KEY,
+      },
+    });
+    if (res.status === 200) {
+      const data = await res.json();
+      if (data && data.status === "PAID") {
+        // update in supabase
+        const { data: _data, error: _error } = await supabaseClient
+          .from("registrations")
+          .update({ cf_status: data.status, cf_token: cf_token })
+          .eq("cf_id", cf_id)
+          .select()
+          .single();
+
+        if (_data && !_error && _data.cf_status === "PAID") {
+          throw redirect(307, "/success/" + _data.id);
+        }
+        else {
+          throw error(500, "Payment failed");
+        }
+      }
+    }
+  }
+};
+
+export const sample = {
+  cf_order_id: 594193729,
+  created_at: "2021-09-22T13:46:51+05:30",
+  customer_details: {
+    customer_id: "P9999711",
+    customer_name: null,
+    customer_email: "abc@yahoo.co.in",
+    customer_phone: "9899049110",
+  },
+  entity: "order",
+  order_amount: 1.0,
+  order_currency: "INR",
+  order_expiry_time: "2021-10-22T13:46:51+05:30",
+  order_id: "order_1471yUGAj97hSGoOB",
+  order_meta: {
+    return_url: "http://localhost:1774/resp.php?order_id={order_id}&order_token={order_token}",
+    notify_url: "https://b8af79f41056.eu.ngrok.io/webhook.php",
+    payment_methods: null,
+  },
+  order_note: null,
+  order_splits: [],
+  order_status: "PAID",
+  order_tags: null,
+  order_token: "9AtvrNXIXgQqFsJbaRVc",
+  payment_link: "https://payments.cashfree.com/order/#9AtvrNXIXgQqFsJbaRVc",
+  payments: {
+    url: "https://api.cashfree.com/pg/orders/order_1471yUGAj97hSGoOB/payments",
+  },
+  refunds: {
+    url: "https://api.cashfree.com/pg/orders/order_1471yUGAj97hSGoOB/refunds",
+  },
+  settlements: {
+    url: "https://api.cashfree.com/pg/orders/order_1471yUGAj97hSGoOB/settlements",
+  },
+};

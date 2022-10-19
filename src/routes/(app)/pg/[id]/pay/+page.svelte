@@ -1,38 +1,40 @@
 <script lang="ts">
-    import { dev } from "$app/environment";
+  import { dev } from "$app/environment";
   import { events } from "$lib/data/events";
   import type { db_registration } from "$lib/types";
   import { onMount } from "svelte";
-import { PUBLIC_RZP_KEY } from "$env/static/public";
-
-
+  import { cashfreeSandbox } from "cashfree-dropjs";
+  import { cashfreeProd } from "cashfree-dropjs";
+  import { goto } from "$app/navigation";
   export let data: { db: db_registration; pg: any };
   let _data = events.find((event) => event.id === data.db.event);
   onMount(() => {
-    dev ? console.log(JSON.stringify(data)):'';
-    const options = {
-    "key": PUBLIC_RZP_KEY, // Enter the Key ID generated from the Dashboard
-    "amount": data.db.amount, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
-    "currency": "INR",
-    "name": "Synergy | GCOEN",
-    "description": _data?.name,
-    // "image": "https://example.com/your_logo",
-    "order_id": data.pg.id, //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
-    // "callback_url": "https://eneqd3r9zrjok.x.pipedream.net/",
-    "prefill": {
-        "name": data.db.name,
-        "email": data.db.email,
-        "contact": data.db.phone
-    },
-    "notes": {
-        "address": "Razorpay Corporate Office"
-    },
-    "theme": {
-        "color": "#3399cc"
-    }
-};
-    // @ts-ignore
-    const rzp = new Razorpay()
+    let cashfree;
+    // TODO: change to prod
+    cashfree = new cashfreeSandbox.Cashfree();
+
+    cashfree.initialiseDropin(document.getElementById("payment-form"), {
+      orderToken: data.pg.order_token,
+      onSuccess: (e) => {
+        /* {"order":{"status":"PAID","orderId":"1_1666199073","message":"Order is Paid","errorText":null,"activePaymentMethod":"upi-collect"},"transaction":{"txStatus":"SUCCESS","txMsg":"Simulated response message","transactionId":885691095,"transactionAmount":104}} */
+        //console.log(e);
+        goto(`/success/${data.db.id}`);
+      },
+      onFailure: (e) => {
+        /* 
+        {"order":{"status":"ERROR","errorText":"Please provide a valid UPI ID","activePaymentMethod":"upi-collect","message":"order has failed","orderId":"1_1666199073"},"transaction":null}
+        */
+        //console.log(e);
+        alert(e.order.errorText);
+      },
+      components: [
+        "order-details",
+        "card",
+        "netbanking",
+        "app",
+        "upi",
+      ],
+    });
   });
 </script>
 
@@ -62,7 +64,10 @@ import { PUBLIC_RZP_KEY } from "$env/static/public";
       <iconify-icon icon={_data?.icon} class="text-6xl text-primary" />
     </div>
   </div>
-  <div class="form-container form-control items-center justify-evenly min-h-[20rem]" />
+  <div
+    id="payment-form"
+    class="form-container form-control items-center justify-evenly min-h-[20rem]"
+  />
 </div>
 
 <!-- {{
