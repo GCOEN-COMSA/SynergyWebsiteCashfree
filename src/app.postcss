@@ -1,0 +1,28 @@
+/* Write your global styles here, in PostCSS syntax */
+
+/* Write your global styles here, in PostCSS syntax */
+
+@import "@fontsource/fira-sans";
+@import "@fontsource/fira-mono";
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+* {
+  font-family: "Fira Sans", sans-serif;
+}
+
+@font-face {
+  font-family: "vimh";
+  src: url("/voice_in_my_head-webfont.woff2") format("woff2"),
+    url("/voice_in_my_head-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.vimh {
+  font-family: "vimh";
+}
