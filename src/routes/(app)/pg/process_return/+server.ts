@@ -17,7 +17,7 @@ export const GET: RequestHandler = async ({ url }) => {
         "Content-Type": "application/json",
         "x-client-id": CF_API_KEY,
         "x-client-secret": CF_SECRET_KEY,
-        "x-api-version": "2022-01-01"
+        "x-api-version": "2022-01-01",
       },
     });
     console.log(await res.clone().json(), res.clone().status, cf_token);
@@ -34,8 +34,7 @@ export const GET: RequestHandler = async ({ url }) => {
         console.log(_data, _error);
         if (_data && !_error && _data.cf_status === "PAID") {
           throw redirect(307, "/success/" + _data.id);
-        }
-        else {
+        } else {
           throw error(500, "Payment failed");
         }
       }

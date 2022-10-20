@@ -9,7 +9,7 @@ export const load: PageLoad = async ({ params }) => {
     .eq("id", params.regis_id)
     .limit(1)
     .single();
-  
+
   if (db_1) return { db: db_1, event: events.find((e) => e.id === db_1.event) };
   else throw error(404, "Registration ID not found");
 };
