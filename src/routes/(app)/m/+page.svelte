@@ -31,7 +31,7 @@
 {:then value}
   <div
     style="--bg-url: url({MobileHero});"
-    class="hero-bg min-h-screen flex flex-col lg:flex-row bg-base-100 overflow-x-hidden scroll-mt-16"
+    class="hero-bg min-h-screen flex flex-col lg:flex-row bg-base-100 overflow-x-hidden"
     id="hero"
   >
     <div id="hero-half" class="mt-10 flex flex-col">
@@ -39,14 +39,14 @@
         class="mt-auto lg:-mb-10 lg:ml-32 mx-auto lg:text-[10rem] text-[5rem] lg:[line-height=9.5rem] text-base-content vimh"
         >SYNERGY</span
       ><span class="mt-2 mx-auto lg:ml-32 lg:mb-36 text-base-content text-4xl"
-        >Nexus of Innovation</span
+        >The Nexus of Innovation</span
       >
     </div>
     <div id="hero-cube" class="flex-grow flex justify-center items-center">
       <svelte:component this={Cube} />
     </div>
   </div>
-  <div class="mt-16" id="about">
+  <div class="mt-16 flex flex-row flex-wrap justify-evenly align-middle " id="about">
     <AboutUs />
   </div>
   <div class="flex flex-col justify-center gap-4 items-center content-gradient mt-10" id="faq">

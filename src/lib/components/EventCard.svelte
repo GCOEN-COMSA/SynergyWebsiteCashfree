@@ -17,7 +17,7 @@
       <p class="min-h-16">{desc}</p>
       <div class="card-actions justify-end">
         <button on:click={()=>{goto(`/register/${id}`)}} class="btn btn-primary">Register</button>
-        <button on:click={onLearnMore} class="btn">Learn More</button>
+        <button on:click={onLearnMore} class="btn">Explore</button>
       </div>
     </div>
   </div>

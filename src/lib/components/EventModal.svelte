@@ -51,7 +51,7 @@
 				</div>
 				<div class="flex flex-col p-2 gap-4 w-full">
 					<button on:click={()=>{closeModal();goto(`/register/${data.id}`)}} class="btn btn-block btn-primary" id="btn-1">Register</button>
-					<button class="btn btn-block btn-secondary" on:click={closeModal} id="btn-2">Back</button>
+					<button class="btn btn-block btn-secondary" on:click={()=>{closeModal();goto(`/pdf/${data.id}.pdf`)}} id="btn-2">Learn</button>
 				</div>
 			</div>
 		</div>

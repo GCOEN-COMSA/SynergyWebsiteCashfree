@@ -65,11 +65,11 @@
     border-radius: 0.25rem;
     margin-top: 0.125rem;
     margin-bottom: 0px;
-    transition: border-radius 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     display: inline-flex;
     gap: 2rem;
     justify-content: space-between;
-    @apply container w-full xl:max-w-xl text-base p-5 lg:p-7;
+    @apply container w-full xl:max-w-xl text-base p-4;
   }
 
   .active {

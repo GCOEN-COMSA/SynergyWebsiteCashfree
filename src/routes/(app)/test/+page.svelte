@@ -1,7 +1,8 @@
 <script>
-    import EventModal from "$lib/components/SelectEventModal.svelte";
+    import Testimonial from "$lib/components/Testimonial.svelte";
+
 </script>
 
 <div class="mt-16">
-<EventModal isOpen/>
+ <Testimonial />
 </div>

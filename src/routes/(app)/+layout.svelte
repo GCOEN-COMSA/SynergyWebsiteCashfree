@@ -6,6 +6,7 @@
 
   afterNavigate(() => {
     contentElem.scrollTo(0,0);
+    sidebar.checked = false;
   })
 
   import { Modals, closeModal } from "svelte-modals";
@@ -17,7 +18,7 @@
   let contentElem: HTMLElement;
   let contentElemScrollTop = 0;
   let is_transparent = true;
-
+  let sidebar: HTMLInputElement;
   $: is_transparent = contentElemScrollTop < 128;
 
   onMount(() => {
@@ -42,7 +43,7 @@
     };
   });
 
-  import type { LayoutLoad } from "./$types";
+  import type { LayoutLoad } from "../../../.svelte-kit/types/src/routes/(app)/$types";
   import { getSupabase } from "@supabase/auth-helpers-sveltekit";
   import { browser } from "$app/environment";
 
@@ -57,7 +58,7 @@
 </Modals>
 
 <div class="drawer">
-  <input id="side-drawer" type="checkbox" class="drawer-toggle" />
+  <input id="side-drawer" bind:this={sidebar} type="checkbox" class="drawer-toggle" />
   <div
     bind:this={contentElem}
     class="drawer-content scroll-smooth snap-y snap-mandatory snap-always scroll-m-16 flex flex-col"
@@ -98,7 +99,7 @@
       </div>
     </div>
     <slot />
-    <footer class="footer p-10 bg-base-200 text-base-content mt-10 opacity-100 hover:opacity-100 lg:opacity-50 transition-opacity duration-200">
+    <footer class="footer p-10 bg-base-200 text-base-content mt-10 opacity-100 hover:opacity-100 lg:opacity-50 transition-opacity duration-200 text-center lg:text-left justify-center lg:justify-between">
       <div>
         <svg
           width="50"
@@ -114,14 +115,32 @@
         >
         <p><span class="vimh">SYNERGY</span><br />by Computer Science Students Association of GCOEN</p>
       </div>
+      <!-- Section 1 -->
+      <div class="lg:ml-auto pr-10">
+        <span class="footer-title">Contact Us</span>
+        <a href="/legal/tos" class="btn btn-ghost">Contact Info</a>
+        <a href="/legal/pp" class="btn btn-ghost">Teams</a>
+      </div>
+      <!-- Section 2 -->
+      <div class="lg:ml-auto pr-10">
+        <span class="footer-title">Information</span>
+        <a href="/legal/tos" class="btn btn-ghost">About Us</a>
+        <a href="/legal/pp" class="btn btn-ghost">Out College</a>
+      </div>
+      <!-- Section 3 -->
       <div class="lg:ml-auto pr-10">
         <span class="footer-title">Legal</span>
-        <a href="/legal/tos" class="link link-hover">Terms of Service</a>
-        <a href="/legal/pp" class="link link-hover">Privacy policy</a>
-        <a href="/legal/cp" class="link link-hover">Cookie policy</a>
+        <a href="/legal/tos" class="btn btn-ghost">Terms & Conditions</a>
+        <a href="/legal/pp" class="btn btn-ghost">Privacy policy</a>
+      </div>
+      <!-- Section 4 -->
+      <div class="lg:ml-auto pr-10 text-sm">
+        <span class="footer-title">Legal</span>
+        <a href="/legal/tos" class="btn btn-ghost">Terms of Service</a>
+        <a href="/legal/pp" class="btn btn-ghost">Privacy policy</a>
       </div>
     </footer>
-    <footer class="footer-center bg-black text-white text-opacity-50 py-2">
+    <footer class="footer-center bg-black text-white text-opacity-50 py-1 text-sm">
       &copy; 2022 COMSA, GCOEN
     </footer>
   </div>
@@ -135,7 +154,7 @@
         >
       </li>
       <li><a href="/">Home</a></li>
-      <li><a href="/#about-us">About</a></li>
+      <li><a on:click={()=>{sidebar.checked =false}} href="/#about-us">About</a></li>
       <li><a href="/events/">Events</a></li>
       <li><a href="/gallery">Gallery</a></li>
     </ul>
