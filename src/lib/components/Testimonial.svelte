@@ -6,6 +6,7 @@
 
 
 <div class="flex flex-col items-center z-10">
+    <h1 class="text-4xl vimh uppercase">testimonials</h1>
     {#if selection==0}
     <TestimonialItem pos="GCoE Nagpur 0"/>
     {:else if  selection==1}

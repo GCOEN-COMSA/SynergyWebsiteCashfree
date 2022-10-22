@@ -38,7 +38,7 @@
       <span
         class="mt-auto lg:-mb-10 lg:ml-32 mx-auto lg:text-[10rem] text-[5rem] lg:[line-height=9.5rem] text-base-content vimh"
         >SYNERGY</span
-      ><span class="mt-2 mx-auto lg:ml-32 lg:mb-36 text-base-content text-4xl"
+      ><span class=" text-center mt-2 mx-auto lg:ml-32 lg:mb-36 text-base-content text-4xl"
         >The Nexus of Innovation</span
       >
     </div>

@@ -1,8 +1,8 @@
 <script>
-    import Testimonial from "$lib/components/Testimonial.svelte";
+    import Component from "$lib/components/Gallery.svelte";
 
 </script>
 
 <div class="mt-16">
- <Testimonial />
+ <Component />
 </div>

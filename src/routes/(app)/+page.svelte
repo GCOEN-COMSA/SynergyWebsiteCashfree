@@ -54,11 +54,12 @@
     class="flex flex-wrap px-36 justify-evenly items-center gap-8 bg-gradient-to-b content-gradient pb-5 lg:pb-10 xl:pb-20"
     id="content"
   >
-  <div id="testimonials" class="mt-10 w-5/6 flex flex-row flex-wrap justify-evenly align-middle">
-	<Testimonial />
-  </div>
+  
     <div id="about-us" class="mt-10 w-5/6 flex flex-row flex-wrap justify-evenly align-middle">
       <AboutUs />
+    </div>
+    <div id="testimonials" class="mt-10 w-5/6 flex flex-row flex-wrap justify-evenly align-middle">
+      <Testimonial />
     </div>
     <div class=" mt-10 w-5/6 flex flex-row flex-wrap justify-evenly align-middle">
       <div id="faq" class="w-5/6"><Faq data_list={page_1} title={page_1_title} /></div>

@@ -43,7 +43,7 @@
     };
   });
 
-  import type { LayoutLoad } from "../../../.svelte-kit/types/src/routes/(app)/$types";
+  import type { LayoutLoad } from "./$types";
   import { getSupabase } from "@supabase/auth-helpers-sveltekit";
   import { browser } from "$app/environment";
 
@@ -65,7 +65,7 @@
   >
     <!-- Navbar -->
     <div
-      class="w-full navbar fixed top-0 left-0 {is_transparent
+      class="w-full navbar min-h-12 fixed top-0 left-0 {is_transparent
         ? 'bg-transparent'
         : 'bg-base-300'} transition-colors duration-200 z-50 px-6"
     >
@@ -92,14 +92,14 @@
         <ul class="menu menu-horizontal">
           <!-- Navbar menu content here -->
           <li><a href="/">Home</a></li>
-          <li><a href="/#about-us">About</a></li>
+          <li><a href="/register/events-1">Register</a></li>
           <li><a href="/events/">Events</a></li>
           <li><a href="/gallery">Gallery</a></li>
         </ul>
       </div>
     </div>
     <slot />
-    <footer class="footer p-10 bg-base-200 text-base-content mt-10 opacity-100 hover:opacity-100 lg:opacity-50 transition-opacity duration-200 text-center lg:text-left justify-center lg:justify-between">
+    <footer class="footer py-8 px-4 bg-base-200 text-base-content opacity-100 hover:opacity-100 lg:opacity-50 transition-opacity duration-200 text-center lg:text-left justify-center justify-items-center lg:justify-around">
       <div>
         <svg
           width="50"
@@ -116,25 +116,25 @@
         <p><span class="vimh">SYNERGY</span><br />by Computer Science Students Association of GCOEN</p>
       </div>
       <!-- Section 1 -->
-      <div class="lg:ml-auto pr-10">
+      <div class="lg:ml-auto">
         <span class="footer-title">Contact Us</span>
         <a href="/legal/tos" class="btn btn-ghost">Contact Info</a>
         <a href="/legal/pp" class="btn btn-ghost">Teams</a>
       </div>
       <!-- Section 2 -->
-      <div class="lg:ml-auto pr-10">
+      <div class="lg:ml-auto">
         <span class="footer-title">Information</span>
         <a href="/legal/tos" class="btn btn-ghost">About Us</a>
         <a href="/legal/pp" class="btn btn-ghost">Out College</a>
       </div>
       <!-- Section 3 -->
-      <div class="lg:ml-auto pr-10">
+      <div class="lg:ml-auto">
         <span class="footer-title">Legal</span>
         <a href="/legal/tos" class="btn btn-ghost">Terms & Conditions</a>
         <a href="/legal/pp" class="btn btn-ghost">Privacy policy</a>
       </div>
       <!-- Section 4 -->
-      <div class="lg:ml-auto pr-10 text-sm">
+      <div class="lg:ml-auto">
         <span class="footer-title">Legal</span>
         <a href="/legal/tos" class="btn btn-ghost">Terms of Service</a>
         <a href="/legal/pp" class="btn btn-ghost">Privacy policy</a>
@@ -154,7 +154,8 @@
         >
       </li>
       <li><a href="/">Home</a></li>
-      <li><a on:click={()=>{sidebar.checked =false}} href="/#about-us">About</a></li>
+      <!-- <li><a on:click={()=>{sidebar.checked =false}} href="/#about-us">About</a></li> -->
+      <li><a href="/register/events-1">Register</a></li>
       <li><a href="/events/">Events</a></li>
       <li><a href="/gallery">Gallery</a></li>
     </ul>
@@ -169,5 +170,9 @@
     right: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.5);
+  }
+
+  .footer > * {
+    justify-items: center;
   }
 </style>
