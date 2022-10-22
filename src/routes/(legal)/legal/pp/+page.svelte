@@ -57,3 +57,9 @@
 			>gcoen.comsa@gmail.com</a
 		>.</span>
 </div>
+
+<style global lang="postcss">
+	html, body {
+		@apply !overflow-y-scroll;
+	}
+  </style>

@@ -69,6 +69,10 @@
         ? 'bg-transparent'
         : 'bg-base-300'} transition-colors duration-200 z-50 px-6"
     >
+      
+      <div class="flex-1 px-2 mx-2 {is_transparent ? 'invisible' : 'visible'}">
+        <img src="{Logo}" alt="Synergy Logo" class="max-h-12">
+      </div>
       <div class="flex-none lg:hidden">
         <label for="side-drawer" class="btn btn-square btn-ghost">
           <svg
@@ -85,21 +89,18 @@
           >
         </label>
       </div>
-      <div class="flex-1 px-2 mx-2 {is_transparent ? 'invisible' : 'visible'}">
-        <img src="{Logo}" alt="Synergy Logo" class="max-h-12">
-      </div>
       <div class="flex-none hidden lg:block">
         <ul class="menu menu-horizontal">
           <!-- Navbar menu content here -->
           <li><a href="/">Home</a></li>
-          <li><a href="/register/events-1">Register</a></li>
           <li><a href="/events/">Events</a></li>
           <li><a href="/gallery">Gallery</a></li>
+          <li><a href="/register/events-1">Register</a></li>
         </ul>
       </div>
     </div>
     <slot />
-    <footer class="flex items-center justify-center pb-8 px-4 bg-base-200 text-base-content opacity-100 hover:opacity-100 lg:opacity-50 transition-opacity duration-200 text-center lg:text-left justify-center justify-items-center lg:justify-around">
+    <footer class="flex items-center pt-4 pb-8 px-4 bg-base-200 text-base-content opacity-100 hover:opacity-100 lg:opacity-50 transition-opacity duration-200 text-center lg:text-left justify-center justify-items-center lg:justify-around">
       <div><img src="{Logo}" class="max-h-40" alt=""></div>
     </footer>
     <footer class="footer pb-8 px-4 bg-base-200 text-base-content opacity-100 hover:opacity-100 lg:opacity-50 transition-opacity duration-200 text-center lg:text-left justify-center justify-items-center lg:justify-around">
@@ -158,9 +159,9 @@
       </li>
       <li><a href="/">Home</a></li>
       <!-- <li><a on:click={()=>{sidebar.checked =false}} href="/#about-us">About</a></li> -->
-      <li><a href="/register/events-1">Register</a></li>
       <li><a href="/events/">Events</a></li>
       <li><a href="/gallery">Gallery</a></li>
+      <li><a href="/register/events-1">Register</a></li>
     </ul>
   </div>
 </div>

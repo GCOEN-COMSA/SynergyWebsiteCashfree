@@ -23,3 +23,9 @@
   11. In case of any mishaps, disputes and third party issues COMSA will not be responsible for the
   same.<br />
 </div>
+
+<style global lang="postcss">
+  html, body {
+      @apply !overflow-y-scroll;
+  }
+</style>

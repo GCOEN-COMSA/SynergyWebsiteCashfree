@@ -35,7 +35,7 @@
 {:then value}
   <div
     style="--bg-url: url({DesktopHero});"
-    class="hero-bg min-h-screen flex flex-col lg:flex-row bg-base-100 overflow-x-hidden "
+    class="hero-bg min-h-screen flex flex-col lg:flex-row bg-base-100 overflow-x-hidden pb-10"
     id="hero"
   >
     <div id="hero-half" class="flex-grow flex flex-col">

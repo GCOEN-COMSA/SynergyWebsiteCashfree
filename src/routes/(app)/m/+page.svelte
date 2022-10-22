@@ -33,7 +33,7 @@
 {:then value}
   <div
     style="--bg-url: url({MobileHero});"
-    class="hero-bg min-h-screen flex flex-col lg:flex-row bg-base-100 overflow-x-hidden "
+    class="  pb-10 hero-bg min-h-screen flex flex-col lg:flex-row bg-base-100 overflow-x-hidden "
     id="hero"
   >
     <div id="hero-half" class="mt-10 flex flex-col text-white">
@@ -54,7 +54,7 @@
   <div class="mt-16 flex flex-row flex-wrap justify-evenly align-middle " id="testimonials">
     <Testimonial />
   </div>
-  <div class="flex flex-col justify-center gap-4 items-center content-gradient mt-10" id="faq">
+  <div class="flex flex-col justify-center gap-4 items-center content-gradient mt-10 pb-10" id="faq">
     <Faq data_list={page_1} title={page_1_title} />
   </div>
 

@@ -17,7 +17,7 @@
   {#if alt}
     <div class="grid-block">
       <div class="tile">
-        <span on:click|preventDefault={clicky} class="tile-link">
+        <span on:click|preventDefault={clicky} class="tile-link delay-75">
           <img class="tile-img tile-img1 alt-{alt}" src="https://placeimg.com/480/270/tech" alt="Tech" />
         </span>
       </div>
@@ -35,7 +35,7 @@
     </div>
     <div class="grid-block">
       <div class="tile">
-        <span on:click|preventDefault={clicky} class="tile-link">
+        <span on:click|preventDefault={clicky} class="tile-link delay-75">
           <img class="tile-img tile-img1 alt-{alt}" src="https://placeimg.com/480/270/tech" alt="Tech" />
         </span>
       </div>
@@ -44,7 +44,7 @@
 
   <div class="grid-block">
     <div class="tile">
-      <span on:click|preventDefault={clicky} class="tile-link" href="#">
+      <span on:click|preventDefault={clicky} class="tile-link delay-100" href="#">
         <img class="tile-img tile-img2 alt-{alt}" src="https://placeimg.com/480/270/arch" alt="Tech" />
       </span>
     </div>
@@ -52,7 +52,7 @@
 
   <div class="grid-block">
     <div class="tile">
-      <span on:click|preventDefault={clicky} class="tile-link" href="#">
+      <span on:click|preventDefault={clicky} class="tile-link delay-150" href="#">
         <img class="tile-img tile-img3 alt-{alt}" src="https://placeimg.com/480/270/tech" alt="Tech" />
       </span>
     </div>
@@ -60,7 +60,7 @@
 
   <div class="grid-block">
     <div class="tile">
-      <span on:click|preventDefault={clicky} class="tile-link" href="#">
+      <span on:click|preventDefault={clicky} class="tile-link delay-200" href="#">
         <img class="tile-img tile-img4 alt-{alt}" src="https://placeimg.com/480/270/arch" alt="Tech" />
       </span>
     </div>
@@ -68,7 +68,7 @@
 
   <div class="grid-block">
     <div class="tile">
-      <span on:click|preventDefault={clicky} class="tile-link" href="#">
+      <span on:click|preventDefault={clicky} class="tile-link delay-300" href="#">
         <img class="tile-img tile-img5 alt-{alt}" src="https://placeimg.com/480/270/tech" alt="Tech" />
       </span>
     </div>
@@ -76,7 +76,7 @@
 
   <div class="grid-block">
     <div class="tile">
-      <span on:click|preventDefault={clicky} class="tile-link" href="#">
+      <span on:click|preventDefault={clicky} class="tile-link delay-500" href="#">
         <img class="tile-img tile-img6 alt-{alt}" src="https://placeimg.com/480/270/arch" alt="Tech" />
       </span>
     </div>
@@ -84,7 +84,7 @@
 
   <div class="grid-block">
     <div class="tile">
-      <span on:click|preventDefault={clicky} class="tile-link" href="#">
+      <span on:click|preventDefault={clicky} class="tile-link delay-700" href="#">
         <img class="tile-img tile-img7 alt-{alt}" src="https://placeimg.com/480/270/tech" alt="Tech" />
       </span>
     </div>
@@ -92,7 +92,7 @@
 
   <div class="grid-block">
     <div class="tile">
-      <span on:click|preventDefault={clicky} class="tile-link" href="#">
+      <span on:click|preventDefault={clicky} class="tile-link delay-1000" href="#">
         <img class="tile-img tile-img8 alt-{alt}" src="https://placeimg.com/480/270/arch" alt="Tech" />
       </span>
     </div>
@@ -151,15 +151,15 @@
 
   @media (max-width: 1024px) {
     .image-grid.alt-true {
-      -webkit-transform: rotateX(-10deg) rotateZ(-10deg);
-      transform: rotateX(-10deg) rotateZ(-10deg);
+      -webkit-transform: none;
+      transform: none;
       -webkit-perspective: 1000px;
       perspective: 1000px;
     }
 
     .image-grid {
-      -webkit-transform: rotateX(10deg) rotateZ(10deg);
-      transform: rotateX(10deg) rotateZ(10deg);
+      -webkit-transform: none;
+      transform: none;
       -webkit-perspective: 1000px;
       perspective: 1000px;
     }
@@ -219,6 +219,7 @@
     transition-duration: 0.125s;
     -webkit-transition-timing-function: ease-in;
     transition-timing-function: ease-in;
+    @apply rounded-lg;
   }
   .tile-link:hover .tile-img1 {
     box-shadow: 5px 5px rgba(244, 170, 200, 0.4), 10px 10px rgba(244, 170, 200, 0.3),
@@ -340,4 +341,38 @@
       -25px 25px rgba(4, 140, 231, 0.05);
   }
 
+  .tile-link {
+    --borderWidth: 3px;
+    position: relative;
+    /* border-radius: var(--borderWidth) !important; */
+    @apply rounded-lg;
+  }
+  .tile-link:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  /* border-radius: calc(2 * var(--borderWidth)); */
+  z-index: -1;
+  animation: animatedgradient 4s ease alternate infinite;
+  background-size: 300% 300%;
+  @apply rounded-lg;
+  
+}
+
+
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 </style>
