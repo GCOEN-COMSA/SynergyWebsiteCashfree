@@ -1,7 +1,7 @@
 <script lang="ts">
-    import ImageModal from '$lib/components/ImageModal.svelte';
-    import { openModal } from 'svelte-modals';
-    export let alt = false;
+  import ImageModal from "$lib/components/ImageModal.svelte";
+  import { openModal } from "svelte-modals";
+  export let alt = false;
   let clicky = (
     event: MouseEvent & {
       currentTarget: EventTarget & HTMLSpanElement;
@@ -13,63 +13,39 @@
   };
 </script>
 
-<div class="grid image-grid alt-{alt} mt-10 lg:mt-4">
-    {#if alt}
-  <div class="grid-block">
-    <div class="tile">
-      <span on:click|preventDefault={clicky} class="tile-link">
-        <img class="tile-img tile-img1" src="https://placeimg.com/480/270/tech" alt="Tech" />
-      </span>
-    </div>
-  </div>
-  <div class="grid-block">
-    <div class="tile flex flex-col items-center justify-center">
-        <h1 class="text-4xl vimh">GALLERY 2021</h1>
-    </div>
-</div>
-    {:else}
+<div class="g-grid image-grid alt-{alt} mt-10 mb-0 lg:-mt-40">
+  {#if alt}
     <div class="grid-block">
-        <div class="tile flex flex-col items-center justify-center">
-            <h1 class="text-4xl vimh">GALLERY 2021</h1>
-        </div>
+      <div class="tile">
+        <span on:click|preventDefault={clicky} class="tile-link">
+          <img class="tile-img tile-img1 alt-{alt}" src="https://placeimg.com/480/270/tech" alt="Tech" />
+        </span>
+      </div>
     </div>
-  <div class="grid-block">
-    <div class="tile">
-      <span on:click|preventDefault={clicky} class="tile-link">
-        <img class="tile-img tile-img1" src="https://placeimg.com/480/270/tech" alt="Tech" />
-      </span>
+    <div class="grid-block">
+      <div class="tile flex flex-col items-center justify-center">
+        <h1 class="text-4xl vimh">SYNERGY 2021</h1>
+      </div>
     </div>
-  </div>
-    {/if}
+  {:else}
+    <div class="grid-block">
+      <div class="tile flex flex-col items-center justify-center">
+        <h1 class="text-4xl vimh">SYNERGY 2021</h1>
+      </div>
+    </div>
+    <div class="grid-block">
+      <div class="tile">
+        <span on:click|preventDefault={clicky} class="tile-link">
+          <img class="tile-img tile-img1 alt-{alt}" src="https://placeimg.com/480/270/tech" alt="Tech" />
+        </span>
+      </div>
+    </div>
+  {/if}
 
   <div class="grid-block">
     <div class="tile">
       <span on:click|preventDefault={clicky} class="tile-link" href="#">
-        <img class="tile-img tile-img2" src="https://placeimg.com/480/270/arch" alt="Tech" />
-      </span>
-    </div>
-  </div>
-
-  <div class="grid-block">
-    <div class="tile">
-      <span on:click|preventDefault={clicky} class="tile-link" href="#">
-        <img class="tile-img tile-img3" src="https://placeimg.com/480/270/tech" alt="Tech" />
-      </span>
-    </div>
-  </div>
-
-  <div class="grid-block">
-    <div class="tile">
-      <span on:click|preventDefault={clicky} class="tile-link" href="#">
-        <img class="tile-img tile-img4" src="https://placeimg.com/480/270/arch" alt="Tech" />
-      </span>
-    </div>
-  </div>
-
-  <div class="grid-block">
-    <div class="tile">
-      <span on:click|preventDefault={clicky} class="tile-link" href="#">
-        <img class="tile-img tile-img5" src="https://placeimg.com/480/270/tech" alt="Tech" />
+        <img class="tile-img tile-img2 alt-{alt}" src="https://placeimg.com/480/270/arch" alt="Tech" />
       </span>
     </div>
   </div>
@@ -77,7 +53,7 @@
   <div class="grid-block">
     <div class="tile">
       <span on:click|preventDefault={clicky} class="tile-link" href="#">
-        <img class="tile-img tile-img6" src="https://placeimg.com/480/270/arch" alt="Tech" />
+        <img class="tile-img tile-img3 alt-{alt}" src="https://placeimg.com/480/270/tech" alt="Tech" />
       </span>
     </div>
   </div>
@@ -85,7 +61,7 @@
   <div class="grid-block">
     <div class="tile">
       <span on:click|preventDefault={clicky} class="tile-link" href="#">
-        <img class="tile-img tile-img7" src="https://placeimg.com/480/270/tech" alt="Tech" />
+        <img class="tile-img tile-img4 alt-{alt}" src="https://placeimg.com/480/270/arch" alt="Tech" />
       </span>
     </div>
   </div>
@@ -93,7 +69,7 @@
   <div class="grid-block">
     <div class="tile">
       <span on:click|preventDefault={clicky} class="tile-link" href="#">
-        <img class="tile-img tile-img8" src="https://placeimg.com/480/270/arch" alt="Tech" />
+        <img class="tile-img tile-img5 alt-{alt}" src="https://placeimg.com/480/270/tech" alt="Tech" />
       </span>
     </div>
   </div>
@@ -101,7 +77,31 @@
   <div class="grid-block">
     <div class="tile">
       <span on:click|preventDefault={clicky} class="tile-link" href="#">
-        <img class="tile-img tile-img9" src="https://placeimg.com/480/270/tech" alt="Tech" />
+        <img class="tile-img tile-img6 alt-{alt}" src="https://placeimg.com/480/270/arch" alt="Tech" />
+      </span>
+    </div>
+  </div>
+
+  <div class="grid-block">
+    <div class="tile">
+      <span on:click|preventDefault={clicky} class="tile-link" href="#">
+        <img class="tile-img tile-img7 alt-{alt}" src="https://placeimg.com/480/270/tech" alt="Tech" />
+      </span>
+    </div>
+  </div>
+
+  <div class="grid-block">
+    <div class="tile">
+      <span on:click|preventDefault={clicky} class="tile-link" href="#">
+        <img class="tile-img tile-img8 alt-{alt}" src="https://placeimg.com/480/270/arch" alt="Tech" />
+      </span>
+    </div>
+  </div>
+
+  <div class="grid-block">
+    <div class="tile">
+      <span on:click|preventDefault={clicky} class="tile-link" href="#">
+        <img class="tile-img tile-img9 alt-{alt}" src="https://placeimg.com/480/270/tech" alt="Tech" />
       </span>
     </div>
   </div>
@@ -116,7 +116,7 @@
 </div>
 
 <style>
-  .grid {
+  .g-grid {
     width: 100%;
     max-width: 60rem;
     margin-left: auto;
@@ -151,23 +151,37 @@
 
   @media (max-width: 1024px) {
     .image-grid.alt-true {
-    -webkit-transform: none !important;
-    transform: none !important;
-    -webkit-perspective: 1000px;
-    perspective: 1000px;
-  }
+      -webkit-transform: none !important;
+      transform: none !important;
+      -webkit-perspective: 1000px;
+      perspective: 1000px;
+    }
 
-  .image-grid {
-    -webkit-transform: none !important;
-    transform: none !important;
-    -webkit-perspective: 1000px;
-    perspective: 1000px;
+    .image-grid {
+      -webkit-transform: none !important;
+      transform: none !important;
+      -webkit-perspective: 1000px;
+      perspective: 1000px;
+    }
+
+    .grid-block {
+      width: 50%;
+      min-height: unset;
+      padding: 0.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
-}
 
   .image-grid .tile-link:hover .tile-img {
     top: -1rem;
     left: -1rem;
+  }
+
+  .image-grid.alt-true .tile-link:hover .tile-img {
+    top: -1rem;
+    left: 1rem;
   }
 
   .image-grid .tile-img {
@@ -265,4 +279,65 @@
       15px 15px rgba(4, 140, 231, 0.2), 20px 20px rgba(4, 140, 231, 0.1),
       25px 25px rgba(4, 140, 231, 0.05);
   }
+  
+  .tile-link:hover .tile-img1.alt-true {
+    box-shadow: -5px 5px rgba(244, 170, 200, 0.4), -10px 10px rgba(244, 170, 200, 0.3),
+      -15px 15px rgba(244, 170, 200, 0.2), -20px 20px rgba(244, 170, 200, 0.1),
+      -25px 25px rgba(244, 170, 200, 0.05);
+  }
+
+  .tile-link:hover .tile-img2.alt-true {
+    box-shadow: -5px 5px rgba(45, 186, 233, 0.4), -10px 10px rgba(45, 186, 233, 0.3),
+      -15px 15px rgba(45, 186, 233, 0.2), -20px 20px rgba(45, 186, 233, 0.1),
+      -25px 25px rgba(45, 186, 233, 0.05);
+  }
+
+  .tile-link:hover .tile-img3.alt-true {
+    box-shadow: -5px 5px rgba(214, 221, 244, 0.4), -10px 10px rgba(214, 221, 244, 0.3),
+      -15px 15px rgba(214, 221, 244, 0.2), -20px 20px rgba(214, 221, 244, 0.1),
+      -25px 25px rgba(214, 221, 244, 0.05);
+  }
+
+  .tile-link:hover .tile-img4.alt-true {
+    box-shadow: -5px 5px rgba(82, 119, 192, 0.4), -10px 10px rgba(82, 119, 192, 0.3),
+      -15px 15px rgba(82, 119, 192, 0.2), -20px 20px rgba(82, 119, 192, 0.1),
+      -25px 25px rgba(82, 119, 192, 0.05);
+  }
+
+  .tile-link:hover .tile-img5.alt-true {
+    box-shadow: -5px 5px rgba(138, 218, 245, 0.4), -10px 10px rgba(138, 218, 245, 0.3),
+      -15px 15px rgba(138, 218, 245, 0.2), -20px 20px rgba(138, 218, 245, 0.1),
+      -25px 25px rgba(138, 218, 245, 0.05);
+  }
+
+  .tile-link:hover .tile-img6.alt-true {
+    box-shadow: -5px 5px rgba(203, 215, 193, 0.4), -10px 10px rgba(203, 215, 193, 0.3),
+      -15px 15px rgba(203, 215, 193, 0.2), -20px 20px rgba(203, 215, 193, 0.1),
+      -25px 25px rgba(203, 215, 193, 0.05);
+  }
+
+  .tile-link:hover .tile-img7.alt-true {
+    box-shadow: -5px 5px rgba(91, 209, 250, 0.4), -10px 10px rgba(91, 209, 250, 0.3),
+      -15px 15px rgba(91, 209, 250, 0.2), -20px 20px rgba(91, 209, 250, 0.1),
+      -25px 25px rgba(91, 209, 250, 0.05);
+  }
+
+  .tile-link:hover .tile-img8.alt-true {
+    box-shadow: -5px 5px rgba(145, 156, 196, 0.4), -10px 10px rgba(145, 156, 196, 0.3),
+      -15px 15px rgba(145, 156, 196, 0.2), -20px 20px rgba(145, 156, 196, 0.1),
+      -25px 25px rgba(145, 156, 196, 0.05);
+  }
+
+  .tile-link:hover .tile-img9.alt-true {
+    box-shadow: -5px 5px rgba(188, 97, 129, 0.4), -10px 10px rgba(188, 97, 129, 0.3),
+      -15px 15px rgba(188, 97, 129, 0.2), -20px 20px rgba(188, 97, 129, 0.1),
+      -25px 25px rgba(188, 97, 129, 0.05);
+  }
+
+  .tile-link:hover .tile-img10.alt-true {
+    box-shadow: -5px 5px rgba(4, 140, 231, 0.4), -10px 10px rgba(4, 140, 231, 0.3),
+      -15px 15px rgba(4, 140, 231, 0.2), -20px 20px rgba(4, 140, 231, 0.1),
+      -25px 25px rgba(4, 140, 231, 0.05);
+  }
+
 </style>

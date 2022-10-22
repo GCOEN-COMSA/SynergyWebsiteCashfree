@@ -8,6 +8,7 @@
   import { events } from "$lib/data/events";
   import AboutUs from "$lib/components/AboutUs.svelte";
   import Loader from "$lib/components/Loader.svelte";
+    import Testimonial from "$lib/components/Testimonial.svelte";
   // Should have been SvelteComponent
   let Cube: any;
   let innerWidth: number;
@@ -34,7 +35,7 @@
     class="hero-bg min-h-screen flex flex-col lg:flex-row bg-base-100 overflow-x-hidden"
     id="hero"
   >
-    <div id="hero-half" class="mt-10 flex flex-col">
+    <div id="hero-half" class="mt-10 flex flex-col text-white">
       <span
         class="mt-auto lg:-mb-10 lg:ml-32 mx-auto lg:text-[10rem] text-[5rem] lg:[line-height=9.5rem] text-base-content vimh"
         >SYNERGY</span
@@ -49,6 +50,9 @@
   <div class="mt-16 flex flex-row flex-wrap justify-evenly align-middle " id="about">
     <AboutUs />
   </div>
+  <div class="mt-16 flex flex-row flex-wrap justify-evenly align-middle " id="testimonials">
+    <Testimonial />
+  </div>
   <div class="flex flex-col justify-center gap-4 items-center content-gradient mt-10" id="faq">
     <Faq data_list={page_1} title={page_1_title} />
   </div>
@@ -58,7 +62,9 @@
 
 <style>
   .hero-bg {
-    background: var(--bg-url) no-repeat top;
+    background: no-repeat top;
+    background-image: linear-gradient(to top, #00000050, #000000aa), var(--bg-url);
+    background-blend-mode: multiply, normal;
     background-size: cover;
   }
 

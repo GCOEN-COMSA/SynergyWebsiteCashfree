@@ -1,4 +1,7 @@
 <script>
+    import { fade } from "svelte/transition";
+
+
 export let image = "http://placeimg.com/400/400/tech",
     pos = "GCoE Nagpur",
     name = "Some Indifferent Cunt",
