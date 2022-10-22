@@ -67,5 +67,22 @@
       >
     </form>
   </div>
-  <div class="w-1/2" />
+  <div class="w-1/2 flex flex-row flex-wrap items-center justify-evenly" >
+    <div class="infopoint">
+      <iconify-icon class="text-4xl" icon="carbon:location" />
+      <p class="text-lg">Address</p>
+      <p class="text-sm">1234 Street Name</p>
+      <p class="text-sm">City, ST 12345</p>
+    </div>
+    <div class="infopoint">
+      <iconify-icon class="text-4xl" icon="carbon:phone" />
+      <p class="text-lg">Phone</p>
+      <p class="text-sm">123-456-7890</p>
+    </div>
+    <div class="infopoint">
+      <iconify-icon class="text-4xl" icon="carbon:email" />
+      <p class="text-lg">Email</p>
+      <p class="text-sm">comsa.gcoen@gmail.com</p>
+      </div>
+  </div>
 </div>
