@@ -14,7 +14,7 @@
 </script>
 
 <div class="g-grid image-grid alt-{alt} mt-10 mb-0 lg:-mt-40">
-  {#if alt}
+  <!-- {#if alt}
     <div class="grid-block">
       <div class="tile">
         <span on:click|preventDefault={clicky} class="tile-link delay-75">
@@ -22,17 +22,17 @@
         </span>
       </div>
     </div>
-    <div class="grid-block">
+     <div class="grid-block">
       <div class="tile flex flex-col items-center justify-center">
         <h1 class="text-4xl vimh">SYNERGY 2021</h1>
       </div>
-    </div>
+    </div> 
   {:else}
-    <div class="grid-block">
+     <div class="grid-block">
       <div class="tile flex flex-col items-center justify-center">
         <h1 class="text-4xl vimh">SYNERGY 2021</h1>
       </div>
-    </div>
+    </div> 
     <div class="grid-block">
       <div class="tile">
         <span on:click|preventDefault={clicky} class="tile-link delay-75">
@@ -40,7 +40,15 @@
         </span>
       </div>
     </div>
-  {/if}
+  {/if} -->
+
+  <div class="grid-block">
+    <div class="tile">
+      <span on:click|preventDefault={clicky} class="tile-link delay-75">
+        <img class="tile-img tile-img1 alt-{alt}" src="https://placeimg.com/480/270/tech" alt="Tech" />
+      </span>
+    </div>
+  </div>
 
   <div class="grid-block">
     <div class="tile">
@@ -106,13 +114,13 @@
     </div>
   </div>
 
-  <!-- <div class="grid-block">
+  <div class="grid-block">
     <div class="tile">
       <span on:click|preventDefault={clicky} class="tile-link" href="#">
         <img class="tile-img tile-img10" src="https://placeimg.com/480/270/arch" alt="Tech" />
       </span>
     </div>
-  </div> -->
+  </div>
 </div>
 
 <style>

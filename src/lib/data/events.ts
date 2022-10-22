@@ -7,7 +7,7 @@ export const events = [
     amount: 100_00, // 100.00
     image: "https://placeimg.com/192/108/tech",
     icon: "clarity:bar-code-line",
-    date: "2021-09-01",
+    date: "1PM/11 Nov 2022",
     players: 1,
   },
   {

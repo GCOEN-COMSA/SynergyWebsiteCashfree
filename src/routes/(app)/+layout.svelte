@@ -70,7 +70,7 @@
         : 'bg-base-300'} transition-colors duration-200 z-50 px-6"
     >
       
-      <div class="flex-1 px-2 mx-2 {is_transparent ? 'invisible' : 'visible'}">
+      <div class="flex-1 px-2 py-2 mx-2 {is_transparent ? 'invisible' : 'visible'}">
         <img src="{Logo}" alt="Synergy Logo" class="max-h-12">
       </div>
       <div class="flex-none lg:hidden">
@@ -100,10 +100,10 @@
       </div>
     </div>
     <slot />
-    <footer class="flex items-center pt-4 pb-8 px-4 bg-base-200 text-base-content opacity-100 hover:opacity-100 lg:opacity-50 transition-opacity duration-200 text-center lg:text-left justify-center justify-items-center lg:justify-around">
+    <footer class="flex items-center pt-4 pb-8 px-4 bg-base-200 text-base-content text-center lg:text-left justify-center justify-items-center lg:justify-around">
       <div><img src="{Logo}" class="max-h-40" alt=""></div>
     </footer>
-    <footer class="footer pb-8 px-4 bg-base-200 text-base-content opacity-100 hover:opacity-100 lg:opacity-50 transition-opacity duration-200 text-center lg:text-left justify-center justify-items-center lg:justify-around">
+    <footer class="footer pb-8 pt-4 px-4 bg-base-200 text-base-content text-center lg:text-left justify-center justify-items-center lg:justify-around">
       <div>
         <svg
           width="50"
@@ -144,7 +144,7 @@
         <a href="/legal/pp" class="btn btn-ghost">Privacy policy</a>
       </div>
     </footer>
-    <footer class="footer-center bg-black text-white text-opacity-50 py-1 text-sm">
+    <footer class="hidden footer-center bg-black text-white text-opacity-50 py-1 text-sm">
       &copy; 2022 COMSA, GCOEN
     </footer>
   </div>
@@ -157,11 +157,11 @@
           ><iconify-icon class="text-4xl" icon="carbon:close" /></label
         >
       </li>
-      <li><a href="/">Home</a></li>
+      <li><a class="ml-10" href="/">Home</a></li>
       <!-- <li><a on:click={()=>{sidebar.checked =false}} href="/#about-us">About</a></li> -->
-      <li><a href="/events/">Events</a></li>
-      <li><a href="/gallery">Gallery</a></li>
-      <li><a href="/register/events-1">Register</a></li>
+      <li><a class="ml-10" href="/events/">Events</a></li>
+      <li><a class="ml-10" href="/gallery">Gallery</a></li>
+      <li><a class="ml-10" href="/register/events-1">Register</a></li>
     </ul>
   </div>
 </div>

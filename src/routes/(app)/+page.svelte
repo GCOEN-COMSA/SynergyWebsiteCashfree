@@ -1,6 +1,6 @@
 <script lang="ts">
   import Faq from "$lib/components/FAQPageDesktop.svelte";
-  import DesktopHero from "$lib/assets/desktop-alt.jpg";
+  import DesktopHero from "$lib/assets/desktop-alt-min.jpg";
   import { page_1, page_1_title } from "$lib/data/FAQs";
   import { onMount, SvelteComponent } from "svelte";
   import { goto } from "$app/navigation";
@@ -8,7 +8,9 @@
   import EventCard from "$lib/components/EventCard.svelte";
   import Loader from "$lib/components/Loader.svelte";
   import { events } from "$lib/data/events";
-    import Testimonial from "$lib/components/Testimonial.svelte";
+  import Testimonial from "$lib/components/Testimonial.svelte";
+  import HeroBot from "$lib/components/HeroBot.svelte";
+    import ContactUs from "$lib/components/ContactUs.svelte";
   let innerWidth: number;
   let innerHeight: number;
   // Should have been SvelteComponent
@@ -22,8 +24,8 @@
     // setTimeout(loadPromiseResolve, 5000);
     if (innerWidth < 1024) await goto("/m/");
     // const mod = await import("$lib/components/HeroCubeDesktop.svelte");
-    const mod = await import("$lib/components/HeroBot.svelte");
-    Cube = mod.default;
+    // const mod = await import("$lib/components/HeroBot.svelte");
+    // Cube = mod.default;
     setTimeout(loadPromiseResolve, 100);
   });
 </script>
@@ -48,7 +50,8 @@
       >
     </div>
     <div id="hero-cube" class="flex-grow flex justify-center items-center pr-10">
-      <svelte:component this={Cube} />
+      <!-- <svelte:component this={Cube} /> -->
+      <HeroBot />
     </div>
   </div>
   <div
@@ -65,12 +68,16 @@
     <div class=" mt-10 w-5/6 flex flex-row flex-wrap justify-evenly align-middle">
       <div id="faq" class="w-5/6"><Faq data_list={page_1} title={page_1_title} /></div>
     </div>
+    <div class=" mt-10 w-5/6 flex flex-row flex-wrap justify-evenly align-middle">
+
+<div id="contact-us" class="w-5/6 flex flex-col items-center justify-items-stretch"><h1 class="text-4xl vimh">CONTACT US</h1><ContactUs /></div>
+    </div>
   </div>
 {/await}
 
 <style lang="postcss">
   .hero-bg {
-    background: no-repeat right;
+    background: no-repeat top right;
     background-image: linear-gradient(#00000050, #000000dd), var(--bg-url);
     background-blend-mode: multiply, normal;
     background-size: cover;

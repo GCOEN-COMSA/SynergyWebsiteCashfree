@@ -51,7 +51,7 @@
   <div class="mt-16 flex flex-row flex-wrap justify-evenly align-middle " id="about">
     <AboutUs />
   </div>
-  <div class="mt-16 flex flex-row flex-wrap justify-evenly align-middle " id="testimonials">
+  <div class="mt-16 flex flex-row flex-wrap justify-evenly align-middle pb-10" id="testimonials">
     <Testimonial />
   </div>
   <div class="flex flex-col justify-center gap-4 items-center content-gradient mt-10 pb-10" id="faq">
