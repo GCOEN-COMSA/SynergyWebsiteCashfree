@@ -21,7 +21,8 @@
   onMount(async () => {
     // setTimeout(loadPromiseResolve, 5000);
     if (innerWidth < 1024) await goto("/m/");
-    const mod = await import("$lib/components/HeroCubeDesktop.svelte");
+    // const mod = await import("$lib/components/HeroCubeDesktop.svelte");
+    const mod = await import("$lib/components/HeroBot.svelte");
     Cube = mod.default;
     setTimeout(loadPromiseResolve, 100);
   });
@@ -37,7 +38,7 @@
     class="hero-bg min-h-screen flex flex-col lg:flex-row bg-base-100 overflow-x-hidden "
     id="hero"
   >
-    <div id="hero-half" class="flex-grow-[2] flex flex-col">
+    <div id="hero-half" class="flex-grow flex flex-col">
       <span
         class="mt-auto mb-4 xl:mb-10 xl:ml-16 2xl:ml-32 mx-auto text-4xl 2xl:text-[10rem]  xl:text-[5rem] xl:[line-height=9.5rem] text-base-content vimh"
         >SYNERGY</span
@@ -46,7 +47,7 @@
         >The Nexus of Innovation</span
       >
     </div>
-    <div id="hero-cube" class="flex-grow flex justify-center items-center">
+    <div id="hero-cube" class="flex-grow flex justify-center items-center pr-10">
       <svelte:component this={Cube} />
     </div>
   </div>

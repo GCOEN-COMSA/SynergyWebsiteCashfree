@@ -19,7 +19,8 @@
   });
   onMount(async () => {
     if (innerWidth > 1024) await goto("/");
-    const mod = await import("$lib/components/HeroCubeMobile.svelte");
+    // const mod = await import("$lib/components/HeroCubeMobile.svelte");
+    const mod = await import("$lib/components/HeroBot.svelte");
     Cube = mod.default;
     setTimeout(loadPromiseResolve, 150);
   });
@@ -32,7 +33,7 @@
 {:then value}
   <div
     style="--bg-url: url({MobileHero});"
-    class="hero-bg min-h-screen flex flex-col lg:flex-row bg-base-100 overflow-x-hidden"
+    class="hero-bg min-h-screen flex flex-col lg:flex-row bg-base-100 overflow-x-hidden "
     id="hero"
   >
     <div id="hero-half" class="mt-10 flex flex-col text-white">

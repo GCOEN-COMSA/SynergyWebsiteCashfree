@@ -151,15 +151,15 @@
 
   @media (max-width: 1024px) {
     .image-grid.alt-true {
-      -webkit-transform: none !important;
-      transform: none !important;
+      -webkit-transform: rotateX(-10deg) rotateZ(-10deg);
+      transform: rotateX(-10deg) rotateZ(-10deg);
       -webkit-perspective: 1000px;
       perspective: 1000px;
     }
 
     .image-grid {
-      -webkit-transform: none !important;
-      transform: none !important;
+      -webkit-transform: rotateX(10deg) rotateZ(10deg);
+      transform: rotateX(10deg) rotateZ(10deg);
       -webkit-perspective: 1000px;
       perspective: 1000px;
     }
