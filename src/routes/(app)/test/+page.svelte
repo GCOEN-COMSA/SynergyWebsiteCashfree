@@ -1,5 +1,5 @@
 <script>
-    import Component from "$lib/components/HeroBot.svelte";
+    import Component from "$lib/components/FooterSocials.svelte";
 
 </script>
 

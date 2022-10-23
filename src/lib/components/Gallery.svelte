@@ -1,6 +1,16 @@
 <script lang="ts">
   import ImageModal from "$lib/components/ImageModal.svelte";
   import { openModal } from "svelte-modals";
+  import Image1 from "$lib/assets/gallery/1.jpg";
+  import Image2 from "$lib/assets/gallery/2.jpg";
+  import Image3 from "$lib/assets/gallery/3.jpg";
+  import Image4 from "$lib/assets/gallery/4.jpg";
+  import Image5 from "$lib/assets/gallery/5.jpg";
+  import Image6 from "$lib/assets/gallery/6.jpg";
+  import Image7 from "$lib/assets/gallery/7.jpg";
+  import Image8 from "$lib/assets/gallery/8.png";
+  import Image9 from "$lib/assets/gallery/9.jpg";
+  import Image10 from "$lib/assets/gallery/10.gif";
   export let alt = false;
   let clicky = (
     event: MouseEvent & {
@@ -13,7 +23,7 @@
   };
 </script>
 
-<div class="g-grid image-grid alt-{alt} mt-10 mb-0 lg:-mt-40">
+<div class="g-grid image-grid alt-{alt} mt-10 self-center justify-evenly">
   <!-- {#if alt}
     <div class="grid-block">
       <div class="tile">
@@ -45,7 +55,7 @@
   <div class="grid-block">
     <div class="tile">
       <span on:click|preventDefault={clicky} class="tile-link delay-75">
-        <img class="tile-img tile-img1 alt-{alt}" src="https://placeimg.com/480/270/tech" alt="Tech" />
+        <img class="tile-img tile-img1 alt-{alt}" src="{Image1}" alt="Tech" />
       </span>
     </div>
   </div>
@@ -53,7 +63,7 @@
   <div class="grid-block">
     <div class="tile">
       <span on:click|preventDefault={clicky} class="tile-link delay-100" href="#">
-        <img class="tile-img tile-img2 alt-{alt}" src="https://placeimg.com/480/270/arch" alt="Tech" />
+        <img class="tile-img tile-img2 alt-{alt}" src="{Image2}" alt="Tech" />
       </span>
     </div>
   </div>
@@ -61,7 +71,7 @@
   <div class="grid-block">
     <div class="tile">
       <span on:click|preventDefault={clicky} class="tile-link delay-150" href="#">
-        <img class="tile-img tile-img3 alt-{alt}" src="https://placeimg.com/480/270/tech" alt="Tech" />
+        <img class="tile-img tile-img3 alt-{alt}" src="{Image9}" alt="Tech" />
       </span>
     </div>
   </div>
@@ -69,7 +79,7 @@
   <div class="grid-block">
     <div class="tile">
       <span on:click|preventDefault={clicky} class="tile-link delay-200" href="#">
-        <img class="tile-img tile-img4 alt-{alt}" src="https://placeimg.com/480/270/arch" alt="Tech" />
+        <img class="tile-img tile-img4 alt-{alt}" src="{Image4}" alt="Tech" />
       </span>
     </div>
   </div>
@@ -77,7 +87,7 @@
   <div class="grid-block">
     <div class="tile">
       <span on:click|preventDefault={clicky} class="tile-link delay-300" href="#">
-        <img class="tile-img tile-img5 alt-{alt}" src="https://placeimg.com/480/270/tech" alt="Tech" />
+        <img class="tile-img tile-img5 alt-{alt}" src="{Image5}" alt="Tech" />
       </span>
     </div>
   </div>
@@ -85,7 +95,7 @@
   <div class="grid-block">
     <div class="tile">
       <span on:click|preventDefault={clicky} class="tile-link delay-500" href="#">
-        <img class="tile-img tile-img6 alt-{alt}" src="https://placeimg.com/480/270/arch" alt="Tech" />
+        <img class="tile-img tile-img6 alt-{alt}" src="{Image6}" alt="Tech" />
       </span>
     </div>
   </div>
@@ -93,7 +103,7 @@
   <div class="grid-block">
     <div class="tile">
       <span on:click|preventDefault={clicky} class="tile-link delay-700" href="#">
-        <img class="tile-img tile-img7 alt-{alt}" src="https://placeimg.com/480/270/tech" alt="Tech" />
+        <img class="tile-img tile-img7 alt-{alt}" src="{Image8}" alt="Tech" />
       </span>
     </div>
   </div>
@@ -101,7 +111,15 @@
   <div class="grid-block">
     <div class="tile">
       <span on:click|preventDefault={clicky} class="tile-link delay-1000" href="#">
-        <img class="tile-img tile-img8 alt-{alt}" src="https://placeimg.com/480/270/arch" alt="Tech" />
+        <img class="tile-img tile-img8 alt-{alt}" src="{Image10}" alt="Tech" />
+      </span>
+    </div>
+  </div>
+
+  <div class="grid-block align-hide">
+    <div class="tile">
+      <span on:click|preventDefault={clicky} class="tile-link delay-200" href="#">
+        <img class="tile-img tile-img4 alt-{alt}" src="{Image4}" alt="Tech" />
       </span>
     </div>
   </div>
@@ -109,7 +127,7 @@
   <div class="grid-block">
     <div class="tile">
       <span on:click|preventDefault={clicky} class="tile-link" href="#">
-        <img class="tile-img tile-img9 alt-{alt}" src="https://placeimg.com/480/270/tech" alt="Tech" />
+        <img class="tile-img tile-img9 alt-{alt}" src="{Image3}" alt="Tech" />
       </span>
     </div>
   </div>
@@ -117,7 +135,7 @@
   <div class="grid-block">
     <div class="tile">
       <span on:click|preventDefault={clicky} class="tile-link" href="#">
-        <img class="tile-img tile-img10" src="https://placeimg.com/480/270/arch" alt="Tech" />
+        <img class="tile-img tile-img10" src="{Image7}" alt="Tech" />
       </span>
     </div>
   </div>
@@ -126,7 +144,7 @@
 <style>
   .g-grid {
     width: 100%;
-    max-width: 60rem;
+    /* max-width: 60rem; */
     margin-left: auto;
     margin-right: auto;
 
@@ -138,21 +156,22 @@
   }
 
   .grid-block {
-    width: 50%;
+    /* width: 50%; */
     min-height: 11.25rem;
+    @apply max-w-lg;
     padding: 1rem;
   }
 
   .image-grid {
-    -webkit-transform: rotateX(45deg) rotateZ(45deg);
-    transform: rotateX(45deg) rotateZ(45deg);
+    -webkit-transform: rotateX(0deg) rotateZ(0deg);
+    transform: rotateX(0deg) rotateZ(0deg);
     -webkit-perspective: 1000px;
     perspective: 1000px;
   }
 
   .image-grid.alt-true {
-    -webkit-transform: rotateX(-45deg) rotateZ(-45deg);
-    transform: rotateX(-45deg) rotateZ(-45deg);
+    -webkit-transform: rotateX(0deg) rotateZ(0deg);
+    transform: rotateX(0deg) rotateZ(0deg);
     -webkit-perspective: 1000px;
     perspective: 1000px;
   }
@@ -173,12 +192,21 @@
     }
 
     .grid-block {
-      width: 50%;
+      width: 100%;
       min-height: unset;
       padding: 0.5rem;
       display: flex;
       justify-content: center;
       align-items: center;
+    }
+  }
+
+  .align-hide {
+    display: none
+  }
+  @media (min-width: 1843px) {
+    .align-hide {
+      display: block;
     }
   }
 

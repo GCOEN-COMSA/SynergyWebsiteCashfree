@@ -9,6 +9,7 @@
   import AboutUs from "$lib/components/AboutUs.svelte";
   import Loader from "$lib/components/Loader.svelte";
     import Testimonial from "$lib/components/Testimonial.svelte";
+    import ContactUs from "$lib/components/ContactUs.svelte";
   // Should have been SvelteComponent
   let Cube: any;
   let innerWidth: number;
@@ -48,17 +49,21 @@
       <svelte:component this={Cube} />
     </div>
   </div>
-  <div class="mt-16 flex flex-row flex-wrap justify-evenly align-middle " id="about">
-    <AboutUs />
+  <div class="content-bg">
+    <div class="mt-16 flex flex-row flex-wrap justify-evenly align-middle mx-auto w-[calc(100%-4rem)] " id="about">
+      <AboutUs />
+    </div>
+    <div class="mt-16 flex flex-row flex-wrap justify-evenly align-middle pb-10 mx-auto w-[calc(100%-4rem)]" id="testimonials">
+      <Testimonial />
+    </div>
+    <div class="flex flex-col justify-center gap-4 items-center  mt-10 pb-10 mx-auto w-[calc(100%-4rem)]" id="faq">
+      <Faq data_list={page_1} title={page_1_title} />
+    </div>
+    <div id="contact-us" class="flex flex-col justify-center gap-4 items-center mt-10 pb-10 mx-auto w-[calc(100%-4rem)]">
+      <h1 class="text-4xl vimh">CONTACT US</h1>
+      <ContactUs />
+    </div>
   </div>
-  <div class="mt-16 flex flex-row flex-wrap justify-evenly align-middle pb-10" id="testimonials">
-    <Testimonial />
-  </div>
-  <div class="flex flex-col justify-center gap-4 items-center content-gradient mt-10 pb-10" id="faq">
-    <Faq data_list={page_1} title={page_1_title} />
-  </div>
-
-  <div class="" id="contact-us" />
 {/await}
 
 <style>
@@ -69,7 +74,7 @@
     background-size: cover;
   }
 
-  .content-gradient {
+  .content-bg {
     /* --tw-gradient-stops: #0000004D, theme('colors.sky.400'), theme('colors.rose.400'), theme('colors.lime.400'); */
     background: linear-gradient(to top, rgb(29, 78, 216), rgb(30, 64, 175), rgb(17, 24, 39));
   }

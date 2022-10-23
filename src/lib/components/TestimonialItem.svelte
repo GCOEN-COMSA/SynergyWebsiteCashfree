@@ -1,7 +1,13 @@
-<script>
-    import { fade } from "svelte/transition";
+<script lang="ts">
+    import { fade, fly } from "svelte/transition";
 
-
+export let index = 0;
+  let anim: {x?:number,y?:number} = {y: -200};
+  if (index == -1) {
+    anim = {x: -200};
+  } else if (index == 1) {
+    anim = {x: 200};
+  }
 export let image = "http://placeimg.com/400/400/tech",
     pos = "GCoE Nagpur",
     name = "Some Indifferent Cunt",
@@ -9,7 +15,7 @@ export let image = "http://placeimg.com/400/400/tech",
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam alias eum labore rerum harum pariatur quae dignissimos. Eius ducimus debitis dolores est vitae ipsam ullam quas expedita quos voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis obcaecati quo, doloremque alias necessitatibus officiis quia voluptatibus illo nihil consequatur. Minima, quas. Aperiam nesciunt laudantium voluptatem perferendis non quae iusto!";
 </script>
 
-<div class="testimonial-container pt-32">
+<div in:fly={{...anim, duration:300}} class="testimonial-container pt-32">
   <div
     class="container max-w-xl flex flex-col items-stretch align-middle justify-between bg-base-300 px-6 py-10 rounded-lg"
   >

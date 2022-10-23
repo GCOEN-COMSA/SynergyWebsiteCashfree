@@ -10,7 +10,7 @@
   import { events } from "$lib/data/events";
   import Testimonial from "$lib/components/Testimonial.svelte";
   import HeroBot from "$lib/components/HeroBot.svelte";
-    import ContactUs from "$lib/components/ContactUs.svelte";
+  import ContactUs from "$lib/components/ContactUs.svelte";
   let innerWidth: number;
   let innerHeight: number;
   // Should have been SvelteComponent
@@ -26,7 +26,7 @@
     // const mod = await import("$lib/components/HeroCubeDesktop.svelte");
     // const mod = await import("$lib/components/HeroBot.svelte");
     // Cube = mod.default;
-    setTimeout(loadPromiseResolve, 100);
+    setTimeout(loadPromiseResolve, 0);
   });
 </script>
 
@@ -58,7 +58,6 @@
     class="flex flex-wrap px-36 justify-evenly items-center gap-8 bg-gradient-to-b content-gradient pb-5 lg:pb-10 xl:pb-20"
     id="content"
   >
-  
     <div id="about-us" class="mt-10 w-5/6 flex flex-row flex-wrap justify-evenly align-middle">
       <AboutUs />
     </div>
@@ -69,8 +68,10 @@
       <div id="faq" class="w-5/6"><Faq data_list={page_1} title={page_1_title} /></div>
     </div>
     <div class=" mt-10 w-5/6 flex flex-row flex-wrap justify-evenly align-middle">
-
-<div id="contact-us" class="w-5/6 flex flex-col items-center justify-items-stretch"><h1 class="text-4xl vimh">CONTACT US</h1><ContactUs /></div>
+      <div id="contact-us" class="w-5/6 flex flex-col items-center justify-items-stretch">
+        <h1 class="text-4xl vimh">CONTACT US</h1>
+        <ContactUs />
+      </div>
     </div>
   </div>
 {/await}

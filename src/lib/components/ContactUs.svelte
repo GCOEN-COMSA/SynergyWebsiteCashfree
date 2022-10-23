@@ -4,7 +4,10 @@
   let email = "";
   let message = "";
 
+  let loading = false;
+  let is_done = false;
   async function submitForm() {
+    loading = true;
     dev ? console.log(name, email, message) : "";
     await fetch("https://submit-form.com/echo", {
       method: "POST",
@@ -18,15 +21,18 @@
         message,
       }),
     });
+    is_done = true;
+    loading = false;
   }
 </script>
 
-<div class="self-stretch flex flex-col lg:flex-row">
+<div class="self-stretch flex flex-col lg:flex-row gap-4">
   <!-- <form action="https://submit-form.com/lZJZ9yjn"> -->
-  <div class="w-1/2 flex flex-col justify-center items-stretch justify-items-center">
+  <div class="lg:flex-grow-[5] flex flex-col justify-center items-stretch justify-items-center">
     <form
-      on:submit|preventDefault|stopPropagation={submitForm}
-      action="https://submit-form.com/echo"
+    on:submit|preventDefault={() => {}}
+      action=""
+      method="POST"
       class="form-control"
     >
       <label for="name" name="name" class="label">
@@ -38,7 +44,7 @@
         name="name"
         type="text"
         placeholder="Type here"
-        class="input input-bordered w-full max-w-xs"
+        class="input input-bordered bg-opacity-50  text-white placeholder:text-base-content w-full"
       />
       <label for="email" class="label">
         <span class="label-text">Email</span>
@@ -49,7 +55,7 @@
         name="email"
         type="text"
         placeholder="Type here"
-        class="input input-bordered w-full max-w-xs"
+        class="input input-bordered bg-opacity-50  text-white placeholder:text-base-content w-full"
       />
       <label for="message" class="label">
         <span class="label-text">Message</span>
@@ -60,26 +66,34 @@
         name="message"
         type="text"
         placeholder="Type here"
-        class="input-bordered w-full max-w-xs textarea min-h-16"
+        class="input-bordered bg-opacity-50  text-white placeholder:text-base-content w-full textarea min-h-[10rem]"
       />
-      <button class="btn btn-primary max-w-xs mt-2" type="submit"
-        ><iconify-icon class="text-4xl" icon="carbon:send" /></button
+      <button on:click|preventDefault|stopPropagation|once={submitForm} disabled={loading} class="btn {is_done ? 'btn-success':'btn-primary'} mt-6 transition-colors duration-1000 {loading ? 'loading':''}" type="submit"
+        >{#if loading}
+           <!-- content here -->
+        {:else}
+        {#if is_done}
+        <iconify-icon class="text-4xl" icon="carbon:checkmark" />
+        {:else}
+        <iconify-icon class="text-4xl" icon="carbon:send" />
+        {/if}
+        {/if}</button
       >
     </form>
   </div>
-  <div class="w-1/2 flex flex-row flex-wrap items-center justify-evenly" >
-    <div class="infopoint">
+  <div class="lg:flex-grow-[1] max-w-xs flex flex-col flex-wrap items-center justify-center justify-items-center self-center lg:border-l-2 border-base-content mt-6 lg:mt-[unset] lg:ml-8" >
+    <div class="infopoint flex flex-col items-center justify-center">
       <iconify-icon class="text-4xl" icon="carbon:location" />
       <p class="text-lg">Address</p>
       <p class="text-sm">1234 Street Name</p>
       <p class="text-sm">City, ST 12345</p>
     </div>
-    <div class="infopoint">
+    <div class="infopoint my-4 flex flex-col items-center justify-center">
       <iconify-icon class="text-4xl" icon="carbon:phone" />
       <p class="text-lg">Phone</p>
       <p class="text-sm">123-456-7890</p>
     </div>
-    <div class="infopoint">
+    <div class="infopoint flex flex-col items-center justify-center">
       <iconify-icon class="text-4xl" icon="carbon:email" />
       <p class="text-lg">Email</p>
       <p class="text-sm">comsa.gcoen@gmail.com</p>
