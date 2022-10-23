@@ -9,7 +9,7 @@
   async function submitForm() {
     loading = true;
     dev ? console.log(name, email, message) : "";
-    await fetch("https://submit-form.com/echo", {
+    await fetch("https://submit-form.com/lZJZ9yjn", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -40,6 +40,7 @@
         <!-- <span class="label-text-alt">Alt label</span> -->
       </label>
       <input
+      bind:value={name}
         id="name"
         name="name"
         type="text"
@@ -51,6 +52,7 @@
         <!-- <span class="label-text-alt">Alt label</span> -->
       </label>
       <input
+      bind:value={email}
         id="email"
         name="email"
         type="text"
@@ -62,6 +64,7 @@
         <!-- <span class="label-text-alt">Alt label</span> -->
       </label>
       <textarea
+      bind:value={message}
         id="message"
         name="message"
         type="text"
