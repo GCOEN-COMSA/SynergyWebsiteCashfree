@@ -9,7 +9,7 @@
   async function submitForm() {
     loading = true;
     dev ? console.log(name, email, message) : "";
-    await fetch("https://api.staticforms.xyz/submit", {
+    await fetch("https://submit-form.com/lZJZ9yjn", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -19,9 +19,6 @@
         name,
         email,
         message,
-        replyTo: email,
-        subject: "Contact Us :" + name,
-        accessKey: 'beddff0a-d0ab-493d-85af-e24b97a84731'
       }),
     });
     is_done = true;
