@@ -148,12 +148,6 @@
         <a href="/legal/tos" class="btn btn-ghost">Terms & Conditions</a>
         <a href="/legal/pp" class="btn btn-ghost">Privacy policy</a>
       </div>
-      <!-- Section 4 -->
-      <div class="m-auto">
-        <span class="footer-title">Legal</span>
-        <a href="/legal/tos" class="btn btn-ghost">Terms of Service</a>
-        <a href="/legal/pp" class="btn btn-ghost">Privacy policy</a>
-      </div>
     </footer>
     <footer class="hidden footer-center bg-black text-white text-opacity-50 py-1 text-sm">
       &copy; 2022 COMSA, GCOEN
