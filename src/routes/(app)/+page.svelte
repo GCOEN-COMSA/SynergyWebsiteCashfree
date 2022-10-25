@@ -11,6 +11,7 @@
   import Testimonial from "$lib/components/Testimonial.svelte";
   import HeroBot from "$lib/components/HeroBot.svelte";
   import ContactUs from "$lib/components/ContactUs.svelte";
+  import ScrollDownIndicator from '$lib/components/ScrollDownIndicator.svelte';
   let innerWidth: number;
   let innerHeight: number;
   // Should have been SvelteComponent
@@ -20,13 +21,31 @@
   let loadPromise = new Promise((resolve) => {
     loadPromiseResolve = resolve;
   });
+  let contentElem: HTMLDivElement | null;
+  let is_transparent = true;
   onMount(async () => {
     // setTimeout(loadPromiseResolve, 5000);
     if (innerWidth < 1024) await goto("/m/");
     // const mod = await import("$lib/components/HeroCubeDesktop.svelte");
     // const mod = await import("$lib/components/HeroBot.svelte");
     // Cube = mod.default;
+    contentElem = document.querySelector("#content-elem");
+    if (contentElem) {
+      contentElem.addEventListener("scroll", ({ target }) => {
+        if (target) {
+          const { scrollTop } = target;
+          if (scrollTop > 128) {
+            // document.body.classList.add("bg-white");
+            is_transparent = false;
+          } else {
+            // document.body.classList.remove("bg-white");
+            is_transparent = true;
+          }
+        }
+      });
+    }
     setTimeout(loadPromiseResolve, 0);
+    
   });
 </script>
 
@@ -75,6 +94,12 @@
     </div>
   </div>
 {/await}
+
+<!-- {@debug is_transparent} -->
+
+{#if is_transparent}
+  <ScrollDownIndicator />
+{/if}
 
 <style lang="postcss">
   .hero-bg {

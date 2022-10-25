@@ -11,7 +11,7 @@
     left: 50%;
     transform: translateY(0%) rotate(45deg);
     opacity: 0;
-    z-index: 999;
+    z-index: 100;
   }
   .global-scroll-div-1 {
     width: 2em;

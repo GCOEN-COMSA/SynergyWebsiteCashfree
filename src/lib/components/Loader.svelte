@@ -4,13 +4,14 @@
 </div>
 
 
-<style>
+<style lang="postcss">
 .center{
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
-    @apply fixed bg-black top-0 left-0 bottom-0 right-0 z-[400];
+    z-index: 1000;
+    @apply fixed bg-black top-0 left-0 bottom-0 right-0;
 }
 
 .ring{

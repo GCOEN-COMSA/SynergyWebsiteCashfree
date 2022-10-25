@@ -63,6 +63,7 @@
 <div class="drawer">
   <input id="side-drawer" bind:this={sidebar} type="checkbox" class="drawer-toggle" />
   <div
+    id="content-elem"
     bind:this={contentElem}
     class="drawer-content scroll-smooth snap-y snap-mandatory snap-always scroll-m-16 flex flex-col"
   >
@@ -171,9 +172,6 @@
   </div>
 </div>
 
-{#if is_transparent}
-  <ScrollDownIndicator />
-{/if}
 
 <style>
   .backdrop {
