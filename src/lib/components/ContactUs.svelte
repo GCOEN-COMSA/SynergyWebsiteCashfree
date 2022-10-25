@@ -91,8 +91,8 @@
     <div class="infopoint flex flex-col items-center justify-center">
       <iconify-icon class="text-4xl" icon="carbon:location" />
       <p class="text-lg">Address</p>
-      <p class="text-sm">1234 Street Name</p>
-      <p class="text-sm">City, ST 12345</p>
+      <p class="text-sm">Sector-27, Mihan Rehabilitation Colony</p>
+      <p class="text-sm">Khapri, Nagpur - 441108</p>
     </div>
     <div class="infopoint my-4 flex flex-col items-center justify-center">
       <iconify-icon class="text-4xl" icon="carbon:phone" />

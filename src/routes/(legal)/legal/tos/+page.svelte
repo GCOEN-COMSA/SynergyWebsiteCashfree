@@ -1,4 +1,4 @@
-<div class="prose mx-auto mt-10">
+<div class="prose mx-auto mt-10 p-8">
   The Terms and Conditions are as follows :<br />
   1. There is no option of refund of any entry. So, kindly do the registration only when you are confirmed
   to participate.<br />

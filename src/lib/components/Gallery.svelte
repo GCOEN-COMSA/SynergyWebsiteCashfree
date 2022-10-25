@@ -23,7 +23,7 @@
   };
 </script>
 
-<div class="g-grid image-grid alt-{alt} mt-10 self-center justify-evenly">
+<div class="g-grid image-grid alt-{alt} mt-14 self-center justify-evenly">
   <!-- {#if alt}
     <div class="grid-block">
       <div class="tile">

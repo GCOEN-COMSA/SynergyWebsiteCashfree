@@ -111,7 +111,7 @@
       </div>
     </footer>
     <footer
-      class="footer pb-8 pt-4 px-4 bg-base-200 text-base-content text-center lg:text-left justify-center justify-items-center lg:justify-around"
+      class="footer gap-y-4 lg:gap-y-10 pb-8 pt-4 px-4 bg-base-200 text-base-content text-center lg:text-left justify-center justify-items-center lg:justify-around"
     >
       <div>
         <FooterMap />

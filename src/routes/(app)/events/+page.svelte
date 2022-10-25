@@ -5,6 +5,7 @@
 
 <div class="mx-auto mt-10 w-5/6 flex flex-row flex-wrap justify-evenly align-middle gap-10 pb-10">
 			<h1 id="events" class="text-[6rem] mx-auto text-center text-base-content w-screen vimh">EVENTS</h1>
+			
 			<h1 id="events" class="text-4xl text-center text-base-content w-screen vimh">TECHNICAL</h1>
 			{#each events as event}
 			<EventCard name={event.name} desc={event.desc} id={event.id} image={event.image}/>
