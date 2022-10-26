@@ -39,7 +39,7 @@
 </script>
 
 <div
-  class="container max-w-4xl flex flex-col items-stretch justify-center bg-base-200 mt-16 rounded-xl p-8 bg-content"
+  class="container max-w-4xl flex flex-col items-stretch justify-center bg-base-200 mt-16 rounded-xl p-8 bg-base-200"
 >
   <div class="title text-center">
     <span class="text-4xl vimh">Registration Form</span>
@@ -66,7 +66,7 @@
   </div>
   <div
     id="payment-form"
-    class="form-container form-control items-center justify-evenly min-h-[20rem]"
+    class="form-container form-control items-center justify-evenly min-h-[20rem] rounded-lg"
   />
 </div>
 

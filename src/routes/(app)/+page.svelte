@@ -74,7 +74,7 @@
     </div>
   </div>
   <div
-    class="flex flex-wrap px-36 justify-evenly items-center gap-8 bg-gradient-to-b content-gradient pb-5 lg:pb-10 xl:pb-20"
+    class="flex flex-wrap px-36 justify-evenly items-center gap-8 bg-gradient-to-b bg-transparent pb-5 lg:pb-10 xl:pb-20"
     id="content"
   >
     <div id="about-us" class="mt-10 w-5/6 flex flex-row flex-wrap justify-evenly align-middle">

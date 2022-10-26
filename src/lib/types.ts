@@ -15,5 +15,6 @@ export interface db_registration {
   cf_id: string;
   cf_token: string;
   cf_status: string;
+  cf_iid: string;
   rzp_status: string;
 }

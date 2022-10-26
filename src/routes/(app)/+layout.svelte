@@ -104,14 +104,14 @@
     </div>
     <slot />
     <footer
-      class="flex flex-col items-center pt-4 pb-8 px-4 bg-base-200 text-base-content text-center justify-center justify-items-center"
+      class="flex flex-col items-center pt-4 pb-8 px-4 text-base-content text-center justify-center justify-items-center bg-footer"
     >
       <div class="flex flex-col items-stretch justify-center">
         <img src={Logo} class="max-h-40" alt="" />
         <FooterSocials />
       </div>
       <footer
-      class="footer gap-y-4 lg:gap-y-10 pb-8 pt-4 px-4 bg-base-200 text-base-content text-center lg:text-left justify-center justify-items-center lg:justify-around"
+      class="footer gap-y-4 lg:gap-y-10 pb-8 pt-4 px-4 text-base-content text-center lg:text-left justify-center justify-items-center lg:justify-around"
     >
       <div>
         <FooterMap />
@@ -151,7 +151,7 @@
     </footer>
     </footer>
 
-    <footer class="footer-center bg-black text-white text-opacity-50 py-1 text-sm">
+    <footer class="footer-center bg-black text-white text-opacity-50 py-3 text-sm">
       &copy; 2022 COMSA | GCOEN. All Rights Reserved.
     </footer>
   </div>
@@ -194,7 +194,8 @@
   }
 
   .bg-footer {
-    background: linear-gradient(to bottom, rgb(29, 78, 216), rgb(30, 64, 175), rgb(17, 24, 39)) scroll;
+    /* background: linear-gradient(to bottom, rgb(29, 78, 216), rgb(30, 64, 175), rgb(00, 00, 00)) scroll; */
     /* background-attachment: scroll ; */
+    background: rgba(0, 0, 0, 0);
   }
 </style>

@@ -1,6 +1,6 @@
 import type { PageServerLoad } from "./$types";
 import { events } from "$lib/data/events";
-import { error, json } from "@sveltejs/kit";
+import { error, json, redirect } from "@sveltejs/kit";
 import { slugify } from "$lib/util";
 import { supabaseClient } from "$lib/db";
 import { dev } from "$app/environment";
@@ -15,37 +15,60 @@ export const load: PageServerLoad = async (event) => {
     .select("*")
     .eq("id", event.params.id)
     .single();
-  // POST TO RZP
-  const _req = await fetch(PG_URL, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      "x-client-id": CF_API_KEY,
-      "x-client-secret": CF_SECRET_KEY,
-      "x-api-version": "2022-01-01",
-    },
-    body: JSON.stringify({
-      order_id: data.id.toString() + "_" + (new Date().valueOf() / 1000).toFixed(0),
-      order_amount: data.amount / 100,
-      order_currency: "INR",
-      order_note: "Additional order info",
-      customer_details: {
-        customer_id: slugify(data.name + "=" + data.phone),
-        customer_name: data.name,
-        customer_email: data.email,
-        customer_phone: data.phone,
+  let _data;
+  let oid = data.cf_iid;
+  if (data.cf_status === "PAID") { 
+    throw redirect(307, `/success/${data.id}`);
+  }
+  if (data.cf_status === "ACTIVE") {
+    // console.log(data.cf_id)
+    const _req = await fetch(PG_URL + `/${oid}`, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        "x-client-id": CF_API_KEY,
+        "x-client-secret": CF_SECRET_KEY,
+        "x-api-version": "2022-01-01",
       },
-      order_meta: {
-        // TODO:
-        return_url:
-          "http://synergy-22-cf.vercel.app/pg/process_return?cf_id={order_id}&cf_token={order_token}",
+    })
+    _data = await _req.json();
+  }
+  else {
+    oid = data.id.toString() + "_" + (new Date().valueOf() / 1000).toFixed(0)
+    const _req = await fetch(PG_URL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "x-client-id": CF_API_KEY,
+        "x-client-secret": CF_SECRET_KEY,
+        "x-api-version": "2022-01-01",
       },
-    }),
-  });
-  const _data = await _req.json();
+      body: JSON.stringify({
+        order_id: oid,
+        order_amount: data.amount / 100,
+        order_currency: "INR",
+        order_note: "Additional order info",
+        customer_details: {
+          customer_id: slugify(data.name + "=" + data.phone),
+          customer_name: data.name,
+          customer_email: data.email,
+          customer_phone: data.phone,
+        },
+        order_meta: {
+          // TODO:
+          return_url:
+            "https://synergycomsa.org/pg/process_return?cf_id={order_id}&cf_token={order_token}",
+        },
+      }),
+    });
+    _data = await _req.json();
+  }
+  
+  
   ({ data } = await supabaseClient
     .from("registrations")
     .update({
+      cf_iid: oid,
       cf_id: _data.cf_order_id,
       cf_token: _data.order_token,
       cf_status: _data.order_status,

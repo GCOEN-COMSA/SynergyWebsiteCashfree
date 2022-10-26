@@ -10,7 +10,7 @@
   }
 </script>
 
-<div class="card max-w-xs min-h-[25vh] lg:min-h-0 md:max-w-md lg:max-w-lg aspect-video bg-base-100 shadow-xl image-full max-h-60 my-4">
+<div class="card max-w-xs lg:min-h-0 md:max-w-md lg:max-w-lg aspect-video bg-base-100 shadow-xl image-full max-h-60 my-4">
     <figure><img src="{image ? image : 'https://placeimg.com/400/225/tech'}" alt="Shoes" /></figure>
     <div class="card-body">
       <h2 class="card-title vimh">{name}</h2>
@@ -21,3 +21,9 @@
       </div>
     </div>
   </div>
+
+<style>
+  .card {
+    min-height: clamp(20vh, 25vh, 30vh);
+  }
+</style>
