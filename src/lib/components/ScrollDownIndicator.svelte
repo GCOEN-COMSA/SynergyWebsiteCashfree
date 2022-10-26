@@ -3,12 +3,15 @@
     import { fade } from "svelte/transition";
 
 </script>
-<div in:fade out:fade class="global-scroll-div-1" />
-<div in:fade out:fade class="global-scroll-div-2" />
+
+  <div in:fade out:fade class="div global-scroll-div-1" />
+  <div in:fade out:fade class="div global-scroll-div-2" />
+
 
 <style>
-  div {
-    left: 50%;
+  .div {
+    left: 50vw;
+    margin-left: -1.25em;
     transform: translateY(0%) rotate(45deg);
     opacity: 0;
     z-index: 100;

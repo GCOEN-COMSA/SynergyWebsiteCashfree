@@ -88,7 +88,7 @@ let is_transparent = true;
 
 <style>
   .hero-bg {
-    background: no-repeat top;
+    background: no-repeat top center;
     background-image: linear-gradient(to top, #00000050, #000000aa), var(--bg-url);
     background-blend-mode: multiply, normal;
     background-size: cover;
