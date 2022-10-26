@@ -79,10 +79,6 @@ let is_transparent = true;
     <div class="flex flex-col justify-center gap-4 items-center  mt-10 pb-10 mx-auto w-[calc(100%-4rem)]" id="faq">
       <Faq data_list={page_1} title={page_1_title} />
     </div>
-    <div id="contact-us" class="flex flex-col justify-center gap-4 items-center mt-10 pb-10 mx-auto w-[calc(100%-4rem)]">
-      <h1 class="text-4xl vimh">CONTACT US</h1>
-      <ContactUs />
-    </div>
   </div>
 {/await}
 
@@ -100,6 +96,7 @@ let is_transparent = true;
 
   .content-bg {
     /* --tw-gradient-stops: #0000004D, theme('colors.sky.400'), theme('colors.rose.400'), theme('colors.lime.400'); */
-    background: linear-gradient(to top, rgb(29, 78, 216), rgb(30, 64, 175), rgb(17, 24, 39));
+    /* background: linear-gradient(to top, rgb(29, 78, 216), rgb(30, 64, 175), rgb(17, 24, 39)); */
+    @apply bg-transparent;
   }
 </style>

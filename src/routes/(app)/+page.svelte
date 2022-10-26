@@ -86,12 +86,6 @@
     <div class=" mt-10 w-5/6 flex flex-row flex-wrap justify-evenly align-middle">
       <div id="faq" class="w-5/6"><Faq data_list={page_1} title={page_1_title} /></div>
     </div>
-    <div class=" mt-10 w-5/6 flex flex-row flex-wrap justify-evenly align-middle">
-      <div id="contact-us" class="w-5/6 flex flex-col items-center justify-items-stretch">
-        <h1 class="text-4xl vimh">CONTACT US</h1>
-        <ContactUs />
-      </div>
-    </div>
   </div>
 {/await}
 

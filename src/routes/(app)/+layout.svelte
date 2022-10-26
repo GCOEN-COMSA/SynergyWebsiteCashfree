@@ -99,6 +99,7 @@
           <li><a class="btn btn-ghost rounded-lg" href="/events/">Events</a></li>
           <li><a class="btn btn-ghost rounded-lg" href="/gallery">Gallery</a></li>
           <li><a class="btn btn-ghost rounded-lg" href="/register/events-1">Register</a></li>
+          <li><a class="btn btn-ghost rounded-lg" href="/contact-us">Contact Us</a></li>
         </ul>
       </div>
     </div>
@@ -133,14 +134,14 @@
       <!-- Section 1 -->
       <div class="m-auto">
         <span class="footer-title">Contact Us</span>
-        <a href="/legal/tos" class="btn btn-ghost">Contact Info</a>
+        <a href="/contact-us" class="btn btn-ghost">Contact Info</a>
         <a href="/legal/pp" class="btn btn-ghost">Teams</a>
       </div>
       <!-- Section 2 -->
       <div class="m-auto">
         <span class="footer-title">Information</span>
-        <a href="/legal/tos" class="btn btn-ghost">About Us</a>
-        <a href="/legal/pp" class="btn btn-ghost">Out College</a>
+        <a href="#about-us" class="btn btn-ghost">About Us</a>
+        <a href="#about-us" class="btn btn-ghost">Out College</a>
       </div>
       <!-- Section 3 -->
       <div class="m-auto">
@@ -164,11 +165,12 @@
           ><iconify-icon class="text-4xl" icon="carbon:close" /></label
         >
       </li>
-      <li><a class="ml-10" href="/">Home</a></li>
+      <li><a class="pl-10" href="/">Home</a></li>
       <!-- <li><a on:click={()=>{sidebar.checked =false}} href="/#about-us">About</a></li> -->
-      <li><a class="ml-10" href="/events/">Events</a></li>
-      <li><a class="ml-10" href="/gallery">Gallery</a></li>
-      <li><a class="ml-10" href="/register/events-1">Register</a></li>
+      <li><a class="pl-10" href="/events/">Events</a></li>
+      <li><a class="pl-10" href="/gallery">Gallery</a></li>
+      <li><a class="pl-10" href="/register/events-1">Register</a></li>
+      <li><a class="pl-10" href="/contact-us">Contact us</a></li>
     </ul>
   </div>
 </div>
