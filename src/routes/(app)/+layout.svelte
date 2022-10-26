@@ -65,7 +65,7 @@
   <div
     id="content-elem"
     bind:this={contentElem}
-    class="drawer-content scroll-smooth snap-y snap-mandatory snap-always scroll-m-16 flex flex-col"
+    class="drawer-content scroll-smooth snap-y snap-mandatory snap-always scroll-m-16 flex flex-col bg-content bg-local"
   >
     <!-- Navbar -->
     <div
@@ -93,12 +93,12 @@
         </label>
       </div>
       <div class="flex-none hidden lg:block">
-        <ul class="menu menu-horizontal">
+        <ul class="menu menu-horizontal gap-4 pr-8">
           <!-- Navbar menu content here -->
-          <li><a href="/">Home</a></li>
-          <li><a href="/events/">Events</a></li>
-          <li><a href="/gallery">Gallery</a></li>
-          <li><a href="/register/events-1">Register</a></li>
+          <li><a class="btn btn-ghost rounded-lg" href="/">Home</a></li>
+          <li><a class="btn btn-ghost rounded-lg" href="/events/">Events</a></li>
+          <li><a class="btn btn-ghost rounded-lg" href="/gallery">Gallery</a></li>
+          <li><a class="btn btn-ghost rounded-lg" href="/register/events-1">Register</a></li>
         </ul>
       </div>
     </div>
@@ -110,8 +110,7 @@
         <img src={Logo} class="max-h-40" alt="" />
         <FooterSocials />
       </div>
-    </footer>
-    <footer
+      <footer
       class="footer gap-y-4 lg:gap-y-10 pb-8 pt-4 px-4 bg-base-200 text-base-content text-center lg:text-left justify-center justify-items-center lg:justify-around"
     >
       <div>
@@ -150,8 +149,10 @@
         <a href="/legal/pp" class="btn btn-ghost">Privacy policy</a>
       </div>
     </footer>
-    <footer class="hidden footer-center bg-black text-white text-opacity-50 py-1 text-sm">
-      &copy; 2022 COMSA, GCOEN
+    </footer>
+
+    <footer class="footer-center bg-black text-white text-opacity-50 py-1 text-sm">
+      &copy; 2022 COMSA | GCOEN. All Rights Reserved.
     </footer>
   </div>
   <div class="drawer-side">
@@ -185,5 +186,15 @@
 
   .footer > * {
     justify-items: center;
+  }
+
+  .bg-content {
+    background: linear-gradient(to top, rgb(29, 78, 216), rgb(30, 64, 175), rgb(17, 24, 39)) scroll;
+    /* background-attachment: scroll ; */
+  }
+
+  .bg-footer {
+    background: linear-gradient(to bottom, rgb(29, 78, 216), rgb(30, 64, 175), rgb(17, 24, 39)) scroll;
+    /* background-attachment: scroll ; */
   }
 </style>

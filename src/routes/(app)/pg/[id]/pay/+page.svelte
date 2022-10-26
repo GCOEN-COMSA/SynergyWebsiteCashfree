@@ -39,7 +39,7 @@
 </script>
 
 <div
-  class="container max-w-4xl flex flex-col items-stretch justify-center bg-base-200 mt-16 rounded-xl p-8"
+  class="container max-w-4xl flex flex-col items-stretch justify-center bg-base-200 mt-16 rounded-xl p-8 bg-content"
 >
   <div class="title text-center">
     <span class="text-4xl vimh">Registration Form</span>
@@ -69,6 +69,13 @@
     class="form-container form-control items-center justify-evenly min-h-[20rem]"
   />
 </div>
+
+<style>
+  .bg-content {
+    /* background: linear-gradient(to top, rgb(29, 78, 216), rgb(30, 64, 175), rgb(17, 24, 39)); */
+    @apply bg-transparent;
+  }
+</style>
 
 <!-- {{
   session: null,
