@@ -37,7 +37,7 @@
     display: flex;
     flex-direction: column;
     /* overflow: scroll; */
-    @apply w-11/12 2xl:w-3/4  pointer-events-none overflow-x-hidden overflow-y-auto min-w-[15rem] self-center;
+    @apply w-11/12 2xl:w-3/4  pointer-events-none overflow-x-hidden overflow-y-auto min-w-[15rem] self-center max-h-screen;
   }
 
   .modal-container * {

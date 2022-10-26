@@ -109,8 +109,8 @@
     background-size: cover;
   }
 
-  .content-gradient {
-    /* --tw-gradient-stops: #0000004D, theme('colors.sky.400'), theme('colors.rose.400'), theme('colors.lime.400'); */
+  /* .content-gradient {
+    --tw-gradient-stops: #0000004D, theme('colors.sky.400'), theme('colors.rose.400'), theme('colors.lime.400'); 
     background: linear-gradient(to top, rgb(29, 78, 216), rgb(30, 64, 175), rgb(17, 24, 39));
-  }
+  } */
 </style>
