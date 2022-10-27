@@ -133,19 +133,19 @@
       </div>
       <!-- Section 1 -->
       <div class="m-auto">
-        <span class="footer-title">Contact Us</span>
+        <span class="footer-title vimh">Contact Us</span>
         <a href="/contact-us" class="btn btn-ghost">Contact Info</a>
         <a href="/legal/pp" class="btn btn-ghost">Teams</a>
       </div>
       <!-- Section 2 -->
       <div class="m-auto">
-        <span class="footer-title">Information</span>
+        <span class="footer-title vimh">Information</span>
         <a href="#about-us" class="btn btn-ghost">About Us</a>
-        <a href="#about-us" class="btn btn-ghost">Out College</a>
+        <a href="#about-us" class="btn btn-ghost">Our College</a>
       </div>
       <!-- Section 3 -->
       <div class="m-auto">
-        <span class="footer-title">Legal</span>
+        <span class="footer-title vimh">Legal</span>
         <a href="/legal/tos" class="btn btn-ghost">Terms & Conditions</a>
         <a href="/legal/pp" class="btn btn-ghost">Privacy policy</a>
       </div>
@@ -176,7 +176,7 @@
 </div>
 
 
-<style>
+<style lang="postcss">
   .backdrop {
     position: fixed;
     top: 0;
@@ -198,6 +198,11 @@
   .bg-footer {
     /* background: linear-gradient(to bottom, rgb(29, 78, 216), rgb(30, 64, 175), rgb(00, 00, 00)) scroll; */
     /* background-attachment: scroll ; */
-    background: rgba(0, 0, 0, 0);
+    background: linear-gradient(to bottom , rgba(14, 21, 37, 0), rgba(14, 21, 37, 0.25), rgba(0, 0, 0, .75) 99%);
+  }
+
+  .footer-title {
+
+    @apply text-white opacity-100 text-lg tracking-wide;
   }
 </style>

@@ -7,8 +7,8 @@
     import Logo from '$lib/assets/logo.png';
     onMount(() => {
         setTimeout(() => {
-            // window.print();
-            // window.history.back();
+            window.print();
+            window.history.back();
         }, 1000)
     })
 </script>

@@ -4,8 +4,8 @@
   export let data: PageData;
 </script>
 
-<div class="pg-container">
-  <h5>Registration Successful!</h5>
+<div class="pg-container px-6">
+  <h5 class="vimh">Registration Successful</h5>
   <div class="svg">
     <!-- <img src="./confirm-icon.svg" class="check-mark"> -->
     <!-- <iconify-icon class="check-mark bg-green-600 rounded-full" width="200px" height="200px" icon="carbon:checkmark-outline"></iconify-icon> -->
@@ -29,7 +29,7 @@
     <div class="info2 w-1/2">
       <p>{data.db.id}</p>
       <p>₹ {data.db.amount / 100}/-</p>
-      <p>{data.db.name}</p>
+      <p class="text-sm whitespace-nowrap leading-8">{data.db.name}</p>
       <p>{data.event?.name}</p>
       <p>{data.db.cf_id}</p>
       <p>+918793150182</p>
@@ -40,11 +40,11 @@
   </div>
   <div class="my-4 p-4">
     <span class="text-sm"
-      >Please keep a screencapture of this screen or remember the registration ID
+      >Please keep a screencapture of this screen or print the reciept using the button below.
     </span>
   </div>
   <div
-    class="my-4 p-4 flex flex-col lg:flex-row self-stretch gap-4 justify-center align-middle items-center"
+    class="p-4 pt-0 flex flex-col lg:flex-row self-stretch gap-4 justify-center align-middle items-center"
   >
     <button  class="btn btn-wide">Back To Home</button><a href="/reciept/{data.db.id}" class="btn btn-wide"
       >Print Reciept</a
@@ -61,12 +61,12 @@
     /* height: 100vh; */
     /* width: 100vw; */
     /* background-color: ; */
-    @apply container;
+    @apply bg-base-300 m-auto mt-20 rounded-xl pt-4;
   }
   .pg-container h5 {
-    margin-top: 5rem;
+    margin-top: 1.5rem;
     margin-bottom: 3rem;
-    font-family: monospace;
+    /* font-family: monospace; */
     @apply lg:text-4xl md:text-2xl text-xl;
   }
   .svg {

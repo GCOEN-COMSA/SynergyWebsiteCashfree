@@ -86,7 +86,7 @@ let is_transparent = true;
   <ScrollDownIndicator />
 {/if}
 
-<style>
+<style lang="postcss">
   .hero-bg {
     background: no-repeat top center;
     background-image: linear-gradient(to top, #00000050, #000000aa), var(--bg-url);
