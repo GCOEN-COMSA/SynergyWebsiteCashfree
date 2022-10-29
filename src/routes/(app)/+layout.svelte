@@ -45,15 +45,10 @@
     };
   });
 
-  import type { LayoutLoad } from "./$types";
-  import { getSupabase } from "@supabase/auth-helpers-sveltekit";
   import { browser } from "$app/environment";
   import FooterSocials from "$lib/components/FooterSocials.svelte";
 
-  export const load: LayoutLoad = async (event) => {
-    const { session } = await getSupabase(event);
-    return { session };
-  };
+  
 </script>
 
 <Modals>
@@ -71,9 +66,9 @@
     <div
       class="w-full navbar fixed top-0 left-0 {is_transparent
         ? 'bg-transparent'
-        : 'bg-base-300'} transition-colors duration-200 z-50 px-6"
+        : 'bg-base-300'} transition-colors duration-200 z-50 px-2 lg:px-6"
     >
-      <div class="flex-1 px-2 py-2 mx-2 {is_transparent ? 'invisible' : 'visible'}">
+      <div class="flex-1 lg:px-2 py-2 lg:mx-2 {is_transparent ? 'invisible' : 'visible'}">
         <img src={Logo} alt="Synergy Logo" class="max-h-12" />
       </div>
       <div class="flex-none lg:hidden">
@@ -105,7 +100,7 @@
     </div>
     <slot />
     <footer
-      class="flex flex-col items-center pt-4 pb-8 px-4 text-base-content text-center justify-center justify-items-center bg-footer"
+      class="flex flex-col items-center pt-4 pb-8 px-4 mt-6 text-base-content text-center justify-center justify-items-center bg-footer rounded-t-md"
     >
       <div class="flex flex-col items-stretch justify-center">
         <img src={Logo} class="max-h-40" alt="" />
@@ -183,7 +178,7 @@
     bottom: 0;
     right: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
   }
 
   .footer > * {
@@ -191,14 +186,16 @@
   }
 
   .bg-content {
-    background: linear-gradient(to top, rgb(29, 78, 216), rgb(30, 64, 175), rgb(17, 24, 39)) scroll;
+    /* background: linear-gradient(to top, rgb(29, 78, 216), rgb(30, 64, 175), rgb(17, 24, 39)); */
     /* background-attachment: scroll ; */
+    @apply bg-[rgb(30,64,175)] bg-opacity-100;
   }
 
   .bg-footer {
     /* background: linear-gradient(to bottom, rgb(29, 78, 216), rgb(30, 64, 175), rgb(00, 00, 00)) scroll; */
     /* background-attachment: scroll ; */
-    background: linear-gradient(to bottom , rgba(14, 21, 37, 0), rgba(14, 21, 37, 0.25), rgba(0, 0, 0, .75) 99%);
+    /* background: linear-gradient(to bottom , rgba(14, 21, 37, 0), rgba(14, 21, 37, 0.25), rgba(0, 0, 0, .75) 99%); */
+    @apply bg-base-200 bg-opacity-60;
   }
 
   .footer-title {

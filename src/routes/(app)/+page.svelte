@@ -17,10 +17,10 @@
   // Should have been SvelteComponent
   let Cube: any;
   // loadPromise: Promise<void>;
-  let loadPromiseResolve: any;
-  let loadPromise = new Promise((resolve) => {
-    loadPromiseResolve = resolve;
-  });
+  // let loadPromiseResolve: any;
+  // let loadPromise = new Promise((resolve) => {
+  //   loadPromiseResolve = resolve;
+  // });
   let contentElem: HTMLDivElement | null;
   let is_transparent = true;
   onMount(async () => {
@@ -44,16 +44,16 @@
         }
       });
     }
-    setTimeout(loadPromiseResolve, 0);
+    // setTimeout(loadPromiseResolve, 100);
     
   });
 </script>
 
 <svelte:window bind:innerWidth bind:innerHeight />
 
-{#await loadPromise}
+<!-- {#await loadPromise}
   <Loader />
-{:then value}
+{:then value} -->
   <div
     style="--bg-url: url({DesktopHero});"
     class="hero-bg min-h-screen flex flex-col lg:flex-row bg-base-100 overflow-x-hidden pb-10"
@@ -65,7 +65,7 @@
         >SYNERGY</span
       ><span
         class="mt-2 mx-auto xl:ml-16 2xl:ml-32 lg:mb-36 text-base-content text-xl xl:text-2xl 2xl:text-4xl"
-        >The Nexus of Innovation</span
+        >The Nexus of All Innovations</span
       >
     </div>
     <div id="hero-cube" class="flex-grow flex justify-center items-center pr-10">
@@ -80,14 +80,14 @@
     <div id="about-us" class="mt-10 w-5/6 flex flex-row flex-wrap justify-evenly align-middle">
       <AboutUs />
     </div>
-    <div id="testimonials" class="mt-10 w-5/6 flex flex-row flex-wrap justify-evenly align-middle">
+    <div id="testimonials" class="mt-12 w-5/6 flex flex-row flex-wrap justify-evenly align-middle">
       <Testimonial />
     </div>
     <div class=" mt-10 w-5/6 flex flex-row flex-wrap justify-evenly align-middle">
       <div id="faq" class="w-5/6"><Faq data_list={page_1} title={page_1_title} /></div>
     </div>
   </div>
-{/await}
+<!-- {/await} -->
 
 <!-- {@debug is_transparent} -->
 

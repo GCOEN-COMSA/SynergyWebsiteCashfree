@@ -15,10 +15,10 @@
   import Cube from '$lib/components/HeroBot.svelte';
   let innerWidth: number;
   let innerHeight: number;
-  let loadPromiseResolve: any;
-  let loadPromise = new Promise((resolve) => {
-    loadPromiseResolve = resolve;
-  });
+  // let loadPromiseResolve: any;
+  // let loadPromise = new Promise((resolve) => {
+  //   loadPromiseResolve = resolve;
+  // });
 let contentElem: HTMLDivElement | null;
 let is_transparent = true;
 
@@ -43,15 +43,15 @@ let is_transparent = true;
       });
     }
 
-    setTimeout(loadPromiseResolve, 0);
+    // setTimeout(loadPromiseResolve, 100);
   });
 </script>
 
 <svelte:window bind:innerWidth bind:innerHeight />
 
-{#await loadPromise}
+<!-- {#await loadPromise}
   <Loader />
-{:then value}
+{:then value} -->
   <div
     style="--bg-url: url({MobileHero});"
     class="  pb-10 hero-bg min-h-screen flex flex-col lg:flex-row bg-base-100 overflow-x-hidden "
@@ -62,7 +62,7 @@ let is_transparent = true;
         class="mt-auto lg:-mb-10 lg:ml-32 mx-auto lg:text-[10rem] text-[5rem] lg:[line-height=9.5rem] text-base-content vimh"
         >SYNERGY</span
       ><span class=" text-center mt-2 mx-auto lg:ml-32 lg:mb-36 text-base-content text-4xl"
-        >The Nexus of Innovation</span
+        >The Nexus of All Innovations</span
       >
     </div>
     <div id="hero-cube" class="flex-grow flex justify-center items-center">
@@ -80,7 +80,7 @@ let is_transparent = true;
       <Faq data_list={page_1} title={page_1_title} />
     </div>
   </div>
-{/await}
+<!-- {/await} -->
 
 {#if is_transparent}
   <ScrollDownIndicator />

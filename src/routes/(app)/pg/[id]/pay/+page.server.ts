@@ -17,7 +17,7 @@ export const load: PageServerLoad = async (event) => {
     .single();
   let _data;
   let oid = data.cf_iid;
-  if (data.cf_status === "PAID") { 
+  if (data.cf_status === "PAID") {
     throw redirect(307, `/success/${data.id}`);
   }
   if (data.cf_status === "ACTIVE") {
@@ -30,11 +30,10 @@ export const load: PageServerLoad = async (event) => {
         "x-client-secret": CF_SECRET_KEY,
         "x-api-version": "2022-01-01",
       },
-    })
+    });
     _data = await _req.json();
-  }
-  else {
-    oid = data.id.toString() + "_" + (new Date().valueOf() / 1000).toFixed(0)
+  } else {
+    oid = data.id.toString() + "_" + (new Date().valueOf() / 1000).toFixed(0);
     const _req = await fetch(PG_URL, {
       method: "POST",
       headers: {
@@ -63,8 +62,7 @@ export const load: PageServerLoad = async (event) => {
     });
     _data = await _req.json();
   }
-  
-  
+
   ({ data } = await supabaseClient
     .from("registrations")
     .update({

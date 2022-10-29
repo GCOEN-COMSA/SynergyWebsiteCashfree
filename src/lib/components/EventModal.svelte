@@ -97,7 +97,7 @@
 		/* background-color: red; */
 		padding: 0.5rem 1.5rem;
 		border-radius: 0 0 1rem 1rem;
-		@apply container bg-base-300;
+		@apply container bg-base-100;
 	}
 
 
