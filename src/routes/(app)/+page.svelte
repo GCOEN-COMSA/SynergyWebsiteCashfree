@@ -33,7 +33,7 @@
     if (contentElem) {
       contentElem.addEventListener("scroll", ({ target }) => {
         if (target) {
-          const { scrollTop } = target;
+          const { scrollTop } = (target as HTMLDivElement);
           if (scrollTop > 128) {
             // document.body.classList.add("bg-white");
             is_transparent = false;

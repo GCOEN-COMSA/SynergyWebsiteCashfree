@@ -32,7 +32,7 @@
 
     contentElem.addEventListener(
       "scroll",
-      ({ target }) => (contentElemScrollTop = target?.scrollTop),
+      ({ target }) => (contentElemScrollTop = (target as HTMLDivElement)?.scrollTop),
     );
 
     return () => {
@@ -40,7 +40,7 @@
       if (browser)
         contentElem.removeEventListener(
           "scroll",
-          ({ target }) => (contentElemScrollTop = target?.scrollTop),
+          ({ target }) => (contentElemScrollTop = (target as HTMLDivElement)?.scrollTop),
         );
     };
   });

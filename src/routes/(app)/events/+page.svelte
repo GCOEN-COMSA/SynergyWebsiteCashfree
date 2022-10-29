@@ -21,7 +21,7 @@
 		
 		</div>
 
-<style>
+<style lang="postcss">
 	div {
 		/* background: linear-gradient(to top, rgb(29, 78, 216), rgb(30, 64, 175), rgb(17, 24, 39)); */
 		@apply bg-transparent;
