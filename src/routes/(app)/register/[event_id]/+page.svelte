@@ -1,8 +1,8 @@
 <script lang="ts">
-  import { page } from "$app/stores";
   import "iconify-icon";
-  import { onMount, type SvelteComponent } from "svelte";
-  import { events } from "$lib/data/events";
+  // import { page } from "$app/stores";
+  // import { onMount, type SvelteComponent } from "svelte";
+  // import { events } from "$lib/data/events";
   import { supabaseClient } from "$lib/db";
   import type { PageData } from "./$types";
   import { openModal } from "svelte-modals";
@@ -11,12 +11,12 @@
   import { goto } from "$app/navigation";
   export let data: PageData;
   let form: HTMLDivElement;
-  let name: string = "";
-  let email: string = "";
-  let phone: string = "";
-  let college: string = "";
-  let grade: string = "";
-  let team: string[] = ["", "", "", ""];
+  let name = "";
+  let email = "";
+  let phone = "";
+  let college = "";
+  let grade = "";
+  let team = ["", "", "", ""];
   let loading = false;
   async function validate_and_submit_form() {
     loading = true;
@@ -29,12 +29,12 @@
       loading = false;
       return;
     }
-    if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+    if (!/^\w+([.-]?\w+)*@\w+([.-]?\w+)*(.\w{2,3})+$/.test(email)) {
       alert("Please enter a valid email.");
       loading = false;
       return;
     }
-    if (!/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/.test(phone)) {
+    if (!/^[+]?[(]?[0-9]{3}[)]?[-\s.]?[0-9]{3}[-\s.]?[0-9]{4,6}$/.test(phone)) {
       alert("Please enter a valid phone number.");
       loading = false;
       return;
@@ -73,14 +73,13 @@
       amount: data.amount,
       status: false,
       team,
-      phone
+      phone,
     };
     let { data: __data, error } = await supabaseClient
       .from("registrations")
       .upsert<db_registration>(_data)
-      .select().single();
-    // @ts-ignore
-    debugger;
+      .select()
+      .single();
     goto(`/pg/${__data.id}/pay`);
     console.log(__data);
     loading = false;

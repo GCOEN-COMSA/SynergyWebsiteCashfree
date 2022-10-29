@@ -30,7 +30,7 @@
   <!-- <form action="https://submit-form.com/lZJZ9yjn"> -->
   <div class="lg:flex-grow-[5] flex flex-col justify-center items-stretch justify-items-center">
     <form
-    on:submit|preventDefault={() => {}}
+    on:submit|preventDefault={() => {console.log('overriding default...')}}
       action=""
       method="POST"
       class="form-control"

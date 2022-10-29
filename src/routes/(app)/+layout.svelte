@@ -2,7 +2,7 @@
   import "../../app.postcss";
   import "iconify-icon";
   import Logo from "$lib/assets/logo.png";
-  import ScrollDownIndicator from "$lib/components/ScrollDownIndicator.svelte";
+  // import ScrollDownIndicator from "$lib/components/ScrollDownIndicator.svelte";
   import { afterNavigate } from "$app/navigation";
   import FooterMap from "$lib/components/FooterMap.svelte";
 
@@ -52,7 +52,7 @@
 </script>
 
 <Modals>
-  <div slot="backdrop" class="backdrop z-[100]" transition:fade on:click={closeModal} />
+  <button slot="backdrop" class="backdrop z-[100]" transition:fade on:click={closeModal} />
 </Modals>
 
 <div class="drawer">
