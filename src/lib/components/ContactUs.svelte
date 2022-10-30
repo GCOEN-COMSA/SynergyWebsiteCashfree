@@ -97,7 +97,8 @@
     <div class="infopoint my-4 flex flex-col items-center justify-center">
       <iconify-icon class="text-4xl" icon="carbon:phone" />
       <p class="text-lg">Phone</p>
-      <p class="text-sm">123-456-7890</p>
+      <p class="text-lg">Ved Nande</p>
+      <p class="text-sm">+91 95247 55711</p>
     </div>
     <div class="infopoint flex flex-col items-center justify-center">
       <iconify-icon class="text-4xl" icon="carbon:email" />
