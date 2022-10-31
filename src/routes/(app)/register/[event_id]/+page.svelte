@@ -64,17 +64,37 @@
     //     // }
     //   });
     // }
+
+    let num_team = 0;
+    team.forEach((member) => {
+      if (member.length > 0) {
+        num_team++;
+      }
+    });
+    console.log(team, num_team);
+    if(!data.players.includes(num_team+1)) {
+      alert("Please enter a valid number of team members.");
+      loading = false;
+      return;
+    }
+
     let _data: db_registration = {
       created_at: new Date(),
       name,
       email,
       education: college,
       event: data.id,
-      amount: data.amount,
+      amount: data.amount[data.players.findIndex((p) => p == num_team + 1)],
       status: false,
       team,
       phone,
     };
+
+    if (data.amount.includes(0)) {
+      _data.status = true;
+      _data.cf_status = "PAID";
+      _data.cf_id == "FREE-EVENT"
+    }
     let { data: __data, error } = await supabaseClient
       .from("registrations")
       .upsert<db_registration>(_data)
@@ -104,9 +124,9 @@
         <span class="text-lg text-bold mr-2">Event Details:</span>{data.desc}
       </div>
       <div class="data-pair text-sm">
-        <span class="text-lg text-bold mr-2">Event Fees:</span><iconify-icon
-          icon="carbon:currency-rupee"
-        />{data.amount / 100}
+        <span class="text-lg text-bold mr-2">Event Fees:</span>{#each data.players as p_count, i}
+        <br /><iconify-icon icon="carbon:currency-rupee" />{data.amount[i] / 100} for {p_count} player(s)
+        {/each}
       </div>
       <div class="text-sm mt-4">
         <button
@@ -198,7 +218,7 @@
         />
       </label>
     </div>
-    {#each Array(data.players - 1) as player, i}
+    {#each Array(data.players[data.players.length - 1] - 1) as player, i}
       <div class="input-field">
         <label for="team-{i}" class="label">
           <span class="label-text">Team Member {i + 1}'s name</span>
@@ -215,6 +235,7 @@
         </label>
       </div>
     {/each}
+    <div class="text-sm mt-4">TODO : text indicating members can be blank</div>
   </div>
   <button
     on:click={validate_and_submit_form}

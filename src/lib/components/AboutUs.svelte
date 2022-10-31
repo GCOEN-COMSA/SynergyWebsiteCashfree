@@ -19,3 +19,11 @@
     </div>
   </div>
 
+<style>
+  .card-body :where(p) {
+    flex-grow: 0;
+  }
+  .card-body {
+    @apply justify-center text-lg;
+  }
+</style>

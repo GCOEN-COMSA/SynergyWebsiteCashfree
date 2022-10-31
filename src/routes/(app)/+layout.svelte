@@ -130,13 +130,13 @@
       <div class="m-auto">
         <span class="footer-title vimh">Contact Us</span>
         <a href="/contact-us" class="btn btn-ghost">Contact Info</a>
-        <a href="/legal/pp" class="btn btn-ghost">Teams</a>
+        <a href="/team" class="btn btn-ghost">Teams</a>
       </div>
       <!-- Section 2 -->
       <div class="m-auto">
         <span class="footer-title vimh">Information</span>
         <a href="#about-us" class="btn btn-ghost">About Us</a>
-        <a href="#about-us" class="btn btn-ghost">Our College</a>
+        <a href="https://gcoen.ac.in" target="_blank" rel="noreferrer" class="btn btn-ghost">Our College</a>
       </div>
       <!-- Section 3 -->
       <div class="m-auto">

@@ -1,37 +1,110 @@
 export const events = [
   {
     id: "events-0",
-    name: "CoderCut v6.0",
-    long_desc: "Longer CoderCut v6.9",
-    desc: "CoderCut v6.9",
-    amount: 100_00, // 100.00
+    name: "Communix 4.0",
+    long_desc:
+      "Verbal expression is an important aspect of our life and a strong communicator is always   articulate with the words. So here we are with an event that will provide you an opportunity to link your thoughts and show your caliber.",
+    desc: "You can talk but, can you communix!?",
+    amount: [40_00], // 100.00
     image: "https://placeimg.com/192/108/tech",
     icon: "clarity:bar-code-line",
-    date: "1PM/11 Nov 2022",
-    players: 1,
+    date: "1PM 11 Nov 2022",
+    players: [1],
   },
   {
     id: "events-1",
-    name: "CoderCut v6.1",
-    long_desc: "Longer CoderCut v6.9",
-    desc: "CoderCut v6.9",
-    amount: 101_00, // 100.00
+    name: "Autocoders",
+    long_desc:
+      "Coding is becoming an important tool one should have in their arsenal for a smooth sailing career in today's corporate world. Test your fingers in this exhilarating mind bending coding event.SO AUTOBOTS  READY, SET, CODING!",
+    desc: "Finger-bots, type out…",
+    amount: [50_00, 80_00, 120_00], // 100.00
     image: "https://placeimg.com/192/108/tech",
-    icon: "simple-icons:codereview",
-    date: "2021-09-01",
-    players: 3,
+    icon: "clarity:bar-code-line",
+    date: "1PM 11 Nov 2022",
+    players: [1, 2, 3],
   },
   {
     id: "events-2",
-    name: "CoderCut v6.2",
-    long_desc: "Longer CoderCut v6.9",
-    desc: "CoderCut v6.9",
-    amount: 102_00, // 100.00
+    name: "Binary Bishops",
+    long_desc:
+      "Hello check-mates! We have a perfect platform for the ones competent enough to solve questions. But wait, here the crux is to show off your chess moves. So, get your pieces ready and Sygrayem;",
+    desc: "When you see a good move, look for better one",
+    amount: [60_00, 100_00], // 100.00
     image: "https://placeimg.com/192/108/tech",
-    icon: "bx:code-block",
-    date: "2021-09-01",
-    players: 1,
+    icon: "clarity:bar-code-line",
+    date: "1PM 11 Nov 2022",
+    players: [1, 2],
   },
+  {
+    id: "events-3",
+    name: "Bounty Hunt",
+    long_desc:
+      "Jake and The NeverLand Pirates or Jack Sparrow we’ve been pretty curious about those ‘treasure hunting games’ isn’t it? We present to you the most exciting event packed with exhilarating activities. Bring on your squad and unravel the mysteries hidden in the entangling hallways of GCOEN.",
+    desc: "Let the hunt begin… !!!",
+    amount: [200_00], // 100.00
+    image: "https://placeimg.com/192/108/tech",
+    icon: "clarity:bar-code-line",
+    date: "1PM 11 Nov 2022",
+    players: [4],
+  },
+  {
+    id: "events-4",
+    name: "Ace Clutchers",
+    long_desc:
+      "Hey gamers! We are here with a great opportunity for you to beat others and be the best in the field of gaming. So fasten your seat belts, clutch your moves, race in the ultimate automotive playground and conquer your rivals.",
+    desc: "One life, one chance",
+    amount: [150_00], // 100.00
+    image: "https://placeimg.com/192/108/tech",
+    icon: "clarity:bar-code-line",
+    date: "1PM 11 Nov 2022",
+    players: [5],
+  },
+  {
+    id: "events-5",
+    name: "Hard Drive",
+    long_desc:
+      "Bots overpower humans or is it vice-versa? We’ve got a way to figure this out. We present ‘Hard-Drive’ which tests your ability to swiftly maneuver the bot. Get the grip on and exhibit your skills.",
+    desc: "Don’t Rush But be Expeditious!?",
+    amount: [40_00], // 100.00
+    image: "https://placeimg.com/192/108/tech",
+    icon: "clarity:bar-code-line",
+    date: "1PM 11 Nov 2022",
+    players: [1],
+  },
+  {
+    id: "events-6",
+    name: "Coming Soon: Seminar",
+    long_desc:
+      "Verbal expression is an important aspect of our life and a strong communicator is always   articulate with the words. So here we are with an event that will provide you an opportunity to link your thoughts and show your caliber.",
+    desc: "You can talk but, can you communix!?",
+    amount: [0], // 100.00
+    image: "https://placeimg.com/192/108/tech",
+    icon: "clarity:bar-code-line",
+    date: "1PM 11 Nov 2022",
+    players: [1],
+  },
+  // {
+  //   id: "events-1",
+  //   name: "CoderCut v6.1",
+  //   long_desc: "Longer CoderCut v6.9",
+  //   desc: "CoderCut v6.9",
+    // amount: [50_00, 80_00, 120_00], // 100.00
+  //   image: "https://placeimg.com/192/108/tech",
+  //   icon: "simple-icons:codereview",
+  //   date: "2021-09-01",
+  //   players: [1, 2, 3],
+  // },
+  // {
+  //   id: "events-2",
+  //   name: "CoderCut v6.2",
+  //   long_desc: "Longer CoderCut v6.9",
+  //   desc: "CoderCut v6.9",
+  //   amount: 102_00, // 100.00
+  //   image: "https://placeimg.com/192/108/tech",
+  //   icon: "bx:code-block",
+  //   date: "2021-09-01",
+  //   players: 1,
+  // },
 ];
 
 /* {

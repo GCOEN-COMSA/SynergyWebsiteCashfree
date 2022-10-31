@@ -1,5 +1,5 @@
 <script>
-    import Component from "$lib/components/FooterSocials.svelte";
+    import Component from "$lib/components/TeamMember.svelte";
 
 </script>
 

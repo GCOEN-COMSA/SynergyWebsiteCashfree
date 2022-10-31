@@ -33,7 +33,7 @@
 							<option class="invisible hidden" disabled selected>Select Here</option>
 							{#each events as event}
 								<option class="font-mono" value={event.id}
-									>{event.name}&nbsp;&nbsp;|&nbsp;&nbsp;₹&nbsp;{event.amount /
+									>{event.name}&nbsp;&nbsp;|&nbsp;&nbsp;₹&nbsp;{event.amount[event.amount.length-1] /
 										100}&nbsp;&nbsp;|&nbsp;{event.players}&nbsp;Required&nbsp;</option
 								>
 							{/each}

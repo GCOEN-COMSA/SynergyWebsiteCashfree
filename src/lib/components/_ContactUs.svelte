@@ -99,7 +99,7 @@
     <div class="infopoint flex flex-col items-center justify-center">
       <iconify-icon class="text-4xl" icon="carbon:email" />
       <p class="text-lg">Email</p>
-      <p class="text-sm">comsa.gcoen@gmail.com</p>
+      <p class="text-sm">gcoen.comsa@gmail.com</p>
       </div>
   </div>
 </div>

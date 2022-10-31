@@ -22,18 +22,18 @@
       <p>Event</p>
       <p>Transaction ID</p>
       <p>Contact</p>
-      {#each Array((data.event?.players ?? 1) - 1) as _, i}
+      {#each Array((data.event?.players[data.event?.players.length-1] ?? 1) - 1) as _, i}
         <p>Player {i + 1}</p>
       {/each}
     </div>
     <div class="info2 w-1/2">
       <p>{data.db.id}</p>
       <p>₹ {data.db.amount / 100}/-</p>
-      <p class="text-sm whitespace-nowrap leading-8">{data.db.name}</p>
+      <p class="text-sm lg:text-3xl whitespace-nowrap leading-8">{data.db.name}</p>
       <p>{data.event?.name}</p>
       <p>{data.db.cf_id}</p>
       <p>+918793150182</p>
-      {#each Array((data.event?.players ?? 1) - 1) as _, i}
+      {#each Array((data.event?.players[data.event?.players.length-1] ?? 1) - 1) as _, i}
         <p>{data.db.team[i] || "<empty>"}</p>
       {/each}
     </div>
