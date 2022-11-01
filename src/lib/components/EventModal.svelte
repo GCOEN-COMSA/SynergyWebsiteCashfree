@@ -75,7 +75,7 @@
             goto(pl);
           }}
           class="btn btn-block btn-primary"
-          id="btn-1">Register ({data.players[i]} players) [₹{data.amount[i]/100}]</button
+          id="btn-1">Register {data.type[i] ?? ""} ({data.players[i]} players) [₹{data.amount[i]/100}]</button
         >
           {/each}
           <button
