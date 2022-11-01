@@ -1,6 +1,6 @@
 <script lang="ts">
   import "iconify-icon";
-  export let image_url = "https://placeimg.com/400/400"
+  export let image = "https://placeimg.com/400/400"
   export let name = "Synergy Member";
   export let role = "Member";
   export let decor = "border-green-500";
@@ -21,9 +21,9 @@
 >
   <div class="image-container flex flex-col items-center justify-around py-6">
     <img
-      src={image_url}
+      src={image}
       alt=""
-      class="rounded-full w-5/12 border-4 {decor}"
+      class="rounded-full w-5/12 border-4 {decor} aspect-square object-cover"
     />
   </div>
   <div class="text-container flex flex-col py-2 justify-center items-center">
