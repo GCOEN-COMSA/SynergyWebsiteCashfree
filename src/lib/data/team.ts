@@ -56,8 +56,8 @@ export const team1 = [
         role: "Lady Representative",
         decor: "border-pink-500",
         socials: [
-            { link: "https://www.instagram.com/comsa_gcoen/", icon: "bi:instagram" },
-            { link: "https://www.instagram.com/comsa_gcoen/", icon: "bi:linkedin" },
+            { link: "https://www.instagram.com/wishest_one/", icon: "bi:instagram" },
+            { link: "https://www.linkedin.com/in/tamanna-kartari-89744b230/", icon: "bi:linkedin" },
         ],
     },
     {
@@ -67,8 +67,8 @@ export const team1 = [
 
         decor: "border-lime-500",
         socials: [
-            { link: "https://www.instagram.com/comsa_gcoen/", icon: "bi:instagram" },
-            { link: "https://www.instagram.com/comsa_gcoen/", icon: "bi:linkedin" },
+            { link: "https://www.instagram.com/sayali_warkade/", icon: "bi:instagram" },
+            { link: "https://www.linkedin.com/in/sayali-warkade-30b701216/", icon: "bi:linkedin" },
         ],
     },
     {
@@ -78,7 +78,7 @@ export const team1 = [
         decor: "border-lime-500",
         socials: [
             { link: "https://www.instagram.com/comsa_gcoen/", icon: "bi:instagram" },
-            { link: "https://www.instagram.com/comsa_gcoen/", icon: "bi:linkedin" },
+            { link: "https://www.linkedin.com/in/saurabh-yadav-469323208/", icon: "bi:linkedin" },
         ],
     },
     {
@@ -87,8 +87,8 @@ export const team1 = [
         role: "Technical Co-Head",
         decor: "border-emerald-500",
         socials: [
-            { link: "https://www.instagram.com/comsa_gcoen/", icon: "bi:instagram" },
-            { link: "https://www.instagram.com/comsa_gcoen/", icon: "bi:linkedin" },
+            { link: "https://www.instagram.com/dev_parapalli/", icon: "bi:instagram" },
+            { link: "https://www.linkedin.com/in/devparapalli/", icon: "bi:linkedin" },
         ],
     },
     {
@@ -97,8 +97,8 @@ export const team1 = [
         role: "Technical Co-Head",
         decor: "border-emerald-500",
         socials: [
-            { link: "https://www.instagram.com/comsa_gcoen/", icon: "bi:instagram" },
-            { link: "https://www.instagram.com/comsa_gcoen/", icon: "bi:linkedin" },
+            { link: "https://www.instagram.com/tiwari_kinjal22/", icon: "bi:instagram" },
+            { link: "https://www.linkedin.com/in/kinjal-tiwari-85989a250/", icon: "bi:linkedin" },
         ],
     },
     {
@@ -107,8 +107,8 @@ export const team1 = [
         role: "Sr. Executive Committee Member",
         decor: "border-fuchsia-500",
         socials: [
-            { link: "https://www.instagram.com/comsa_gcoen/", icon: "bi:instagram" },
-            { link: "https://www.instagram.com/comsa_gcoen/", icon: "bi:linkedin" },
+            { link: "https://www.instagram.com/dev.vishalvsk/", icon: "bi:instagram" },
+            { link: "https://www.linkedin.com/in/vishal-kesharwani-01b99b1a3", icon: "bi:linkedin" },
         ],
     },
     {
@@ -117,7 +117,7 @@ export const team1 = [
         role: "Sr. Executive Committee Member",
         decor: "border-fuchsia-500",
         socials: [
-            { link: "https://www.instagram.com/comsa_gcoen/", icon: "bi:instagram" },
+            { link: "https://www.instagram.com/__tushar.88___/", icon: "bi:instagram" },
             { link: "https://www.instagram.com/comsa_gcoen/", icon: "bi:linkedin" },
         ],
     },
@@ -127,8 +127,8 @@ export const team1 = [
         role: "Executive Committee Member",
         decor: "border-fuchsia-500",
         socials: [
-            { link: "https://www.instagram.com/comsa_gcoen/", icon: "bi:instagram" },
-            { link: "https://www.instagram.com/comsa_gcoen/", icon: "bi:linkedin" },
+            { link: "https://www.instagram.com/mrudula_3007/", icon: "bi:instagram" },
+            { link: "https://www.linkedin.com/in/mrudula-wankar-0a871a22b", icon: "bi:linkedin" },
         ],
     },
     {
@@ -137,8 +137,8 @@ export const team1 = [
         role: "Executive Committee Member",
         decor: "border-fuchsia-500",
         socials: [
-            { link: "https://www.instagram.com/comsa_gcoen/", icon: "bi:instagram" },
-            { link: "https://www.instagram.com/comsa_gcoen/", icon: "bi:linkedin" },
+            { link: "https://www.instagram.com/belejay38/", icon: "bi:instagram" },
+            { link: "https://www.linkedi.com/in/jay-bele-9793b4241", icon: "bi:linkedin" },
         ],
     },
     {
@@ -157,8 +157,8 @@ export const team1 = [
         role: "Executive Committee Member",
         decor: "border-fuchsia-500",
         socials: [
-            { link: "https://www.instagram.com/comsa_gcoen/", icon: "bi:instagram" },
-            { link: "https://www.instagram.com/comsa_gcoen/", icon: "bi:linkedin" },
+            { link: "https://www.instagram.com/priyaaa_013/", icon: "bi:instagram" },
+            { link: "https://www.linkedin.com/in/priyanandanwar/", icon: "bi:linkedin" },
         ],
     },
     {
@@ -167,8 +167,8 @@ export const team1 = [
         role: "Executive Committee Member",
         decor: "border-fuchsia-500",
         socials: [
-            { link: "https://www.instagram.com/comsa_gcoen/", icon: "bi:instagram" },
-            { link: "https://www.instagram.com/comsa_gcoen/", icon: "bi:linkedin" },
+            { link: "https://www.instagram.com/_gayatri__10_/", icon: "bi:instagram" },
+            { link: "https://www.linkedin.com/in/gayatri-deshkar-43500422a/", icon: "bi:linkedin" },  
         ],
     },
 ];
