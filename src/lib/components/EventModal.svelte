@@ -68,14 +68,16 @@
           {data.long_desc}
         </div>
         <div class="flex flex-col p-2 gap-4 w-full">
+          {#each data.payment_links as pl, i}
           <button
-            on:click={() => {
-              closeModal();
-              goto(`/register/${data.id}`);
-            }}
-            class="btn btn-block btn-primary"
-            id="btn-1">Register</button
-          >
+          on:click={() => {
+            closeModal();
+            goto(pl);
+          }}
+          class="btn btn-block btn-primary"
+          id="btn-1">Register ({data.players[i]} players) [₹{data.amount[i]/100}]</button
+        >
+          {/each}
           <button
             class="btn btn-block btn-secondary"
             on:click={() => {
