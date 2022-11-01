@@ -217,26 +217,26 @@ export const team2 = [
             { link: "https://www.linkedin.com/in/prachi-munne-235bb5207", icon: "bi:linkedin" },
         ],
     },
-    {
-        name: "Hrishikesh Ghule",
-        role: "President",
-        image: (await import("$lib/assets/team/hrishikesh.jpg")).default,
-        decor: "border-orange-500",
-        socials: [
-            { link: "https://www.instagram.com/hrishikesh_23/", icon: "bi:instagram" },
-            { link: "https://www.linkedin.com/in/hrishikesh-ghule-16b09822a", icon: "bi:linkedin" },
-        ],
-    },
-    {
-        name: "Hardik Thackery",
-        role: "Event Coordinator",
-        image: (await import("$lib/assets/team/hardik.jpg")).default,
-        decor: "border-orange-500",
-        socials: [
-            { link: "https://www.instagram.com/_hardik.thakre_/", icon: "bi:instagram" },
-            { link: "https://www.instagram.com/comsa_gcoen/", icon: "bi:linkedin" },
-        ],
-    },
+    // {
+    //     name: "Hrishikesh Ghule",
+    //     role: "Event Coordinator",
+    //     image: (await import("$lib/assets/team/hrishikesh.jpg")).default,
+    //     decor: "border-orange-500",
+    //     socials: [
+    //         { link: "https://www.instagram.com/hrishikesh_23/", icon: "bi:instagram" },
+    //         { link: "https://www.linkedin.com/in/hrishikesh-ghule-16b09822a", icon: "bi:linkedin" },
+    //     ],
+    // },
+    // {
+    //     name: "Hardik Thackery",
+    //     role: "Event Coordinator",
+    //     image: (await import("$lib/assets/team/hardik.jpg")).default,
+    //     decor: "border-orange-500",
+    //     socials: [
+    //         { link: "https://www.instagram.com/_hardik.thakre_/", icon: "bi:instagram" },
+    //         { link: "https://www.instagram.com/comsa_gcoen/", icon: "bi:linkedin" },
+    //     ],
+    // },
     {
         name: "Rishika Deshmukh",
         role: "Publicity Head",
@@ -260,4 +260,15 @@ export const team2 = [
             { link: "http://www.linkedin.com/in/yuvraj-totade-737aaa207", icon: "bi:linkedin" },
         ],
     },
+    {
+        name: "Kunal Gohane",
+        role: "Sponsorship Head",
+        image: (await import("$lib/assets/team/kunal.jpg")).default,
+        decor: "border-purple-500",
+        socials: [
+            { link: "https://instagram.com/totadeyuvraj44?igshid=YmMyMTA2M2Y=", icon: "bi:instagram" },
+            { link: "http://www.linkedin.com/in/yuvraj-totade-737aaa207", icon: "bi:linkedin" },
+        ],
+    },
+
 ];
