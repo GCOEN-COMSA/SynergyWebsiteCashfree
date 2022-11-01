@@ -1,9 +1,38 @@
+import ved from '$lib/assets/team/ved.png';
+import madhur from '$lib/assets/team/madhur.png';
+import abhishek from '$lib/assets/team/abhishek.png';
+import aryan from '$lib/assets/team/aryan.png';
+import naresh from '$lib/assets/team/naresh.png';
+import tamanna from '$lib/assets/team/tamanaah.png';
+import sayali from '$lib/assets/team/sayali.png';
+import saurabh from '$lib/assets/team/saurabh.png';
+import devansh from '$lib/assets/team/devansh.png';
+import kinjal from '$lib/assets/team/kinjal.png';
+import vishal from '$lib/assets/team/vishal.png';
+import tushar from '$lib/assets/team/tushar.png';
+import mrudula from '$lib/assets/team/mrudula.png';
+import jay from '$lib/assets/team/jay.png';
+import sahil from '$lib/assets/team/sahil.png';
+import priya from '$lib/assets/team/priya.png';
+import gayatri from '$lib/assets/team/gayatri.png';
+
+import saher from '$lib/assets/team/saher.jpg';
+import sayalim from '$lib/assets/team/sayalim.jpg';
+import purva from '$lib/assets/team/purva.jpg';
+import prachi from '$lib/assets/team/prachi.jpg';
+import rishika from '$lib/assets/team/rishika.jpg';
+import yuvraj from '$lib/assets/team/yuvraj.jpg';
+import kunal from '$lib/assets/team/kunal.jpg';
+
+
+
+
 export const team1 = [
     {
         name: "Ved Nande",
         role: "President",
         decor: "border-orange-500",
-        image: (await import("$lib/assets/team/ved.png")).default,
+        image: ved,
         socials: [
             { link: "https://www.instagram.com/vednande/", icon: "bi:instagram" },
             { link: "https://www.linkedin.com/in/ved-nande-b86248203/", icon: "bi:linkedin" },
@@ -12,7 +41,7 @@ export const team1 = [
     {
         name: "Madhur Manekar",
         role: "Vice President",
-        image: (await import("$lib/assets/team/madhur.png")).default,
+        image: madhur,
         decor: "border-amber-500",
         socials: [
             { link: "https://www.instagram.com/lord_mm_69/", icon: "bi:instagram" },
@@ -22,7 +51,7 @@ export const team1 = [
     {
         name: "Abhishek Khond",
         role: "Secretary",
-        image: (await import("$lib/assets/team/abhishek.png")).default,
+        image: abhishek,
 
         decor: "border-cyan-500",
         socials: [
@@ -32,7 +61,7 @@ export const team1 = [
     },
     {
         name: "Aryan Waghmare",
-        image: (await import("$lib/assets/team/aryan.png")).default,
+        image: aryan,
         role: "Treasurer",
         decor: "border-blue-500",
         socials: [
@@ -42,7 +71,7 @@ export const team1 = [
     },
     {
         name: "Naresh Chandanbatve",
-        image: (await import("$lib/assets/team/naresh.png")).default,
+        image: naresh,
         role: "Technical Head",
         decor: "border-indigo-500",
         socials: [
@@ -52,7 +81,7 @@ export const team1 = [
     },
     {
         name: "Tamanna Kartari",
-        image: (await import("$lib/assets/team/tamanaah.png")).default,
+        image: tamanna,
         role: "Lady Representative",
         decor: "border-pink-500",
         socials: [
@@ -63,7 +92,7 @@ export const team1 = [
     {
         name: "Sayali Warkhade",
         role: "Sports Co-ordinator",
-        image: (await import("$lib/assets/team/sayali.png")).default,
+        image: sayali,
 
         decor: "border-lime-500",
         socials: [
@@ -74,7 +103,7 @@ export const team1 = [
     {
         name: "Saurabh Yadav",
         role: "Sports Co-ordinator",
-        image: (await import("$lib/assets/team/saurabh.png")).default,
+        image: saurabh,
         decor: "border-lime-500",
         socials: [
             { link: "https://www.instagram.com/comsa_gcoen/", icon: "bi:instagram" },
@@ -83,7 +112,7 @@ export const team1 = [
     },
     {
         name: "Devansh Parapalli",
-        image: (await import("$lib/assets/team/devansh.png")).default,
+        image: devansh,
         role: "Technical Co-Head",
         decor: "border-emerald-500",
         socials: [
@@ -93,7 +122,7 @@ export const team1 = [
     },
     {
         name: "Kinjal Tiwari",
-        image: (await import("$lib/assets/team/kinjal.png")).default,
+        image: kinjal,
         role: "Technical Co-Head",
         decor: "border-emerald-500",
         socials: [
@@ -102,7 +131,7 @@ export const team1 = [
         ],
     },
     {
-        image: (await import("$lib/assets/team/vishal.png")).default,
+        image: vishal,
         name: "Vishal Kesharwani",
         role: "Sr. Executive Committee Member",
         decor: "border-fuchsia-500",
@@ -112,7 +141,7 @@ export const team1 = [
         ],
     },
     {
-        image: (await import("$lib/assets/team/tushar.png")).default,
+        image: tushar,
         name: "Tushar Nagare",
         role: "Sr. Executive Committee Member",
         decor: "border-fuchsia-500",
@@ -122,7 +151,7 @@ export const team1 = [
         ],
     },
     {
-        image: (await import("$lib/assets/team/mrudula.png")).default,
+        image: mrudula,
         name: "Mrudula Wankar",
         role: "Executive Committee Member",
         decor: "border-fuchsia-500",
@@ -132,7 +161,7 @@ export const team1 = [
         ],
     },
     {
-        image: (await import("$lib/assets/team/jay.png")).default,
+        image: jay,
         name: "Jay Bele",
         role: "Executive Committee Member",
         decor: "border-fuchsia-500",
@@ -142,7 +171,7 @@ export const team1 = [
         ],
     },
     {
-        image: (await import("$lib/assets/team/sahil.png")).default,
+        image: sahil,
         name: "Sahil Kuhikar",
         role: "Executive Committee Member",
         decor: "border-fuchsia-500",
@@ -152,7 +181,7 @@ export const team1 = [
         ],
     },
     {
-        image: (await import("$lib/assets/team/priya.png")).default,
+        image: priya,
         name: "Priya Nandanwar",
         role: "Executive Committee Member",
         decor: "border-fuchsia-500",
@@ -162,7 +191,7 @@ export const team1 = [
         ],
     },
     {
-        image: (await import("$lib/assets/team/gayatri.png")).default,
+        image: gayatri,
         name: "Gayatri Deshkar",
         role: "Executive Committee Member",
         decor: "border-fuchsia-500",
@@ -177,7 +206,7 @@ export const team2 = [
     {
         name: "Saher Pathan",
         role: "Organization Head",
-        image: (await import("$lib/assets/team/saher.jpg")).default,
+        image: saher,
         decor: "border-rose-500",
         socials: [
             { link: "https://www.instagram.com/sahergpathan/", icon: "bi:instagram" },
@@ -187,7 +216,7 @@ export const team2 = [
     {
         name: "Sayali Moghe",
         role: "Organization Co-Head",
-        image: (await import("$lib/assets/team/sayalim.jpg")).default,
+        image: sayalim,
         decor: "border-rose-500",
         socials: [
             { link: "https://www.instagram.com/sayalimoghe15?r=nametag", icon: "bi:instagram" },
@@ -197,7 +226,7 @@ export const team2 = [
     {
         name: "Purva Waghmare",
         role: "CnD Head",
-        image: (await import("$lib/assets/team/purva.jpg")).default,
+        image: purva,
         decor: "border-orange-500",
         socials: [
             { link: "https://www.instagram.com/_.purva_waghmare._?r=nametag", icon: "bi:instagram" },
@@ -207,7 +236,7 @@ export const team2 = [
     {
         name: "Prachi Munne",
         role: "CnD Co-Head",
-        image: (await import("$lib/assets/team/prachi.jpg")).default,
+        image: prachi,
         decor: "border-orange-500",
         socials: [
             {
@@ -240,7 +269,7 @@ export const team2 = [
     {
         name: "Rishika Deshmukh",
         role: "Publicity Head",
-        image: (await import("$lib/assets/team/rishika.jpg")).default,
+        image: rishika,
         decor: "border-purple-500",
         socials: [
             {
@@ -253,7 +282,7 @@ export const team2 = [
     {
         name: "Yuvraj Totade",
         role: "Publicity Co-Head",
-        image: (await import("$lib/assets/team/yuvraj.jpg")).default,
+        image: yuvraj,
         decor: "border-purple-500",
         socials: [
             { link: "https://instagram.com/totadeyuvraj44?igshid=YmMyMTA2M2Y=", icon: "bi:instagram" },
@@ -263,11 +292,11 @@ export const team2 = [
     {
         name: "Kunal Gohane",
         role: "Sponsorship Head",
-        image: (await import("$lib/assets/team/kunal.jpg")).default,
-        decor: "border-purple-500",
+        image: kunal,
+        decor: "border-fuchsia-500",
         socials: [
-            { link: "https://instagram.com/totadeyuvraj44?igshid=YmMyMTA2M2Y=", icon: "bi:instagram" },
-            { link: "http://www.linkedin.com/in/yuvraj-totade-737aaa207", icon: "bi:linkedin" },
+            { link: "https://instagram.com/the_bad_captain.33?igshid=YmMyMTA2M2Y=", icon: "bi:instagram" },
+            { link: "https://www.linkedin.com/in/kunal-gohane-a46324235", icon: "bi:linkedin" },
         ],
     },
 
