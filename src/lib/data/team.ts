@@ -5,8 +5,8 @@ export const team1 = [
         decor: "border-orange-500",
         image: (await import("$lib/assets/team/ved.png")).default,
         socials: [
-            { link: "https://www.instagram.com/comsa_gcoen/", icon: "bi:instagram" },
-            { link: "https://www.instagram.com/comsa_gcoen/", icon: "bi:linkedin" },
+            { link: "https://www.instagram.com/vednande/", icon: "bi:instagram" },
+            { link: "https://www.linkedin.com/in/ved-nande-b86248203/", icon: "bi:linkedin" },
         ],
     },
     {
@@ -15,8 +15,8 @@ export const team1 = [
         image: (await import("$lib/assets/team/madhur.png")).default,
         decor: "border-amber-500",
         socials: [
-            { link: "https://www.instagram.com/comsa_gcoen/", icon: "bi:instagram" },
-            { link: "https://www.instagram.com/comsa_gcoen/", icon: "bi:linkedin" },
+            { link: "https://www.instagram.com/lord_mm_69/", icon: "bi:instagram" },
+            { link: "https://www.linkedin.com/in/madhur-manekar-76ab4a22b/", icon: "bi:linkedin" },
         ],
     },
     {
@@ -26,8 +26,8 @@ export const team1 = [
 
         decor: "border-cyan-500",
         socials: [
-            { link: "https://www.instagram.com/comsa_gcoen/", icon: "bi:instagram" },
-            { link: "https://www.instagram.com/comsa_gcoen/", icon: "bi:linkedin" },
+            { link: "https://www.instagram.com/abhi_khond/", icon: "bi:instagram" },
+            { link: "https://www.linkedin.com/in/abhishek-khond-b81847210/", icon: "bi:linkedin" },
         ],
     },
     {
@@ -36,8 +36,8 @@ export const team1 = [
         role: "Treasurer",
         decor: "border-blue-500",
         socials: [
-            { link: "https://www.instagram.com/comsa_gcoen/", icon: "bi:instagram" },
-            { link: "https://www.instagram.com/comsa_gcoen/", icon: "bi:linkedin" },
+            { link: "https://www.instagram.com/ary3n__/", icon: "bi:instagram" },
+            { link: "https://www.linkedin.com/in/aryan-waghmare-674109230/", icon: "bi:linkedin" },
         ],
     },
     {
@@ -46,8 +46,8 @@ export const team1 = [
         role: "Technical Head",
         decor: "border-indigo-500",
         socials: [
-            { link: "https://www.instagram.com/comsa_gcoen/", icon: "bi:instagram" },
-            { link: "https://www.instagram.com/comsa_gcoen/", icon: "bi:linkedin" },
+            { link: "https://instagram.com/naresh_chandanbatve", icon: "bi:instagram" },
+            { link: "https://www.linkedin.com/in/naresh-chandanbatve/", icon: "bi:linkedin" },
         ],
     },
     {
