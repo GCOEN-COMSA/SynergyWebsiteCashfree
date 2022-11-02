@@ -77,7 +77,7 @@ export const team1 = [
         image: (await import("$lib/assets/team/saurabh.png")).default,
         decor: "border-lime-500",
         socials: [
-            { link: "https://www.instagram.com/comsa_gcoen/", icon: "bi:instagram" },
+            // { link: "https://www.instagram.com/comsa_gcoen/", icon: "bi:instagram" },
             { link: "https://www.linkedin.com/in/saurabh-yadav-469323208/", icon: "bi:linkedin" },
         ],
     },
@@ -118,7 +118,7 @@ export const team1 = [
         decor: "border-fuchsia-500",
         socials: [
             { link: "https://www.instagram.com/__tushar.88___/", icon: "bi:instagram" },
-            { link: "https://www.instagram.com/comsa_gcoen/", icon: "bi:linkedin" },
+            // { link: "https://www.instagram.com/comsa_gcoen/", icon: "bi:linkedin" },
         ],
     },
     {
@@ -147,8 +147,8 @@ export const team1 = [
         role: "Executive Committee Member",
         decor: "border-fuchsia-500",
         socials: [
-            { link: "https://www.instagram.com/comsa_gcoen/", icon: "bi:instagram" },
-            { link: "https://www.instagram.com/comsa_gcoen/", icon: "bi:linkedin" },
+            // { link: "https://www.instagram.com/comsa_gcoen/", icon: "bi:instagram" },
+            { link: "https://www.linkedin.com/in/sahil-kuhikar-151801255/", icon: "bi:linkedin" },
         ],
     },
     {
@@ -201,7 +201,7 @@ export const team2 = [
         decor: "border-orange-500",
         socials: [
             { link: "https://www.instagram.com/_.purva_waghmare._?r=nametag", icon: "bi:instagram" },
-            { link: "https://www.instagram.com/comsa_gcoen/", icon: "bi:linkedin" },
+            { link: "https://www.linkedin.com/in/purva-waghmare-73884622b/", icon: "bi:linkedin" },
         ],
     },
     {
