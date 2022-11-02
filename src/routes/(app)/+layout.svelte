@@ -93,7 +93,7 @@
           <li><a class="btn btn-ghost rounded-lg" href="/">Home</a></li>
           <li><a class="btn btn-ghost rounded-lg" href="/events/">Events</a></li>
           <li><a class="btn btn-ghost rounded-lg" href="/gallery">Gallery</a></li>
-          <li><a class="btn btn-ghost rounded-lg" href="/register/events-1">Register</a></li>
+          <li><a class="btn btn-ghost rounded-lg" href="/events/">Register</a></li>
           <li><a class="btn btn-ghost rounded-lg" href="/contact-us">Contact Us</a></li>
         </ul>
       </div>
@@ -164,7 +164,7 @@
       <!-- <li><a on:click={()=>{sidebar.checked =false}} href="/#about-us">About</a></li> -->
       <li><a class="pl-10" href="/events/">Events</a></li>
       <li><a class="pl-10" href="/gallery">Gallery</a></li>
-      <li><a class="pl-10" href="/register/events-1">Register</a></li>
+      <li><a class="pl-10" href="/events/">Register</a></li>
       <li><a class="pl-10" href="/contact-us">Contact us</a></li>
     </ul>
   </div>
