@@ -10,7 +10,7 @@
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi totam magnam, quibusdam commodi veritatis corrupti ex.";
 </script>
 
-<div class="self-center">
+<div class="self-stretch">
   <button
     class="accordion {is_open ? 'active' : ''}"
     bind:this={accordion}
@@ -45,7 +45,7 @@
   </button>
   <div bind:this={panel} class="panel {is_open ? 'active' : ''}">
     <p>
-      {answer}
+      {@html answer}
     </p>
   </div>
 </div>

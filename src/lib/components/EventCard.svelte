@@ -24,7 +24,7 @@
 
 <style>
   .card {
-    min-height: clamp(20vh, 25vh, 30vh);
+    min-height: clamp(22vh, 100%, 32vh);
   }
   .card-title {
     letter-spacing: 0.2rem;

@@ -1,16 +1,15 @@
 <script>
-    import TestimonialItem from "$lib/components/TestimonialItem.svelte";
-    import {fly} from "svelte/transition";
-    let selection = 0;
+  import TestimonialItem from "$lib/components/TestimonialItem.svelte";
+  import { fly } from "svelte/transition";
+  let selection = 0;
 
-    import {Swiper, SwiperSlide} from 'swiper/svelte';
-    import {Navigation, A11y, Pagination} from 'swiper';
-    import 'swiper/css';
-    import 'swiper/css/navigation';
-    import 'swiper/css/a11y';
-    import 'swiper/css/pagination';
+  import { Swiper, SwiperSlide } from "swiper/svelte";
+  import { Navigation, A11y, Pagination } from "swiper";
+  import "swiper/css";
+  import "swiper/css/navigation";
+  import "swiper/css/a11y";
+  import "swiper/css/pagination";
 </script>
-
 
 <!-- <div class="flex flex-col items-center z-10">
     <h1 class="text-4xl vimh uppercase">testimonials</h1>
@@ -28,4 +27,13 @@
 </div>
 </div> -->
 
-<Swiper modules={[Navigation, A11y, Pagination]} spaceBetween={30} slidesPerView={1} pagination={{clickable: true}}> <SwiperSlide><TestimonialItem index={selection} pos="GCoE Nagpur -1" /></SwiperSlide><SwiperSlide><TestimonialItem index={selection} pos="GCoE Nagpur 0" /></SwiperSlide><SwiperSlide><TestimonialItem index={selection} pos="GCoE Nagpur 1" /></SwiperSlide></Swiper>
+<Swiper
+  modules={[Navigation, A11y, Pagination]}
+  spaceBetween={30}
+  slidesPerView={1}
+  pagination={{ clickable: true }}
+>
+  <SwiperSlide><TestimonialItem index={selection} name="Vidhi Sharma" pos="Student RCOEM" text="Sharing my experience about the previous iterations of Synergy, I would like to appreciate the efforts taken by the students and their hard work to make this event a success.It was an event full of experience and enthusiasm. It’s a great platform for the students to make a breakthrough in their skillset where they get to compete with other brilliant minds." /></SwiperSlide>
+  <SwiperSlide><TestimonialItem index={selection} pos="GCoE Nagpur 0" /></SwiperSlide>
+  <SwiperSlide><TestimonialItem index={selection} pos="GCoE Nagpur 1" /></SwiperSlide>
+</Swiper>
