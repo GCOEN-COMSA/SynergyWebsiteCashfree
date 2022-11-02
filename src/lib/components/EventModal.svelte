@@ -154,7 +154,7 @@
     /* background-color: aqua; */
     padding: 1rem;
     margin-bottom: 1rem;
-    font-size: 1.05rem;
+    font-size: 0.875rem;
     @apply bg-base-100 rounded-xl;
   }
 
