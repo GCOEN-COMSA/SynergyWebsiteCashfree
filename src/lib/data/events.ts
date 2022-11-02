@@ -1,21 +1,5 @@
 export const events = [
   {
-    id: "events-0",
-    name: "Communix 4.0",
-    long_desc:
-      "Verbal expression is an important aspect of our life and a strong communicator is always   articulate with the words. So here we are with an event that will provide you an opportunity to link your thoughts and show your caliber.",
-    desc: "You can talk but, can you communix!?",
-    amount: [40_00], // 100.00
-    image: "https://placeimg.com/192/108/tech",
-    icon: "clarity:bar-code-line",
-    date: "12 Nov 2022",
-    players: [1],
-    type: [""],
-    payment_links: [
-      "https://rzp.io/l/t13epeW",
-    ]
-  },
-  {
     id: "events-1",
     name: "Autocoders",
     long_desc:
@@ -31,6 +15,22 @@ export const events = [
       'https://rzp.io/l/0l3VB4xMnc',
       'https://rzp.io/l/8bn4CfyBU',
       'https://rzp.io/l/8K50JlbU',
+    ]
+  },
+  {
+    id: "events-0",
+    name: "Communix 4.0",
+    long_desc:
+      "Verbal expression is an important aspect of our life and a strong communicator is always   articulate with the words. So here we are with an event that will provide you an opportunity to link your thoughts and show your caliber.",
+    desc: "You can talk but, can you communix!?",
+    amount: [40_00], // 100.00
+    image: "https://placeimg.com/192/108/tech",
+    icon: "clarity:bar-code-line",
+    date: "12 Nov 2022",
+    players: [1],
+    type: [""],
+    payment_links: [
+      "https://rzp.io/l/t13epeW",
     ]
   },
   {
