@@ -8,7 +8,7 @@ export const events = [
     amount: [40_00], // 100.00
     image: "https://placeimg.com/192/108/tech",
     icon: "clarity:bar-code-line",
-    date: "12 Nov 2022 at 2:30PM",
+    date: "12 Nov 2022",
     players: [1],
     type: [""],
     payment_links: [
@@ -24,7 +24,7 @@ export const events = [
     amount: [50_00, 80_00, 120_00], // 100.00
     image: "https://placeimg.com/192/108/tech",
     icon: "clarity:bar-code-line",
-    date: "12 Nov 2022 at 12:00",
+    date: "12 Nov 2022",
     players: [1, 2, 3],
     type:["", "", ""],
     payment_links: [
@@ -42,7 +42,7 @@ export const events = [
     amount: [60_00, 100_00], // 100.00
     image: "https://placeimg.com/192/108/tech",
     icon: "clarity:bar-code-line",
-    date: "13 Nov 2022 at 12:00",
+    date: "13 Nov 2022",
     players: [1, 2],
     type:["", ""],
     payment_links: [
@@ -59,7 +59,7 @@ export const events = [
     amount: [200_00], // 100.00
     image: "https://placeimg.com/192/108/tech",
     icon: "clarity:bar-code-line",
-    date: "12 Nov 2022 at 12:00",
+    date: "12 & 13 Nov 2022",
     players: [4],
     type:[""],
     payment_links: [
@@ -75,7 +75,7 @@ export const events = [
     amount: [150_00, 150_00], // 100.00
     image: "https://placeimg.com/192/108/tech",
     icon: "clarity:bar-code-line",
-    date: "12 Nov 2022 at 4:30PM",
+    date: "12 & 13 Nov 2022",
     players: [5, 5],
     type:["VALORANT", 'COD MOBILE'],
     payment_links: [
@@ -92,7 +92,7 @@ export const events = [
     amount: [40_00], // 100.00
     image: "https://placeimg.com/192/108/tech",
     icon: "clarity:bar-code-line",
-    date: "1PM 11 Nov 2022",
+    date: "12 Nov 2022",
     players: [1],
     type:[""],
     payment_links: [
@@ -108,7 +108,7 @@ export const events = [
     amount: [0], // 100.00
     image: "https://placeimg.com/192/108/tech",
     icon: "clarity:bar-code-line",
-    date: "12 Nov 2022 at 4:30PM",
+    date: "12 Nov 2022",
     players: [1],
     type:[""],
     payment_links: [
