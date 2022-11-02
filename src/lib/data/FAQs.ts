@@ -3,7 +3,7 @@ export const page_1 = [
   {
     question: "WHAT ARE THE PERKS OF PARTICIPATING IN SYNERGY ?",
     answer:
-      "a) Certificate of participation provided by <strong> Govt. College of Engg,Ngp <strong><br />b) Huge variety of events and great experience<br />c) Fun and memories ;)",
+      "a) Certificate of participation provided by <strong> Govt. College of Engg,Ngp </strong><br />b) Huge variety of events and great experience<br />c) Fun and memories ;)",
   },
   {
     question: "WHAT ARE THE TYPES OF EVENTS THAT ARE BEING CONDUCTED IN SYNERGY?",
