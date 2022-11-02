@@ -3,9 +3,8 @@
   import "iconify-icon";
   import Logo from "$lib/assets/logo.png";
   // import ScrollDownIndicator from "$lib/components/ScrollDownIndicator.svelte";
-  import { afterNavigate, goto } from "$app/navigation";
+  import { afterNavigate, beforeNavigate, goto } from "$app/navigation";
   import FooterMap from "$lib/components/FooterMap.svelte";
-
   afterNavigate(() => {
     contentElem.scrollTo(0, 0);
     sidebar.checked = false;
@@ -16,6 +15,7 @@
 
   import { supabaseClient } from "$lib/db";
   import { invalidate } from "$app/navigation";
+  import {navigating} from "$app/stores";
   import { onMount } from "svelte";
   let contentElem: HTMLElement;
   let contentElemScrollTop = 0;
@@ -47,6 +47,7 @@
 
   import { browser } from "$app/environment";
   import FooterSocials from "$lib/components/FooterSocials.svelte";
+    import Loader from "$lib/components/Loader.svelte";
 
   
 </script>
@@ -170,6 +171,9 @@
   </div>
 </div>
 
+{#if $navigating}
+   <Loader />
+{/if}
 
 <style lang="postcss">
   .backdrop {
@@ -186,9 +190,9 @@
   }
 
   .bg-content {
-    /* background: linear-gradient(to top, rgb(29, 78, 216), rgb(30, 64, 175), rgb(17, 24, 39)); */
+    background: linear-gradient(to top, rgb(56, 189, 248), rgb(49, 46, 129));
     /* background-attachment: scroll ; */
-    @apply bg-[rgb(30,64,175)] bg-opacity-100;
+    /* @apply bg-[rgb(30,64,175)] bg-opacity-100; */
   }
 
   .bg-footer {

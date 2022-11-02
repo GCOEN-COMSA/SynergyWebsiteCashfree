@@ -3,7 +3,7 @@
     import { team1, team2 } from "$lib/data/team";
 </script>
 <div class="mx-auto mt-10 w-full flex flex-row flex-wrap justify-center items-stretch align-middle gap-10 pb-10">
-    <h1 id="team" class="text-[5rem] xl:text-[6rem] mx-auto text-center text-base-content w-screen vimh mb-6">Our Team</h1>
+    <h1 id="team" class="text-[5rem] xl:text-[6rem] mx-auto text-center text-base-content w-screen vimh mb-6 hidden">Our Team</h1>
     <h1 id="team" class="text-2xl xl:text-[6rem] mx-auto text-center text-base-content w-screen vimh my-6">Core Team</h1>
     <div class="flex flex-row flex-wrap w-11/12 gap-4">
         <!-- <TeamMember name="Ved Nande" role="President" decor="border-orange-500" />
@@ -27,7 +27,7 @@
             <TeamMember {...person} />
         {/each}
     </div>
-    <h1 id="team" class="text-2xl xl:text-[6rem] mx-auto text-center text-base-content w-screen vimh my-6">Synergy Team</h1>
+    <h1 id="team" class="text-2xl xl:text-[6rem] mx-auto text-center text-base-content w-screen vimh mb-6 mt-24">Synergy Team</h1>
     <div class="flex flex-row flex-wrap w-11/12 gap-4">
         {#each team2 as person}
             <TeamMember {...person} />
