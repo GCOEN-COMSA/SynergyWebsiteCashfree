@@ -33,7 +33,7 @@
   slidesPerView={1}
   pagination={{ clickable: true }}
 >
-  <SwiperSlide><TestimonialItem index={selection} name="Vidhi Sharma" pos="Student RCOEM" text="Sharing my experience about the previous iterations of Synergy, I would like to appreciate the efforts taken by the students and their hard work to make this event a success.It was an event full of experience and enthusiasm. It’s a great platform for the students to make a breakthrough in their skillset where they get to compete with other brilliant minds." /></SwiperSlide>
-  <SwiperSlide><TestimonialItem index={selection} pos="GCoE Nagpur 0" /></SwiperSlide>
-  <SwiperSlide><TestimonialItem index={selection} pos="GCoE Nagpur 1" /></SwiperSlide>
+  <SwiperSlide><TestimonialItem index={selection} name="Dr. Latesh Bhagat" pos="CSE Dept Head." text="Sharing my experience about the previous iterations of Synergy, I would like to appreciate the efforts taken by the students and their hard work to make this event a success.It was an event full of experience and enthusiasm. It’s a great platform for the students to make a breakthrough in their skillset where they get to compete with other brilliant minds." /></SwiperSlide>
+  <SwiperSlide><TestimonialItem index={selection} name="Ashutosh Rokade" pos="Student, GCoE Nagpur" /></SwiperSlide>
+  <SwiperSlide><TestimonialItem index={selection} name="Tanushree Manekar" pos="Student, GCoE Nagpur" /></SwiperSlide>
 </Swiper>

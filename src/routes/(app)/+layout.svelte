@@ -3,7 +3,7 @@
   import "iconify-icon";
   import Logo from "$lib/assets/logo.png";
   // import ScrollDownIndicator from "$lib/components/ScrollDownIndicator.svelte";
-  import { afterNavigate } from "$app/navigation";
+  import { afterNavigate, goto } from "$app/navigation";
   import FooterMap from "$lib/components/FooterMap.svelte";
 
   afterNavigate(() => {
@@ -69,7 +69,7 @@
         : 'bg-base-300'} transition-colors duration-200 z-50 px-2 lg:px-6"
     >
       <div class="flex-1 lg:px-2 py-2 lg:mx-2 {is_transparent ? 'invisible' : 'visible'}">
-        <img src={Logo} alt="Synergy Logo" class="max-h-12" />
+        <img on:click={()=>{goto('/')}} src={Logo} alt="Synergy Logo" class="max-h-12 btn btn-ghost p-0" />
       </div>
       <div class="flex-none lg:hidden">
         <label for="side-drawer" class="btn btn-square btn-ghost">

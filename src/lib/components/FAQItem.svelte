@@ -10,7 +10,7 @@
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi totam magnam, quibusdam commodi veritatis corrupti ex.";
 </script>
 
-<div class="self-stretch">
+<div class="self-stretch uppercase">
   <button
     class="accordion {is_open ? 'active' : ''}"
     bind:this={accordion}
@@ -43,7 +43,7 @@
       </svg></span
     >
   </button>
-  <div bind:this={panel} class="panel {is_open ? 'active' : ''}">
+  <div bind:this={panel} class="panel uppercase {is_open ? 'active' : ''}">
     <p>
       {@html answer}
     </p>
