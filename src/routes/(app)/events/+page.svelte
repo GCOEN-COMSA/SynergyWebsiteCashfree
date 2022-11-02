@@ -3,7 +3,7 @@
     import { events } from '$lib/data/events';
 </script>
 
-<div class="mx-auto mt-14 w-full p-8 pt-0 flex flex-row flex-wrap mb-[30rem] lg:mb-8  lg:h-max  justify-evenly align-middle gap-10 lg:pb-10 ">
+<div class="mx-auto  mt-14 w-full p-8 pt-0 flex flex-row flex-wrap mb-[40rem] lg:mb-[30rem]  lg:h-max  justify-evenly align-middle gap-4 lg:pb-10 ">
 			<h1 id="events" class="text-[6rem] mx-auto text-center text-base-content w-screen vimh">EVENTS</h1>
 
 			<h1 id="events" class="text-4xl text-center text-base-content w-screen vimh invisible">TECHNICAL</h1>
