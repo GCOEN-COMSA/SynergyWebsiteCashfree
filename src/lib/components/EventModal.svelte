@@ -136,7 +136,7 @@
 
   .title {
     /* line-height: 3.75rem; */
-    font-size: 3.5rem;
+    font-size: 3rem;
     /* margin-left: 1rem; */
     /* padding: 0.5rem; */
     /* @apply bg-base-100; */

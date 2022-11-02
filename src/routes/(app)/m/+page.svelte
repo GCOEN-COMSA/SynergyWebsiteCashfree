@@ -73,7 +73,7 @@ let is_transparent = true;
     <div class="mt-16 flex flex-row flex-wrap justify-evenly align-middle mx-auto w-[calc(100%-4rem)] " id="about">
       <AboutUs />
     </div>
-    <div class="mt-16 flex flex-row flex-wrap justify-evenly align-middle pb-10 mx-auto w-[calc(100%-4rem)]" id="testimonials">
+    <div class="mt-16 flex flex-row flex-wrap justify-evenly align-middle mb-4 mx-auto w-[calc(100%-4rem)]" id="testimonials">
       <Testimonial />
     </div>
     <div class="flex flex-col justify-center gap-4 items-center  mt-10 pb-10 mx-auto w-[calc(100%-4rem)]" id="faq">
