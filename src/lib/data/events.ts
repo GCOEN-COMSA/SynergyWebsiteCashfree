@@ -10,8 +10,9 @@ export const events = [
     icon: "clarity:bar-code-line",
     date: "1PM 11 Nov 2022",
     players: [1],
+    type: [""],
     payment_links: [
-      "https://rzp.io/l/communix-1",
+      "https://rzp.io/l/t13epeW",
     ]
   },
   {
@@ -25,10 +26,11 @@ export const events = [
     icon: "clarity:bar-code-line",
     date: "1PM 11 Nov 2022",
     players: [1, 2, 3],
+    type:["", "", ""],
     payment_links: [
-      'https://rzp.io/l/autocoders-1',
-      'https://rzp.io/l/autocoders-2',
-      'https://rzp.io/l/autocoders-3',
+      'https://rzp.io/l/0l3VB4xMnc',
+      'https://rzp.io/l/8bn4CfyBU',
+      'https://rzp.io/l/8K50JlbU',
     ]
   },
   {
@@ -42,9 +44,10 @@ export const events = [
     icon: "clarity:bar-code-line",
     date: "1PM 11 Nov 2022",
     players: [1, 2],
+    type:["", ""],
     payment_links: [
-      'https://rzp.io/l/binary-bishops-1',
-      'https://rzp.io/l/binary-bishops-2',
+      'https://rzp.io/l/LPNQeJ1zt',
+      'https://rzp.io/l/IPGVIAOl2U',
     ]
   },
   {
@@ -58,8 +61,9 @@ export const events = [
     icon: "clarity:bar-code-line",
     date: "1PM 11 Nov 2022",
     players: [4],
+    type:[""],
     payment_links: [
-      'https://rzp.io/l/bounty-hunt-4',
+      'https://rzp.io/l/C7ZnM1j',
     ]
   },
   {
@@ -68,13 +72,15 @@ export const events = [
     long_desc:
       "Hey gamers! We are here with a great opportunity for you to beat others and be the best in the field of gaming. So fasten your seat belts, clutch your moves, race in the ultimate automotive playground and conquer your rivals.",
     desc: "One life, one chance",
-    amount: [150_00], // 100.00
+    amount: [150_00, 150_00], // 100.00
     image: "https://placeimg.com/192/108/tech",
     icon: "clarity:bar-code-line",
     date: "1PM 11 Nov 2022",
-    players: [5],
+    players: [5, 5],
+    type:["VALORANT", 'COD MOBILE'],
     payment_links: [
-      'https://rzp.io/l/ace-clutchers-5',
+      'https://rzp.io/l/u5LTH9kE5',
+      'https://rzp.io/l/aDRCQH9',
     ]
   },
   {
@@ -88,8 +94,9 @@ export const events = [
     icon: "clarity:bar-code-line",
     date: "1PM 11 Nov 2022",
     players: [1],
+    type:[""],
     payment_links: [
-      'https://rzp.io/l/hard-drive-1',
+      'https://rzp.io/l/3ELT4ABmn',
     ]
   },
   {
@@ -103,8 +110,9 @@ export const events = [
     icon: "clarity:bar-code-line",
     date: "1PM 11 Nov 2022",
     players: [1],
+    type:[""],
     payment_links: [
-      'https://rzp.io/l/coming-soon-seminar-1',
+      '/register/events-6',
     ]
   },
   // {
