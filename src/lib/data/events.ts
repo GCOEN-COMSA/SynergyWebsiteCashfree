@@ -101,10 +101,10 @@ export const events = [
   },
   {
     id: "events-6",
-    name: "Coming Soon: Seminar",
+    name: "Seminar",
     long_desc:
-      "Verbal expression is an important aspect of our life and a strong communicator is always   articulate with the words. So here we are with an event that will provide you an opportunity to link your thoughts and show your caliber.",
-    desc: "You can talk but, can you communix!?",
+      "Coming Soon...",
+    desc: "Coming Soon",
     amount: [0], // 100.00
     image: "https://placeimg.com/192/108/tech",
     icon: "clarity:bar-code-line",

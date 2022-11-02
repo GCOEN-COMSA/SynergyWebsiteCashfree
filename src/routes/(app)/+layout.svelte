@@ -94,7 +94,7 @@
           <li><a class="btn btn-ghost rounded-lg" href="/">Home</a></li>
           <li><a class="btn btn-ghost rounded-lg" href="/events/">Events</a></li>
           <li><a class="btn btn-ghost rounded-lg" href="/gallery">Gallery</a></li>
-          <li><a class="btn btn-ghost rounded-lg" href="/events/">Register</a></li>
+          <li><a class="btn btn-ghost rounded-lg" href="/team/">Team</a></li>
           <li><a class="btn btn-ghost rounded-lg" href="/contact-us">Contact Us</a></li>
         </ul>
       </div>
@@ -165,7 +165,7 @@
       <!-- <li><a on:click={()=>{sidebar.checked =false}} href="/#about-us">About</a></li> -->
       <li><a class="pl-10" href="/events/">Events</a></li>
       <li><a class="pl-10" href="/gallery">Gallery</a></li>
-      <li><a class="pl-10" href="/events/">Register</a></li>
+      <li><a class="pl-10" href="/team/">Team</a></li>
       <li><a class="pl-10" href="/contact-us">Contact us</a></li>
     </ul>
   </div>
@@ -204,6 +204,6 @@
 
   .footer-title {
 
-    @apply text-white opacity-100 text-lg tracking-wide;
+    @apply text-white opacity-100 text-lg tracking-[0.15rem];
   }
 </style>

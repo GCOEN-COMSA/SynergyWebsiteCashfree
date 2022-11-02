@@ -103,7 +103,7 @@
     <div class="infopoint flex flex-col items-center justify-center">
       <iconify-icon class="text-4xl" icon="carbon:email" />
       <p class="text-lg">Email</p>
-      <p class="text-sm">gcoen.comsa@gmail.com</p>
+      <a href="mailto:gcoen.comsa@gmail.com" class="text-sm">gcoen.comsa@gmail.com</a>
       </div>
   </div>
 </div>

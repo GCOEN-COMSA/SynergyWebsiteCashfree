@@ -10,7 +10,7 @@
     "Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi totam magnam, quibusdam commodi veritatis corrupti ex.";
 </script>
 
-<div class="self-stretch uppercase">
+<div class="self-center w-full uppercase">
   <button
     class="accordion {is_open ? 'active' : ''}"
     bind:this={accordion}
@@ -69,7 +69,7 @@
     display: inline-flex;
     gap: 2rem;
     justify-content: space-between;
-    @apply container w-full xl:max-w-xl text-base p-4;
+    @apply container w-full  text-base p-4;
   }
 
   .active {
@@ -108,7 +108,7 @@
     /* margin-left: 0.25rem; */
     margin-right: 0.25rem;
     border-radius: 0px 0px 0.25rem 0.25rem;
-    @apply container w-full lg:w-[unset] xl:max-w-xl text-sm;
+    @apply container w-full text-sm;
   }
 
   .panel.active {
