@@ -4,11 +4,12 @@
   let selection = 0;
 
   import { Swiper, SwiperSlide } from "swiper/svelte";
-  import { Navigation, A11y, Pagination } from "swiper";
+  import { Navigation, A11y, Pagination, Autoplay } from "swiper";
   import "swiper/css";
   import "swiper/css/navigation";
   import "swiper/css/a11y";
   import "swiper/css/pagination";
+  import "swiper/css/autoplay";
 </script>
 
 <!-- <div class="flex flex-col items-center z-10">
@@ -28,9 +29,11 @@
 </div> -->
 
 <Swiper
-  modules={[Navigation, A11y, Pagination]}
+  modules={[Navigation, A11y, Pagination, Autoplay]}
   spaceBetween={30}
   slidesPerView={1}
+  autoplay
+  loop={true}
   pagination={{ clickable: true }}
 >
   <SwiperSlide><TestimonialItem index={selection} name="Dr. Latesh Bhagat" pos="CSE Dept Head." text="Sharing my experience about the previous iterations of Synergy, I would like to appreciate the efforts taken by the students and their hard work to make this event a success. It was an event full of experience and enthusiasm. It’s a great platform for the students to make a breakthrough in their skillset where they get to compete with other brilliant minds." /></SwiperSlide>

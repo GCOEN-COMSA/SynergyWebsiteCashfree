@@ -56,7 +56,7 @@
   <button slot="backdrop" class="backdrop z-[100]" transition:fade on:click={closeModal} />
 </Modals>
 
-<div class="drawer">
+<div data-sveltekit-prefetch class="drawer">
   <input id="side-drawer" bind:this={sidebar} type="checkbox" class="drawer-toggle" />
   <div
     id="content-elem"
@@ -91,7 +91,7 @@
       <div class="flex-none hidden lg:block">
         <ul class="menu menu-horizontal gap-4 pr-8">
           <!-- Navbar menu content here -->
-          <li><a class="btn btn-ghost rounded-lg" href="/">Home</a></li>
+          <li><a data-sveltekit-reload class="btn btn-ghost rounded-lg"  href="/">Home</a></li>
           <li><a class="btn btn-ghost rounded-lg" href="/events/">Events</a></li>
           <li><a class="btn btn-ghost rounded-lg" href="/gallery">Gallery</a></li>
           <li><a class="btn btn-ghost rounded-lg" href="/team/">Team</a></li>
@@ -136,7 +136,7 @@
       <!-- Section 2 -->
       <div class="m-auto">
         <span class="footer-title vimh">Information</span>
-        <a href="/#about-us" class="btn btn-ghost">About Us</a>
+        <a data-sveltekit-reload href="/#about-us" class="btn btn-ghost">About Us</a>
         <a href="https://gcoen.ac.in" target="_blank" rel="external noopener noreferrer" class="btn btn-ghost">Our College</a>
       </div>
       <!-- Section 3 -->
@@ -161,7 +161,7 @@
           ><iconify-icon class="text-4xl" icon="carbon:close" /></label
         >
       </li>
-      <li><a class="pl-10" href="/">Home</a></li>
+      <li><a data-sveltekit-reload class="pl-10" href="/">Home</a></li>
       <!-- <li><a on:click={()=>{sidebar.checked =false}} href="/#about-us">About</a></li> -->
       <li><a class="pl-10" href="/events/">Events</a></li>
       <li><a class="pl-10" href="/gallery">Gallery</a></li>
