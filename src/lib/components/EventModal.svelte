@@ -51,7 +51,8 @@
 
 {#if isOpen}
   <div use:clickOutside={()=>{closeModal();}} class="s-modal z-[200]" transition:fade>
-    <div  class="modal-container">
+    <div  class="modal-container relative">
+      <div on:click={closeModal} class="absolute right-2 top-2 lg:right-10 lg:top-10 btn btn-ghost rounded-full h-fit w-fit p-1 text-6xl md:text-8xl xl:text-[4rem]"><iconify-icon icon="carbon:close-outline" /></div>
       <img
         class="image aspect-video flex-grow"
         src={data.image ? data.image : "http://placeimg.com/400/400/tech"}
@@ -116,11 +117,11 @@
     display: flex;
     flex-direction: column;
     /* overflow: scroll; */
-    @apply w-full lg:h-full xl:w-3/4 xl:h-3/4 pointer-events-none overflow-x-hidden overflow-y-scroll min-w-[15rem] self-start lg:self-center ;
+    @apply w-full lg:h-full xl:w-3/4 xl:h-3/4 pointer-events-none overflow-x-hidden overflow-y-scroll min-w-[15rem] self-start lg:self-center pb-[45vh] lg:pb-8;
   }
 
   .modal-container * {
-    @apply pointer-events-auto overflow-scroll scroll-p-40;
+    @apply pointer-events-auto overflow-scroll;
   }
 
   .image {
