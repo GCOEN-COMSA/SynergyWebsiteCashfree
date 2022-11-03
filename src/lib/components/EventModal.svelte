@@ -108,6 +108,7 @@
 
     /* allow click-through to backdrop */
     pointer-events: none;
+    @apply overflow-scroll;
   }
   .modal-container {
     /* background-color: blueviolet; */
@@ -115,11 +116,11 @@
     display: flex;
     flex-direction: column;
     /* overflow: scroll; */
-    @apply w-full h-full xl:w-3/4 xl:h-3/4 pointer-events-none overflow-x-hidden overflow-y-auto min-w-[15rem] self-center;
+    @apply w-full lg:h-full xl:w-3/4 xl:h-3/4 pointer-events-none overflow-x-hidden overflow-y-scroll min-w-[15rem] self-start lg:self-center ;
   }
 
   .modal-container * {
-    @apply pointer-events-auto;
+    @apply pointer-events-auto overflow-scroll scroll-p-40;
   }
 
   .image {

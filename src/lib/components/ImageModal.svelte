@@ -26,6 +26,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @apply bg-black/60;
 
     /* allow click-through to backdrop */
     pointer-events: none;

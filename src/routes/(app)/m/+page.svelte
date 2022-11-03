@@ -65,7 +65,7 @@ let is_transparent = true;
         >The Nexus of All Innovations</span
       >
     </div>
-    <div id="hero-cube" class="flex-grow flex justify-center items-center">
+    <div id="hero-cube" class="flex-grow flex justify-center items-center overflow-clip">
       <svelte:component this={Cube} />
     </div>
   </div>

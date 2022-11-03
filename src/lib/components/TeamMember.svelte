@@ -33,6 +33,8 @@
   <div class="bottom-text flex flex-row items-center justify-center gap-2 py-4">
     {#each socials as social}
       <a
+        rel="external noopener noreferrer"
+        target="_blank"
         href={social.link}
         class="social btn btn-ghost cursor-pointer rounded-xl inline-flex align-middle"
         ><iconify-icon class="text-4xl text-white" icon={social.icon} /></a
