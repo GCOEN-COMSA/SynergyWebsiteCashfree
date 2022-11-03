@@ -8,7 +8,7 @@ export const page_1 = [
   {
     question: "WHAT ARE THE TYPES OF EVENTS THAT ARE BEING CONDUCTED IN SYNERGY?",
     answer:
-      "There will be events which cover technical,non-technical and analytical domain as well.",
+      "There will be events which cover technical, non-technical and analytical domain as well.",
   },
   {
     question: "IS THERE ANY FOOD FACILITY AVAILABLE WITHIN THE CAMPUS?",
