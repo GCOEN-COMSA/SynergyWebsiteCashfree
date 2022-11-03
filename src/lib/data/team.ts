@@ -168,7 +168,7 @@ export const team1 = [
         decor: "border-fuchsia-500",
         socials: [
             { link: "https://www.instagram.com/belejay38/", icon: "bi:instagram" },
-            { link: "https://www.linkedi.com/in/jay-bele-9793b4241/", icon: "bi:linkedin" },
+            { link: "https://www.linkedin.com/in/jay-bele-9793b4241/", icon: "bi:linkedin" },
         ],
     },
     {
