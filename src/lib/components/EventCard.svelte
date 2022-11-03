@@ -5,11 +5,15 @@
 	import { goto } from '$app/navigation';
   // openModal(EventModal, { title: "Alert", message: "This is an alert" })
   
-  export let name:string, desc:string, id:string; 
+  export let name:string, desc:string, id:string, image: string; 
   let onLearnMore = () => {
     openModal(EventModal, {id: id})
   }
 </script>
+
+<svelte:head>
+  <link rel="preload" href={image} as="image" />
+</svelte:head>
 
 <div class="card mx-auto max-w-xs md:max-w-md lg:max-w-lg aspect-video bg-base-200 shadow-xl image-full max-h-60 my-4">
     <!-- <figure><img src="{image ? image : 'https://placeimg.com/400/225/tech'}" alt="Shoes" /></figure> -->
