@@ -136,8 +136,8 @@
       <!-- Section 2 -->
       <div class="m-auto">
         <span class="footer-title vimh">Information</span>
-        <a href="#about-us" class="btn btn-ghost">About Us</a>
-        <a href="https://gcoen.ac.in" target="_blank" rel="noreferrer" class="btn btn-ghost">Our College</a>
+        <a href="/#about-us" class="btn btn-ghost">About Us</a>
+        <a href="https://gcoen.ac.in" target="_blank" rel="external noopener noreferrer" class="btn btn-ghost">Our College</a>
       </div>
       <!-- Section 3 -->
       <div class="m-auto">
