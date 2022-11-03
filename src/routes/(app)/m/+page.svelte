@@ -71,15 +71,15 @@ let is_transparent = true;
   </div>
   <div class="content-bg">
     <div class="mt-16 flex flex-row flex-wrap justify-evenly align-middle mx-auto w-[calc(100%-4rem)] " id="about-us">
+      <AboutUs />
+    </div>
+    <div class="mt-16 flex flex-row flex-wrap justify-evenly align-middle mx-auto w-[calc(100%-4rem)] " id="about-us">
       <!-- <div class="flex flex-col lg:flex-row flex-wrap items-stretch justify-around gap-10"> -->
 				<h1 id="events" class="text-[6rem] mx-auto text-center text-base-content w-screen vimh">EVENTS</h1>
 				{#each events as event}
 				<EventCard name={event.name} desc={event.desc} id={event.id} image={event.image}/>
 				{/each}
 			<!-- </div> -->
-    </div>
-    <div class="mt-16 flex flex-row flex-wrap justify-evenly align-middle mx-auto w-[calc(100%-4rem)] " id="about-us">
-      <AboutUs />
     </div>
     <div class="mt-16 flex flex-row flex-wrap justify-evenly align-middle mb-4 mx-auto w-[calc(100%-4rem)]" id="testimonials">
       <Testimonial />
