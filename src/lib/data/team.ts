@@ -241,7 +241,7 @@ export const team2 = [
         decor: "border-orange-500",
         socials: [
             {
-                link: "https://www.instagram.com/invites/contact/?i=10xrcab98s0jo&utm_content=kxqqvxv",
+                link: "https://www.instagram.com/_p_ra_chi_/",
                 icon: "bi:instagram",
             },
             { link: "https://www.linkedin.com/in/prachi-munne-235bb5207", icon: "bi:linkedin" },
@@ -274,7 +274,7 @@ export const team2 = [
         decor: "border-purple-500",
         socials: [
             {
-                link: "https://www.instagram.com/invites/contact/?i=w2mzr2sf2mei&utm_content=kcabbab",
+                link: "https://www.instagram.com/rishikaa.08/",
                 icon: "bi:instagram",
             },
             { link: "https://www.linkedin.com/in/rishika-deshmukh-558a2222a/", icon: "bi:linkedin" },
