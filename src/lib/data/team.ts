@@ -306,7 +306,7 @@ export const team2 = [
         image: mohit,
         decor: "border-cyan-500",
         socials: [
-            { link: "https://www.instagram.com/p/CR1LsE_i5olUxa9YDyF3HG8IdiBd4DuwRJiNAc0/", icon: "bi:instagram" },
+            { link: "https://www.instagram.com/mohit._1108/", icon: "bi:instagram" },
             { link: "https://www.linkedin.com/in/mohit-tumane-a83592251", icon: "bi:linkedin" },
         ],
     },
@@ -316,8 +316,8 @@ export const team2 = [
         image: sukrut,
         decor: "border-cyan-500",
         socials: [
-            // { link: "https://instagram.com/the_bad_captain.33?igshid=YmMyMTA2M2Y=", icon: "bi:instagram" },
-            // { link: "https://www.linkedin.com/in/kunal-gohane-a46324235", icon: "bi:linkedin" },
+            { link: "https://www.instagram.com/comsa_gcoen/", icon: "bi:instagram" },
+            { link: "https://www.instagram.com/comsa_gcoen/", icon: "bi:linkedin" },
         ],
     },
 
