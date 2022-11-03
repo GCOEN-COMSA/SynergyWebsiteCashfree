@@ -52,7 +52,7 @@
 {#if isOpen}
   <div use:clickOutside={()=>{closeModal();}} class="s-modal z-[200]" transition:fade>
     <div  class="modal-container relative">
-      <div on:click={closeModal} class="absolute right-2 top-2 lg:right-10 lg:top-10 btn btn-ghost rounded-full h-fit w-fit p-1 text-6xl md:text-8xl xl:text-[4rem]"><iconify-icon icon="carbon:close-outline" /></div>
+      <div on:click={closeModal} class="absolute right-2 top-2 lg:right-10 lg:top-10 btn btn-ghost rounded-full h-fit w-fit p-1 text-4xl md:text-8xl xl:text-[4rem]"><iconify-icon icon="carbon:close-outline" /></div>
       <img
         class="image aspect-video flex-grow"
         src={data.image ? data.image : "http://placeimg.com/400/400/tech"}
@@ -160,7 +160,7 @@
     /* background-color: aqua; */
     padding: 1rem;
     margin-bottom: 0.5rem;
-    font-size: 0.875rem;
+    font-size: 1.15rem;
     @apply bg-base-100 rounded-xl;
   }
 

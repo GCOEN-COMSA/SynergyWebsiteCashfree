@@ -78,6 +78,14 @@
     class="flex flex-wrap px-36 justify-evenly items-center gap-8 bg-gradient-to-b bg-transparent pb-5 lg:pb-10 xl:pb-20"
     id="content"
   >
+    <div id="stuff" class="mt-10 w-5/6 flex flex-row flex-wrap justify-evenly align-middle">
+      <!-- <div class="flex flex-col lg:flex-row flex-wrap items-stretch justify-around gap-10"> -->
+				<h1 id="events" class="text-[6rem] mx-auto text-center text-base-content w-screen vimh">EVENTS</h1>
+				{#each events as event}
+				<EventCard name={event.name} desc={event.desc} id={event.id} image={event.image}/>
+				{/each}
+			<!-- </div> -->
+    </div>
     <div id="about-us" class="mt-10 w-5/6 flex flex-row flex-wrap justify-evenly align-middle">
       <AboutUs />
     </div>
