@@ -3,9 +3,8 @@
   import "iconify-icon";
   import Logo from "$lib/assets/logo.png";
   // import ScrollDownIndicator from "$lib/components/ScrollDownIndicator.svelte";
-  import { afterNavigate, goto } from "$app/navigation";
+  import { afterNavigate, beforeNavigate, goto } from "$app/navigation";
   import FooterMap from "$lib/components/FooterMap.svelte";
-
   afterNavigate(() => {
     contentElem.scrollTo(0, 0);
     sidebar.checked = false;
@@ -16,6 +15,7 @@
 
   import { supabaseClient } from "$lib/db";
   import { invalidate } from "$app/navigation";
+  import {navigating} from "$app/stores";
   import { onMount } from "svelte";
   let contentElem: HTMLElement;
   let contentElemScrollTop = 0;
@@ -47,6 +47,7 @@
 
   import { browser } from "$app/environment";
   import FooterSocials from "$lib/components/FooterSocials.svelte";
+    import Loader from "$lib/components/Loader.svelte";
 
   
 </script>
@@ -93,7 +94,7 @@
           <li><a class="btn btn-ghost rounded-lg" href="/">Home</a></li>
           <li><a class="btn btn-ghost rounded-lg" href="/events/">Events</a></li>
           <li><a class="btn btn-ghost rounded-lg" href="/gallery">Gallery</a></li>
-          <li><a class="btn btn-ghost rounded-lg" href="/events/">Register</a></li>
+          <li><a class="btn btn-ghost rounded-lg" href="/team/">Team</a></li>
           <li><a class="btn btn-ghost rounded-lg" href="/contact-us">Contact Us</a></li>
         </ul>
       </div>
@@ -135,8 +136,8 @@
       <!-- Section 2 -->
       <div class="m-auto">
         <span class="footer-title vimh">Information</span>
-        <a href="#about-us" class="btn btn-ghost">About Us</a>
-        <a href="https://gcoen.ac.in" target="_blank" rel="noreferrer" class="btn btn-ghost">Our College</a>
+        <a href="/#about-us" class="btn btn-ghost">About Us</a>
+        <a href="https://gcoen.ac.in" target="_blank" rel="external noopener noreferrer" class="btn btn-ghost">Our College</a>
       </div>
       <!-- Section 3 -->
       <div class="m-auto">
@@ -164,12 +165,15 @@
       <!-- <li><a on:click={()=>{sidebar.checked =false}} href="/#about-us">About</a></li> -->
       <li><a class="pl-10" href="/events/">Events</a></li>
       <li><a class="pl-10" href="/gallery">Gallery</a></li>
-      <li><a class="pl-10" href="/events/">Register</a></li>
+      <li><a class="pl-10" href="/team/">Team</a></li>
       <li><a class="pl-10" href="/contact-us">Contact us</a></li>
     </ul>
   </div>
 </div>
 
+{#if $navigating}
+   <Loader />
+{/if}
 
 <style lang="postcss">
   .backdrop {
@@ -186,9 +190,9 @@
   }
 
   .bg-content {
-    /* background: linear-gradient(to top, rgb(29, 78, 216), rgb(30, 64, 175), rgb(17, 24, 39)); */
+    background: linear-gradient(to top, rgb(56, 189, 248), rgb(49, 46, 129));
     /* background-attachment: scroll ; */
-    @apply bg-[rgb(30,64,175)] bg-opacity-100;
+    /* @apply bg-[rgb(30,64,175)] bg-opacity-100; */
   }
 
   .bg-footer {
@@ -200,6 +204,6 @@
 
   .footer-title {
 
-    @apply text-white opacity-100 text-lg tracking-wide;
+    @apply text-white opacity-100 text-lg tracking-[0.15rem];
   }
 </style>

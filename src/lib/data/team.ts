@@ -23,7 +23,8 @@ import prachi from '$lib/assets/team/prachi.jpg';
 import rishika from '$lib/assets/team/rishika.jpg';
 import yuvraj from '$lib/assets/team/yuvraj.jpg';
 import kunal from '$lib/assets/team/kunal.jpg';
-
+import mohit from '$lib/assets/team/mohit.jpg';
+import sukrut from '$lib/assets/team/sukrut.jpg';
 
 
 
@@ -297,6 +298,26 @@ export const team2 = [
         socials: [
             { link: "https://instagram.com/the_bad_captain.33?igshid=YmMyMTA2M2Y=", icon: "bi:instagram" },
             { link: "https://www.linkedin.com/in/kunal-gohane-a46324235", icon: "bi:linkedin" },
+        ],
+    },
+    {
+        name: "Mohit Tumane",
+        role: "H&D Head",
+        image: mohit,
+        decor: "border-cyan-500",
+        socials: [
+            { link: "https://www.instagram.com/p/CR1LsE_i5olUxa9YDyF3HG8IdiBd4DuwRJiNAc0/", icon: "bi:instagram" },
+            { link: "https://www.linkedin.com/in/mohit-tumane-a83592251", icon: "bi:linkedin" },
+        ],
+    },
+    {
+        name: "Sukrut Bhoot",
+        role: "H&D Co-Head",
+        image: sukrut,
+        decor: "border-cyan-500",
+        socials: [
+            // { link: "https://instagram.com/the_bad_captain.33?igshid=YmMyMTA2M2Y=", icon: "bi:instagram" },
+            // { link: "https://www.linkedin.com/in/kunal-gohane-a46324235", icon: "bi:linkedin" },
         ],
     },
 

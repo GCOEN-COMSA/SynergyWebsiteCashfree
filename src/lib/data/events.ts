@@ -1,20 +1,10 @@
+import aceclutchers from '$lib/assets/events/aceclutchers.jpg';
+import autocoders from '$lib/assets/events/autocoders.jpg';
+import binarybishops from '$lib/assets/events/binarybishops.png';
+import communix from '$lib/assets/events/communix.jpg';
+
+
 export const events = [
-  {
-    id: "events-0",
-    name: "Communix 4.0",
-    long_desc:
-      "Verbal expression is an important aspect of our life and a strong communicator is always   articulate with the words. So here we are with an event that will provide you an opportunity to link your thoughts and show your caliber.",
-    desc: "You can talk but, can you communix!?",
-    amount: [40_00], // 100.00
-    image: "https://placeimg.com/192/108/tech",
-    icon: "clarity:bar-code-line",
-    date: "12 Nov 2022",
-    players: [1],
-    type: [""],
-    payment_links: [
-      "https://rzp.io/l/t13epeW",
-    ]
-  },
   {
     id: "events-1",
     name: "Autocoders",
@@ -22,7 +12,7 @@ export const events = [
       "Coding is becoming an important tool one should have in their arsenal for a smooth sailing career in today's corporate world. Test your fingers in this exhilarating mind bending coding event.SO AUTOBOTS  READY, SET, CODING!",
     desc: "Finger-bots, type out…",
     amount: [50_00, 80_00, 120_00], // 100.00
-    image: "https://placeimg.com/192/108/tech",
+    image: autocoders,
     icon: "clarity:bar-code-line",
     date: "12 Nov 2022",
     players: [1, 2, 3],
@@ -34,13 +24,29 @@ export const events = [
     ]
   },
   {
+    id: "events-0",
+    name: "Communix 4.0",
+    long_desc:
+      "Verbal expression is an important aspect of our life and a strong communicator is always   articulate with the words. So here we are with an event that will provide you an opportunity to link your thoughts and show your caliber.",
+    desc: "You can talk but, can you communix!?",
+    amount: [40_00], // 100.00
+    image: communix,
+    icon: "clarity:bar-code-line",
+    date: "12 Nov 2022",
+    players: [1],
+    type: [""],
+    payment_links: [
+      "https://rzp.io/l/t13epeW",
+    ]
+  },
+  {
     id: "events-2",
     name: "Binary Bishops",
     long_desc:
       "Hello check-mates! We have a perfect platform for the ones competent enough to solve questions. But wait, here the crux is to show off your chess moves. So, get your pieces ready and Sygrayem;",
     desc: "When you see a good move, look for better one",
     amount: [60_00, 100_00], // 100.00
-    image: "https://placeimg.com/192/108/tech",
+    image: binarybishops,
     icon: "clarity:bar-code-line",
     date: "13 Nov 2022",
     players: [1, 2],
@@ -73,7 +79,7 @@ export const events = [
       "Hey gamers! We are here with a great opportunity for you to beat others and be the best in the field of gaming. So fasten your seat belts, clutch your moves, race in the ultimate automotive playground and conquer your rivals.",
     desc: "One life, one chance",
     amount: [150_00, 150_00], // 100.00
-    image: "https://placeimg.com/192/108/tech",
+    image: aceclutchers,
     icon: "clarity:bar-code-line",
     date: "12 & 13 Nov 2022",
     players: [5, 5],
@@ -101,10 +107,10 @@ export const events = [
   },
   {
     id: "events-6",
-    name: "Coming Soon: Seminar",
+    name: "Seminar",
     long_desc:
-      "Verbal expression is an important aspect of our life and a strong communicator is always   articulate with the words. So here we are with an event that will provide you an opportunity to link your thoughts and show your caliber.",
-    desc: "You can talk but, can you communix!?",
+      "Coming Soon...",
+    desc: "Coming Soon",
     amount: [0], // 100.00
     image: "https://placeimg.com/192/108/tech",
     icon: "clarity:bar-code-line",

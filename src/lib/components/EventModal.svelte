@@ -7,6 +7,7 @@
 
   import { events } from "$lib/data/events";
   import { goto } from "$app/navigation";
+    import { clickOutside } from "$lib/util";
 
   let data = events.find((event) => event.id == id) || events[0];
 
@@ -49,25 +50,25 @@
 </script>
 
 {#if isOpen}
-  <div class="s-modal z-[200]" transition:fade>
-    <div class="modal-container">
+  <div use:clickOutside={()=>{closeModal();}} class="s-modal z-[200]" transition:fade>
+    <div  class="modal-container">
       <img
         class="image"
         src={data.image ? data.image : "http://placeimg.com/400/400/tech"}
         alt="Event Description"
       />
       <div class="text-container">
-        <h1 class="title vimh">{data.name}</h1>
-        <div class="flex">
+        <h1 class="title vimh px-2 lg:px-4">{data.name}</h1>
+        <div class="flex px-2">
           {#each data.players as pc}
             <div class="badge {get_badge_style(pc)} badge-outline mx-2">{get_badge_text(pc)}</div>
           {/each}
         </div>
-        <div class="date">Date: {data.date}</div>
+        <div class="date px-2 lg:px-4">Date: {data.date}</div>
         <div class="description text-justify">
           {data.long_desc}
         </div>
-        <div class="flex flex-col p-2 gap-4 w-full">
+        <div class="flex flex-col p-2 pt-1 gap-1 w-full">
           {#each data.payment_links as pl, i}
           <button
           on:click={() => {
@@ -78,13 +79,15 @@
           id="btn-1">Register {data.type[i] ?? ""} ({data.players[i]} players) [₹{data.amount[i]/100}]</button
         >
           {/each}
-          <button
+          <a href="/pdf/{data.id}.pdf"
+          target="_blank"
+          rel="external noopener noreferrer"
             class="btn btn-block btn-secondary"
             on:click={() => {
               closeModal();
-              goto(`/pdf/${data.id}.pdf`);
+              // goto(`/pdf/${data.id}.pdf`);
             }}
-            id="btn-2">Learn</button
+            id="btn-2">Learn More</a
           >
         </div>
       </div>
@@ -108,7 +111,7 @@
   }
   .modal-container {
     /* background-color: blueviolet; */
-    padding: 2rem;
+    padding: 0.25rem;
     display: flex;
     flex-direction: column;
     /* overflow: scroll; */
@@ -129,14 +132,15 @@
   .text-container {
     /* max-width: 70vw; */
     /* background-color: red; */
-    padding: 0.5rem 1.5rem;
+    padding-top: 0.5rem;
     border-radius: 0 0 1rem 1rem;
-    @apply container bg-base-100;
+    @apply container bg-base-100 lg:px-6;
   }
 
   .title {
     /* line-height: 3.75rem; */
-    font-size: 3rem;
+    font-size: 2.75rem;
+    @apply whitespace-nowrap
     /* margin-left: 1rem; */
     /* padding: 0.5rem; */
     /* @apply bg-base-100; */
@@ -144,7 +148,7 @@
 
   .date {
     /* background-color: yellow; */
-    margin: 0 0 1rem 0rem;
+    margin: 0.25rem 0 0.5rem 0rem;
     line-height: 1.75rem;
     font-size: 1.5rem;
     /* @apply bg-base-100; */
@@ -153,7 +157,7 @@
   .description {
     /* background-color: aqua; */
     padding: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
     font-size: 0.875rem;
     @apply bg-base-100 rounded-xl;
   }

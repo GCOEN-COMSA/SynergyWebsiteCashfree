@@ -15,7 +15,6 @@
   let innerWidth: number;
   let innerHeight: number;
   // Should have been SvelteComponent
-  let Cube: any;
   // loadPromise: Promise<void>;
   // let loadPromiseResolve: any;
   // let loadPromise = new Promise((resolve) => {
@@ -44,12 +43,14 @@
         }
       });
     }
-    // setTimeout(loadPromiseResolve, 100);
-    
   });
 </script>
 
 <svelte:window bind:innerWidth bind:innerHeight />
+
+<!-- {#if loading}
+   <Loader />
+{/if} -->
 
 <!-- {#await loadPromise}
   <Loader />
@@ -81,7 +82,8 @@
       <AboutUs />
     </div>
     <div id="testimonials" class="mt-12 w-5/6 flex flex-row flex-wrap justify-evenly align-middle">
-      <Testimonial />
+      <!-- <Testimonial /> -->
+      <svelte:component this={Testimonial} />
     </div>
     <div class=" mt-10 w-5/6 flex flex-row flex-wrap justify-evenly align-middle">
       <div id="faq" class="w-5/6"><Faq data_list={page_1} title={page_1_title} /></div>
