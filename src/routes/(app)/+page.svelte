@@ -69,7 +69,7 @@
         >The Nexus of All Innovations</span
       >
     </div>
-    <div id="hero-cube" class="flex-grow flex justify-center items-center pr-10">
+    <div id="hero-cube" class="flex-grow flex justify-center items-center pl-20">
       <!-- <svelte:component this={Cube} /> -->
       <HeroBot />
     </div>

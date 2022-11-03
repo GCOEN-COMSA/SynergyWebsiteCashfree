@@ -1,4 +1,4 @@
-<svg width="80vw" height="80vh" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 197.60004 221.93357">
+<svg width="60vh" height="60vh" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 197.60004 221.93357">
     <style>
       @keyframes robotMoves {
         from {
