@@ -53,7 +53,7 @@
   <div use:clickOutside={()=>{closeModal();}} class="s-modal z-[200]" transition:fade>
     <div  class="modal-container">
       <img
-        class="image"
+        class="image aspect-video flex-grow"
         src={data.image ? data.image : "http://placeimg.com/400/400/tech"}
         alt="Event Description"
       />

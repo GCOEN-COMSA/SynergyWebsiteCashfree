@@ -1,7 +1,7 @@
-import aceclutchers from '$lib/assets/events/aceclutchers.jpg';
-import autocoders from '$lib/assets/events/autocoders.jpg';
-import binarybishops from '$lib/assets/events/binarybishops.png';
-import communix from '$lib/assets/events/communix.jpg';
+import aceclutchers from '$lib/assets/events/aceclutchers-min.jpg';
+import autocoders from '$lib/assets/events/autocoders-min.jpg';
+import binarybishops from '$lib/assets/events/binarybishops-min.png';
+import communix from '$lib/assets/events/communix-min.jpg';
 
 
 export const events = [
