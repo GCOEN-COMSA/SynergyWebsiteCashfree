@@ -1,11 +1,29 @@
-import aceclutchers from '$lib/assets/events/aceclutchers-min.jpg';
-import autocoders from '$lib/assets/events/autocoders-min.jpg';
-import binarybishops from '$lib/assets/events/binarybishops-min.png';
-import communix from '$lib/assets/events/communix-min.jpg';
+import aceclutchers from '$lib/assets/events/aceclutchers.jpg';
+import autocoders from '$lib/assets/events/autocoders.jpg';
+import binarybishops from '$lib/assets/events/binarybishops.jpg';
+import communix from '$lib/assets/events/communix.jpg';
+import bountyhunt from '$lib/assets/events/bounty-hunt.jpg';
 
 
-export const events = [
+export interface Event {
+  id: string;
+  name: string;
+  desc: string;
+  long_desc: string;
+  image: string;
+  icon: string;
+  amount: number[];
+  date: string;
+  players: number[];
+  type: string[];
+  payment_links: string[];
+  hide: boolean;
+}
+
+
+export const events: Event[] = [
   {
+    hide: false,
     id: "events-1",
     name: "Autocoders",
     long_desc:
@@ -14,7 +32,7 @@ export const events = [
     amount: [50_00, 80_00, 120_00], // 100.00
     image: autocoders,
     icon: "clarity:bar-code-line",
-    date: "12 Nov 2022",
+    date: "12ᵗʰ Nov 2022",
     players: [1, 2, 3],
     type:["", "", ""],
     payment_links: [
@@ -24,6 +42,7 @@ export const events = [
     ]
   },
   {
+    hide: false,
     id: "events-0",
     name: "Communix 4.0",
     long_desc:
@@ -32,7 +51,7 @@ export const events = [
     amount: [40_00], // 100.00
     image: communix,
     icon: "clarity:bar-code-line",
-    date: "12 Nov 2022",
+    date: "12ᵗʰ Nov 2022",
     players: [1],
     type: [""],
     payment_links: [
@@ -40,6 +59,7 @@ export const events = [
     ]
   },
   {
+    hide: false,
     id: "events-2",
     name: "Binary Bishops",
     long_desc:
@@ -48,7 +68,7 @@ export const events = [
     amount: [60_00, 100_00], // 100.00
     image: binarybishops,
     icon: "clarity:bar-code-line",
-    date: "13 Nov 2022",
+    date: "13ᵗʰ Nov 2022",
     players: [1, 2],
     type:["", ""],
     payment_links: [
@@ -57,22 +77,25 @@ export const events = [
     ]
   },
   {
+    hide: true,
     id: "events-3",
     name: "Bounty Hunt",
     long_desc:
-      "Jake and The NeverLand Pirates or Jack Sparrow we’ve been pretty curious about those ‘treasure hunting games’ isn’t it? We present to you the most exciting event packed with exhilarating activities. Bring on your squad and unravel the mysteries hidden in the entangling hallways of GCOEN.",
+      "Jake and The NeverLand Pirates or Jack Sparrow we’ve been pretty curious about those ‘treasure hunting games’ isn’t it? We present to you the most exciting event packed with exhilarating activities. Bring on your squad and unravel the mysteries hidden in the entangling hallways of GCOEN. You may register with a team of 2 - 4 members.",
     desc: "Let the hunt begin… !!!",
     amount: [200_00], // 100.00
-    image: "https://placeimg.com/192/108/tech",
+    image: bountyhunt,
     icon: "clarity:bar-code-line",
-    date: "12 & 13 Nov 2022",
+    date: "12ᵗʰ & 13ᵗʰ Nov 2022",
     players: [4],
     type:[""],
     payment_links: [
-      'https://rzp.io/l/C7ZnM1j',
+      // 'https://rzp.io/l/C7ZnM1j',
+      "about:blank"
     ]
   },
   {
+    hide: false,
     id: "events-4",
     name: "Ace Clutchers",
     long_desc:
@@ -81,7 +104,7 @@ export const events = [
     amount: [200_00, 150_00], // 100.00
     image: aceclutchers,
     icon: "clarity:bar-code-line",
-    date: "12 & 13 Nov 2022",
+    date: "12ᵗʰ & 13ᵗʰ Nov 2022",
     players: [5, 5],
     type:["VALORANT", 'COD MOBILE'],
     payment_links: [
@@ -90,6 +113,7 @@ export const events = [
     ]
   },
   {
+    hide: true,
     id: "events-5",
     name: "Hard Drive",
     long_desc:
@@ -98,7 +122,7 @@ export const events = [
     amount: [40_00], // 100.00
     image: "https://placeimg.com/192/108/tech",
     icon: "clarity:bar-code-line",
-    date: "12 Nov 2022",
+    date: "12ᵗʰ Nov 2022",
     players: [1],
     type:[""],
     payment_links: [

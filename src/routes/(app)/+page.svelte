@@ -85,7 +85,8 @@
       <!-- <div class="flex flex-col lg:flex-row flex-wrap items-stretch justify-around gap-10"> -->
 				<h1 id="events" class="text-[6rem] mx-auto text-center text-base-content w-screen vimh">EVENTS</h1>
 				{#each events as event}
-				<EventCard name={event.name} desc={event.desc} id={event.id} image={event.image}/>
+        {@debug event}
+				<EventCard event={event}/>
 				{/each}
 			<!-- </div> -->
     </div>
