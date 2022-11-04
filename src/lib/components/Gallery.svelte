@@ -204,7 +204,7 @@
   .align-hide {
     display: none
   }
-  @media (min-width: 1843px) {
+  @media (min-width: 1536px) {
     .align-hide {
       display: block;
     }

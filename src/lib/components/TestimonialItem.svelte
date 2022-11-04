@@ -17,7 +17,7 @@ export let image = "http://placeimg.com/400/400/tech",
 
 <div in:fly={{...anim, duration:300}} class="testimonial-container pt-32">
   <div
-    class="min-h-[22.5rem] container max-w-xl flex flex-col items-stretch align-middle justify-between bg-base-100 px-6 py-10 lg:mb-8 rounded-lg"
+    class="min-h-[29.5rem] lg:min-h-[22.5rem] container max-w-xl flex flex-col items-stretch self-stretch align-middle justify-between bg-base-100 px-6 py-10 lg:mb-8 rounded-lg"
   >
     <div class="image-container flex flex-row items-center justify-center -mt-24">
       <img class="h-36 rounded-full border-[0.25rem] border-base-content bg-slate-300" src={image} alt="..." />

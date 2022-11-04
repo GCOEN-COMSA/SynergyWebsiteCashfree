@@ -9,7 +9,7 @@ export const events = [
     id: "events-1",
     name: "Autocoders",
     long_desc:
-      "Coding is becoming an important tool one should have in their arsenal for a smooth sailing career in today's corporate world. Test your fingers in this exhilarating mind bending coding event.SO AUTOBOTS  READY, SET, CODING!",
+      "Coding is becoming an important tool one should have in their arsenal for a smooth sailing career in today's corporate world. Test your fingers in this exhilarating mind bending coding event. SO AUTOBOTS  READY, SET, CODING!",
     desc: "Finger-bots, type out…",
     amount: [50_00, 80_00, 120_00], // 100.00
     image: autocoders,
@@ -56,22 +56,22 @@ export const events = [
       'https://rzp.io/l/IPGVIAOl2U',
     ]
   },
-  // {
-  //   id: "events-3",
-  //   name: "Bounty Hunt",
-  //   long_desc:
-  //     "Jake and The NeverLand Pirates or Jack Sparrow we’ve been pretty curious about those ‘treasure hunting games’ isn’t it? We present to you the most exciting event packed with exhilarating activities. Bring on your squad and unravel the mysteries hidden in the entangling hallways of GCOEN.",
-  //   desc: "Let the hunt begin… !!!",
-  //   amount: [200_00], // 100.00
-  //   image: "https://placeimg.com/192/108/tech",
-  //   icon: "clarity:bar-code-line",
-  //   date: "12 & 13 Nov 2022",
-  //   players: [4],
-  //   type:[""],
-  //   payment_links: [
-  //     'https://rzp.io/l/C7ZnM1j',
-  //   ]
-  // },
+  {
+    id: "events-3",
+    name: "Bounty Hunt",
+    long_desc:
+      "Jake and The NeverLand Pirates or Jack Sparrow we’ve been pretty curious about those ‘treasure hunting games’ isn’t it? We present to you the most exciting event packed with exhilarating activities. Bring on your squad and unravel the mysteries hidden in the entangling hallways of GCOEN.",
+    desc: "Let the hunt begin… !!!",
+    amount: [200_00], // 100.00
+    image: "https://placeimg.com/192/108/tech",
+    icon: "clarity:bar-code-line",
+    date: "12 & 13 Nov 2022",
+    players: [4],
+    type:[""],
+    payment_links: [
+      'https://rzp.io/l/C7ZnM1j',
+    ]
+  },
   {
     id: "events-4",
     name: "Ace Clutchers",
@@ -89,22 +89,22 @@ export const events = [
       'https://rzp.io/l/aDRCQH9',
     ]
   },
-  // {
-  //   id: "events-5",
-  //   name: "Hard Drive",
-  //   long_desc:
-  //     "Bots overpower humans or is it vice-versa? We’ve got a way to figure this out. We present ‘Hard-Drive’ which tests your ability to swiftly maneuver the bot. Get the grip on and exhibit your skills.",
-  //   desc: "Don’t Rush But be Expeditious!?",
-  //   amount: [40_00], // 100.00
-  //   image: "https://placeimg.com/192/108/tech",
-  //   icon: "clarity:bar-code-line",
-  //   date: "12 Nov 2022",
-  //   players: [1],
-  //   type:[""],
-  //   payment_links: [
-  //     'https://rzp.io/l/3ELT4ABmn',
-  //   ]
-  // },
+  {
+    id: "events-5",
+    name: "Hard Drive",
+    long_desc:
+      "Bots overpower humans or is it vice-versa? We’ve got a way to figure this out. We present ‘Hard-Drive’ which tests your ability to swiftly maneuver the bot. Get the grip on and exhibit your skills.",
+    desc: "Don’t Rush But be Expeditious!?",
+    amount: [40_00], // 100.00
+    image: "https://placeimg.com/192/108/tech",
+    icon: "clarity:bar-code-line",
+    date: "12 Nov 2022",
+    players: [1],
+    type:[""],
+    payment_links: [
+      'https://rzp.io/l/3ELT4ABmn',
+    ]
+  },
   // {
   //   id: "events-6",
   //   name: "Seminar",

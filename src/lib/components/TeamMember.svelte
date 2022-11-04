@@ -23,7 +23,7 @@
     <img
       src={image}
       alt=""
-      class="rounded-full w-5/12 border-4 {decor} aspect-square object-cover"
+      class="rounded-full w-5/12 border-4 border-slate-400 aspect-square object-cover"
     />
   </div>
   <div class="text-container flex flex-col py-2 justify-center items-center">

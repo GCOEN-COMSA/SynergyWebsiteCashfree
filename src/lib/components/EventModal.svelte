@@ -52,7 +52,7 @@
 {#if isOpen}
   <div use:clickOutside={()=>{closeModal();}} class="s-modal z-[200]" transition:fade>
     <div  class="modal-container relative">
-      <div on:click={closeModal} class="absolute right-2 top-2 lg:right-10 lg:top-10 btn btn-ghost rounded-full h-fit w-fit p-1 text-4xl md:text-8xl xl:text-[4rem]"><iconify-icon icon="carbon:close-outline" /></div>
+      <div on:click={closeModal} class="absolute right-2 top-2 lg:right-10 lg:top-24 btn btn-ghost rounded-full h-fit w-fit p-1 text-4xl md:text-8xl xl:text-[4rem]"><iconify-icon icon="carbon:close-outline" /></div>
       <img
         class="image aspect-video flex-grow"
         src={data.image ? data.image : "http://placeimg.com/400/400/tech"}
@@ -77,7 +77,7 @@
             goto(pl);
           }}
           class="btn btn-block btn-primary"
-          id="btn-1">Register {data.type[i] ?? ""} ({data.players[i]} players) [₹{data.amount[i]/100}]</button
+          id="btn-1">Register {data.type[i] ?? ""} ({data.players[i]} {data.players[i] > 1 ? 'players':'player'}) [₹{data.amount[i]/100}]</button
         >
           {/each}
           <a href="/pdf/{data.id}.pdf"
@@ -117,7 +117,7 @@
     display: flex;
     flex-direction: column;
     /* overflow: scroll; */
-    @apply w-full lg:h-full xl:w-3/4 xl:h-3/4 pointer-events-none overflow-x-hidden overflow-y-scroll min-w-[15rem] self-start lg:self-center pb-[45vh] lg:pb-8;
+    @apply w-full lg:h-full xl:w-3/4 xl:h-3/4 pointer-events-none overflow-x-hidden overflow-y-scroll min-w-[15rem] self-start lg:self-center pb-[45vh] pt-[10vh] lg:pb-8;
   }
 
   .modal-container * {
@@ -152,7 +152,7 @@
     /* background-color: yellow; */
     margin: 0.25rem 0 0.5rem 0rem;
     line-height: 1.75rem;
-    font-size: 1.5rem;
+    font-size: 1.35rem;
     /* @apply bg-base-100; */
   }
 
@@ -160,8 +160,8 @@
     /* background-color: aqua; */
     padding: 1rem;
     margin-bottom: 0.5rem;
-    font-size: 1.15rem;
-    @apply bg-base-100 rounded-xl lg:text-2xl;
+    /* font-size: 1.05rem; */
+    @apply bg-base-100 rounded-xl text-base lg:text-base leading-4;
   }
 
   @media only screen and (min-width: 1025px) {

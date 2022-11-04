@@ -69,8 +69,8 @@ let is_transparent = true;
       <svelte:component this={Cube} />
     </div>
   </div>
-  <div class="content-bg">
-    <div class="mt-16 flex flex-row flex-wrap justify-evenly align-middle mx-auto w-[calc(100%-4rem)] " id="about-us">
+  <div id="about-us" class="content-bg">
+    <div class="mt-16 flex flex-row flex-wrap justify-evenly align-middle mx-auto w-[calc(100%-4rem)] ">
       <AboutUs />
     </div>
     <div class="mt-16 flex flex-row flex-wrap justify-evenly align-middle mx-auto w-[calc(100%-4rem)] " id="about-us">

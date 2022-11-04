@@ -49,7 +49,7 @@
   import FooterSocials from "$lib/components/FooterSocials.svelte";
     import Loader from "$lib/components/Loader.svelte";
 
-  
+import {page} from "$app/stores";
 </script>
 
 <Modals>
@@ -70,7 +70,7 @@
         : 'bg-base-300'} transition-colors duration-200 z-50 px-2 lg:px-6"
     >
       <div class="flex-1 lg:px-2 py-2 lg:mx-2 {is_transparent ? 'invisible' : 'visible'}">
-        <img on:click={()=>{goto('/')}} src={Logo} alt="Synergy Logo" class="max-h-12 btn btn-ghost p-0" />
+        <img on:click={()=>{goto('/')}} src={Logo} alt="Synergy Logo" class="max-h-12 p-0" />
       </div>
       <div class="flex-none lg:hidden">
         <label for="side-drawer" class="btn btn-square btn-ghost">
@@ -136,7 +136,7 @@
       <!-- Section 2 -->
       <div class="m-auto">
         <span class="footer-title vimh">Information</span>
-        <a data-sveltekit-reload href="/#about-us" class="btn btn-ghost">About Us</a>
+        <a data-sveltekit-reload href="{$page.url.toString().includes('/m') ? '/m#about-us':'/#about-us'}" class="btn btn-ghost">About Us</a>
         <a href="https://gcoen.ac.in" target="_blank" rel="external noopener noreferrer" class="btn btn-ghost">Our College</a>
       </div>
       <!-- Section 3 -->
