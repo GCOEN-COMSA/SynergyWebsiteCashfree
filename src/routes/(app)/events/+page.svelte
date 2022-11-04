@@ -4,7 +4,7 @@
 </script>
 
 <!-- <div class="mx-auto  mt-14 w-full p-8 pt-0 flex flex-row flex-wrap mb-[40rem] lg:mb-[30rem]  lg:h-max  justify-evenly align-middle gap-4 lg:pb-10 "> -->
-<div class="py-10">
+<div class="py-10 lg:px-20">
 			<div class="flex flex-col lg:flex-row flex-wrap items-stretch justify-around gap-10">
 				<h1 id="events" class="text-[6rem] mx-auto text-center text-base-content w-screen vimh">EVENTS</h1>
 				{#each events as event}
