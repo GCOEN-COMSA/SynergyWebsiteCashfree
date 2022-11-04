@@ -69,8 +69,8 @@ import {page} from "$app/stores";
         ? 'bg-transparent'
         : 'bg-base-300'} transition-colors duration-200 z-50 px-2 lg:px-6"
     >
-      <div class="flex-1 lg:px-2 py-2 lg:mx-2 {is_transparent ? 'invisible' : 'visible'}">
-        <img on:click={()=>{goto('/')}} src={Logo} alt="Synergy Logo" class="max-h-12 p-0" />
+      <div class="flex-1 lg:px-2 py-2 lg:mx-2 {is_transparent ? 'invisible' : 'visible'} cursor-pointer">
+        <img on:click={()=>{$page.url.toString().includes('/m') ? goto('/m'):goto('/')}} src={Logo} alt="Synergy Logo" class="max-h-12 p-0" />
       </div>
       <div class="flex-none lg:hidden">
         <label for="side-drawer" class="btn btn-square btn-ghost">
