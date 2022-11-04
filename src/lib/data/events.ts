@@ -78,7 +78,7 @@ export const events = [
     long_desc:
       "Hey gamers! We are here with a great opportunity for you to beat others and be the best in the field of gaming. So fasten your seat belts, clutch your moves, race in the ultimate automotive playground and conquer your rivals.",
     desc: "One life, one chance",
-    amount: [150_00, 150_00], // 100.00
+    amount: [200_00, 150_00], // 100.00
     image: aceclutchers,
     icon: "clarity:bar-code-line",
     date: "12 & 13 Nov 2022",

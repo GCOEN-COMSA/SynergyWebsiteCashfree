@@ -161,7 +161,7 @@
     padding: 1rem;
     margin-bottom: 0.5rem;
     font-size: 1.15rem;
-    @apply bg-base-100 rounded-xl;
+    @apply bg-base-100 rounded-xl lg:text-2xl;
   }
 
   @media only screen and (min-width: 1025px) {

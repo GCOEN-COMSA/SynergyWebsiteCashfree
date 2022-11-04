@@ -41,6 +41,6 @@
   pagination={{ clickable: true }}
 >
   <SwiperSlide><TestimonialItem index={selection} image={latesh} name="Dr. Latesh Bhagat" pos="CSE Dept Head." text="Sharing my experience about the previous iterations of Synergy, I would like to appreciate the efforts taken by the students and their hard work to make this event a success. It was an event full of experience and enthusiasm. It’s a great platform for the students to make a breakthrough in their skillset where they get to compete with other brilliant minds." /></SwiperSlide>
-  <SwiperSlide><TestimonialItem index={selection} image={ashutosh} name="Ashutosh Rokade" pos="Student, GCoE Nagpur" /></SwiperSlide>
-  <SwiperSlide><TestimonialItem index={selection} image={tanushree} name="Tanushree Manekar" pos="Student, GCoE Nagpur" /></SwiperSlide>
+  <SwiperSlide><TestimonialItem index={selection} image={ashutosh} name="Ashutosh Rokade" text="Synergy is incredible !! It has been evolved over the years providing splendid opportunities to the students. Comsa and synergy helped me grow technically and socially. Students should be actively involved in such activities for their overall development." pos="Student, GCoE Nagpur" /></SwiperSlide>
+  <SwiperSlide><TestimonialItem index={selection} image={tanushree} name="Tanushree Manekar" text="Participating in events like Synergy itself provides a great boost ! I personally learned and enjoyed a lot helping with organization and planning, the process was itself a wholesome. All students should look upto taking up such opportunities :)" pos="Student, GCoE Nagpur" /></SwiperSlide>
 </Swiper>
