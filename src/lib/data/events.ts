@@ -91,8 +91,8 @@ export const events: Event[] = [
     players: [4],
     type:[""],
     payment_links: [
-      // 'https://rzp.io/l/C7ZnM1j',
-      "about:blank"
+      'https://rzp.io/l/C7ZnM1j',
+      // "about:blank"
     ]
   },
   {
