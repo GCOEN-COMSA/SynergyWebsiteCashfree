@@ -11,6 +11,9 @@
   import Image8 from "$lib/assets/gallery/8.png";
   import Image9 from "$lib/assets/gallery/9.jpg";
   import Image10 from "$lib/assets/gallery/10.gif";
+  import Image11 from "$lib/assets/gallery/11.jpg";
+  import Image12 from "$lib/assets/gallery/12.jpg";
+
   export let alt = false;
   let clicky = (
     event: MouseEvent & {
@@ -71,7 +74,7 @@
   <div class="grid-block">
     <div class="tile">
       <span on:click|preventDefault={clicky} class="tile-link delay-150" href="#">
-        <img class="tile-img tile-img3 alt-{alt}" src="{Image9}" alt="Tech" />
+        <img class="tile-img tile-img3 alt-{alt}" src="{Image11}" alt="Tech" />
       </span>
     </div>
   </div>
@@ -79,7 +82,7 @@
   <div class="grid-block">
     <div class="tile">
       <span on:click|preventDefault={clicky} class="tile-link delay-200" href="#">
-        <img class="tile-img tile-img4 alt-{alt}" src="{Image4}" alt="Tech" />
+        <img class="tile-img tile-img4 alt-{alt}" src="{Image12}" alt="Tech" />
       </span>
     </div>
   </div>
