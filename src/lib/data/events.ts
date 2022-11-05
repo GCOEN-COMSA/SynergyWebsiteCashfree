@@ -1,4 +1,4 @@
-import aceclutchers from '$lib/assets/events/aceclutchers.png';
+import aceclutchers from '$lib/assets/events/aceclutchers.jpg';
 import autocoders from '$lib/assets/events/autocoders.png';
 import binarybishops from '$lib/assets/events/binarybishops.png';
 import communix from '$lib/assets/events/communix.png';
