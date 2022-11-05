@@ -1,8 +1,9 @@
-import aceclutchers from '$lib/assets/events/aceclutchers.jpg';
-import autocoders from '$lib/assets/events/autocoders.jpg';
-import binarybishops from '$lib/assets/events/binarybishops.jpg';
-import communix from '$lib/assets/events/communix.jpg';
-import bountyhunt from '$lib/assets/events/bounty-hunt.jpg';
+import aceclutchers from '$lib/assets/events/aceclutchers.png';
+import autocoders from '$lib/assets/events/autocoders.png';
+import binarybishops from '$lib/assets/events/binarybishops.png';
+import communix from '$lib/assets/events/communix.png';
+import bountyhunt from '$lib/assets/events/bountyhunt.png';
+import harddrive from '$lib/assets/events/harddrive.png'
 
 
 export interface Event {
@@ -77,7 +78,7 @@ export const events: Event[] = [
     ]
   },
   {
-    hide: true,
+    hide: false,
     id: "events-3",
     name: "Bounty Hunt",
     long_desc:
@@ -113,14 +114,14 @@ export const events: Event[] = [
     ]
   },
   {
-    hide: true,
+    hide: false,
     id: "events-5",
     name: "Hard Drive",
     long_desc:
       "Bots overpower humans or is it vice-versa? We’ve got a way to figure this out. We present ‘Hard-Drive’ which tests your ability to swiftly maneuver the bot. Get the grip on and exhibit your skills.",
     desc: "Don’t Rush But be Expeditious!?",
     amount: [40_00], // 100.00
-    image: "https://placeimg.com/192/108/tech",
+    image: harddrive,
     icon: "clarity:bar-code-line",
     date: "12ᵗʰ Nov 2022",
     players: [1],
