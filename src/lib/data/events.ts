@@ -1,9 +1,9 @@
 import aceclutchers from '$lib/assets/events/aceclutchers.jpg';
 import autocoders from '$lib/assets/events/autocoders.png';
-import binarybishops from '$lib/assets/events/binarybishops.png';
-import communix from '$lib/assets/events/communix.png';
+import binarybishops from '$lib/assets/events/binarybishops.jpg';
+import communix from '$lib/assets/events/communix.jpg';
 import bountyhunt from '$lib/assets/events/bountyhunt.png';
-import harddrive from '$lib/assets/events/harddrive.png'
+import harddrive from '$lib/assets/events/harddrive.jpg'
 
 
 export interface Event {
