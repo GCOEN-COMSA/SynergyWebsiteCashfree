@@ -8,3 +8,5 @@ node_modules
 !.env.example
 .vercel
 .output
+.csv 
+# Because I store rzp shite in this repo.

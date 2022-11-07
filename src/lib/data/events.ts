@@ -1,5 +1,5 @@
 import aceclutchers from '$lib/assets/events/aceclutchers.jpg';
-import autocoders from '$lib/assets/events/autocoders.png';
+import autocoders from '$lib/assets/events/autocoders.jpg';
 import binarybishops from '$lib/assets/events/binarybishops.jpg';
 import communix from '$lib/assets/events/communix.jpg';
 import bountyhunt from '$lib/assets/events/bountyhunt.png';
@@ -30,16 +30,16 @@ export const events: Event[] = [
     long_desc:
       "Coding is becoming an important tool one should have in their arsenal for a smooth sailing career in today's corporate world. Test your fingers in this exhilarating mind bending coding event. SO AUTOBOTS  READY, SET, CODING!",
     desc: "Finger-bots, type out…",
-    amount: [50_00, 80_00, 120_00], // 100.00
+    amount: [50_00, 80_00], // 100.00
     image: autocoders,
     icon: "clarity:bar-code-line",
     date: "12ᵗʰ Nov 2022",
-    players: [1, 2, 3],
-    type:["", "", ""],
+    players: [1, 2],
+    type:["", ""],
     payment_links: [
       'https://rzp.io/l/0l3VB4xMnc',
       'https://rzp.io/l/8bn4CfyBU',
-      'https://rzp.io/l/8K50JlbU',
+      // 'https://rzp.io/l/8K50JlbU',
     ]
   },
   {
