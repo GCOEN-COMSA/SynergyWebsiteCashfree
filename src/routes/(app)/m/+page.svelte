@@ -13,6 +13,8 @@
   // Should have been SvelteComponent
   import ScrollDownIndicator from "$lib/components/ScrollDownIndicator.svelte";
   import Cube from '$lib/components/HeroBot.svelte';
+    import BigSponsor from "$lib/components/BigSponsor.svelte";
+    import SmallSponsor from "$lib/components/SmallSponsor.svelte";
   let innerWidth: number;
   let innerHeight: number;
   // let loadPromiseResolve: any;
@@ -80,6 +82,11 @@ let is_transparent = true;
 				<EventCard {event}/>
 				{/each}
 			<!-- </div> -->
+    </div>
+    <div class="mt-16 flex flex-row flex-wrap justify-evenly align-middle mb-4 mx-auto w-[calc(100%-4rem)]" id="testimonials">
+      <h1 id="events" class="text-[4.5rem] mx-auto text-center text-base-content w-screen vimh">SPONSORS</h1>
+				<BigSponsor />
+        <SmallSponsor />
     </div>
     <div class="mt-16 flex flex-row flex-wrap justify-evenly align-middle mb-4 mx-auto w-[calc(100%-4rem)]" id="testimonials">
       <Testimonial />

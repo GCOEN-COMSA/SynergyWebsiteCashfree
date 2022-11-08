@@ -123,7 +123,7 @@ export const events: Event[] = [
     amount: [40_00], // 100.00
     image: harddrive,
     icon: "clarity:bar-code-line",
-    date: "12ᵗʰ Nov 2022",
+    date: "13ᵗʰ Nov 2022",
     players: [1],
     type:[""],
     payment_links: [

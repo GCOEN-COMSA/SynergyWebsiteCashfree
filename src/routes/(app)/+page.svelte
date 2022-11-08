@@ -12,6 +12,8 @@
   import HeroBot from "$lib/components/HeroBot.svelte";
   import ContactUs from "$lib/components/ContactUs.svelte";
   import ScrollDownIndicator from '$lib/components/ScrollDownIndicator.svelte';
+    import SmallSponsor from "$lib/components/SmallSponsor.svelte";
+    import BigSponsor from "$lib/components/BigSponsor.svelte";
   let innerWidth: number;
   let innerHeight: number;
   // Should have been SvelteComponent
@@ -85,9 +87,16 @@
       <!-- <div class="flex flex-col lg:flex-row flex-wrap items-stretch justify-around gap-10"> -->
 				<h1 id="events" class="text-[6rem] mx-auto text-center text-base-content w-screen vimh">EVENTS</h1>
 				{#each events as event}
-        {@debug event}
+        <!-- {@debug event} -->
 				<EventCard event={event}/>
 				{/each}
+			<!-- </div> -->
+    </div>
+    <div id="spons" class="flex flex-col mx-auto">
+      <!-- <div class="flex flex-col lg:flex-row flex-wrap items-stretch justify-around gap-10"> -->
+				<h1 id="events" class="text-[6rem] mx-auto text-center text-base-content w-screen vimh">SPONSORS</h1>
+				<BigSponsor />
+        <SmallSponsor />
 			<!-- </div> -->
     </div>
     <div id="testimonials" class="mt-12 w-5/6 flex flex-row flex-wrap justify-evenly align-middle">
