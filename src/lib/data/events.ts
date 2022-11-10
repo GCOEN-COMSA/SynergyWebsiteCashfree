@@ -102,15 +102,16 @@ export const events: Event[] = [
     long_desc:
       "Hey gamers! We are here with a great opportunity for you to beat others and be the best in the field of gaming. So fasten your seat belts, clutch your moves, race in the ultimate automotive playground and conquer your rivals.",
     desc: "One life, one chance",
-    amount: [200_00, 150_00], // 100.00
+    amount: [200_00, 150_00, 30_00], // 100.00
     image: aceclutchers,
     icon: "clarity:bar-code-line",
     date: "12ᵗʰ & 13ᵗʰ Nov 2022",
-    players: [5, 5],
-    type:["VALORANT", 'COD MOBILE'],
+    players: [5, 5, 1],
+    type:["VALORANT", 'COD MOBILE', 'COD MOBILE (SOLO)'],
     payment_links: [
       'https://rzp.io/l/u5LTH9kE5',
       'https://rzp.io/l/aDRCQH9',
+      'https://rzp.io/l/BxK7OAT'
     ]
   },
   {
