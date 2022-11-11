@@ -5,6 +5,8 @@ import communix from '$lib/assets/events/communix.jpg';
 import bountyhunt from '$lib/assets/events/bountyhunt.png';
 import harddrive from '$lib/assets/events/harddrive.jpg'
 
+import seminar_1 from "$lib/assets/events/seminar_1.jpeg"
+import seminar_2 from "$lib/assets/events/seminar_2.jpeg"
 
 export interface Event {
   id: string;
@@ -129,6 +131,40 @@ export const events: Event[] = [
     type:[""],
     payment_links: [
       'https://rzp.io/l/3ELT4ABmn',
+    ]
+  },
+    {
+    hide: false,
+    id: "events-6",
+    name: "Seminar on Aero-modeling",
+    long_desc:
+      "For the one's having a knack of exploring the visionary domain of Aeromodelling  we've got a great talk awaiting for y'all! ✈ With us we'll be having Dr. Rajesh Joshi, the director of Aerovision India. Sir will be hosting a seminar on Aeromodelling.",
+    desc: "Don't miss this opportunity, it's going to be fun!!",
+    amount: [0], // 100.00
+    image: seminar_2,
+    icon: "clarity:bar-code-line",
+    date: "13ᵗʰ Nov 2022",
+    players: [1],
+    type:[""],
+    payment_links: [
+      'https://chat.whatsapp.com/CdapqnwhvY3E8MJhw7jmHw',
+    ]
+  },
+  {
+    hide: false,
+    id: "events-7",
+    name: "Seminar on Data Science & Machine Learning",
+    long_desc:
+      "For the one's having a knack of exploring the visionary domain of 𝗗𝗮𝘁𝗮 𝘀𝗰𝗶𝗲𝗻𝗰𝗲 𝗮𝗻𝗱 𝗠𝗮𝗰𝗵𝗶𝗻𝗲 𝗹𝗲𝗮𝗿𝗻𝗶𝗻𝗴 .we've got a great talk awaiting for y'all! ✈ With us we'll be having Mr. Hemant Surjuse, BSC in computer science and MCA ,who has served for IBM and currently a part of Bombay stock Exchange. Sir will be hosting a webinar on data science and machine learning. ",
+    desc: "Don't miss this opportunity, it's going to be fun!!",
+    amount: [0], // 100.00
+    image: seminar_1,
+    icon: "clarity:bar-code-line",
+    date: "12ᵗʰ Nov 2022",
+    players: [1],
+    type:[""],
+    payment_links: [
+      'https://chat.whatsapp.com/E5iuCRmduqx3efCbzHByMf',
     ]
   },
   // {
