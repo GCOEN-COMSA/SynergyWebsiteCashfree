@@ -19,7 +19,7 @@
 <div
   class="container min-h-[10rem] bg-base-100/60 hover:bg-base-100/100 transition-all duration-300 ease-linear rounded-100 max-w-sm flex flex-col items-stretch rounded-lg"
 >
-  <div class="image-container flex flex-col items-center justify-around py-6">
+  <div class="image-container flex flex-col items-center justify-around py-6 ">
     <img
       src={image}
       alt=""
@@ -36,8 +36,8 @@
         rel="external noopener noreferrer"
         target="_blank"
         href={social.link}
-        class="social btn btn-ghost cursor-pointer rounded-xl inline-flex align-middle"
-        ><iconify-icon class="text-4xl text-white" icon={social.icon} /></a
+        class="social grayscale btn btn-ghost hover:bg-transparent cursor-pointer rounded-xl inline-flex align-middle hover:grayscale-0"
+        ><iconify-icon class="text-4xl text-red" icon={social.icon} /></a
       >
     {/each}
   </div>

@@ -35,7 +35,7 @@ export const team1 = [
         decor: "border-orange-500",
         image: ved,
         socials: [
-            { link: "https://www.instagram.com/vednande/", icon: "bi:instagram" },
+            { link: "https://www.instagram.com/vednande/", icon: "skill-icons:instagram" },
             { link: "https://www.linkedin.com/in/ved-nande-b86248203/", icon: "bi:linkedin" },
         ],
     },

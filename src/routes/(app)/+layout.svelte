@@ -67,7 +67,7 @@ import {page} from "$app/stores";
     <div
       class="w-full navbar fixed top-0 left-0 {is_transparent
         ? 'bg-transparent'
-        : 'bg-base-300'} transition-colors duration-200 z-50 px-2 lg:px-6"
+        : 'bg-back'} transition-colors duration-200 z-50 px-2 lg:px-6 rounded-b-[20px]"
     >
       <div class="flex-1 lg:px-2 py-2 lg:mx-2 {is_transparent ? 'invisible' : 'visible'} cursor-pointer">
         <img on:click={()=>{$page.url.toString().includes('/m') ? goto('/m'):goto('/')}} src={Logo} alt="Synergy Logo" class="max-h-12 p-0" />
@@ -92,7 +92,7 @@ import {page} from "$app/stores";
         <ul class="menu menu-horizontal gap-4 pr-8">
           <!-- Navbar menu content here -->
           <li><a data-sveltekit-reload class="btn btn-ghost rounded-lg"  href="/">Home</a></li>
-          <li><a class="btn btn-ghost rounded-lg" href="/events/">Events</a></li>
+          <li><a class="btn btn-ghost rounded-lg " href="/events/">Events</a></li>
           <li><a class="btn btn-ghost rounded-lg" href="/gallery">Gallery</a></li>
           <li><a class="btn btn-ghost rounded-lg" href="/team/">Team</a></li>
           <li><a class="btn btn-ghost rounded-lg" href="/contact-us">Contact Us</a></li>
@@ -101,10 +101,10 @@ import {page} from "$app/stores";
     </div>
     <slot />
     <footer
-      class="flex flex-col items-center pt-4 pb-8 px-4 mt-6 text-base-content text-center justify-center justify-items-center bg-footer rounded-t-md"
+      class="flex flex-col items-center pt-4 pb-8 px-4 mt-6 text-base-content text-center justify-center justify-items-center bg-footer rounded-t-md duration-500"
     >
-      <div class="flex flex-col items-stretch justify-center">
-        <img src={Logo} class="max-h-40" alt="" />
+      <div class="flex flex-col items-stretch justify-center duration-500">
+        <img src={Logo} class="max-h-40 duration-500" alt="" />
         <FooterSocials />
       </div>
       <footer
@@ -190,7 +190,7 @@ import {page} from "$app/stores";
   }
 
   .bg-content {
-    background: linear-gradient(to top, rgb(56, 189, 248), rgb(49, 46, 129));
+    background: linear-gradient(to left bottom, #fc354c, #0abfbc);
     /* background-attachment: scroll ; */
     /* @apply bg-[rgb(30,64,175)] bg-opacity-100; */
   }
@@ -200,8 +200,14 @@ import {page} from "$app/stores";
     /* background-attachment: scroll ; */
     /* background: linear-gradient(to bottom , rgba(14, 21, 37, 0), rgba(14, 21, 37, 0.25), rgba(0, 0, 0, .75) 99%); */
     @apply bg-base-200 bg-opacity-60;
+
   }
 
+  .bg-back{
+      backdrop-filter: sepia(25%) blur(20px);
+      border-bottom: 10px solid linear-gradient(to left, #fc354c, #0abfbc);
+      transition: all 0.150s;
+    }
   .footer-title {
 
     @apply text-white opacity-100 text-lg tracking-[0.15rem];
