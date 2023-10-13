@@ -41,6 +41,6 @@
     letter-spacing: 0.2rem;
   }
   .card.image-full:before {
-    opacity: 1;
+    opacity: 0;
   }
 </style>
