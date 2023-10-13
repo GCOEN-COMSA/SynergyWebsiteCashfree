@@ -4,7 +4,7 @@ import binarybishops from '$lib/assets/events/binarybishops.jpg';
 import communix from '$lib/assets/events/communix.jpg';
 import bountyhunt from '$lib/assets/events/bountyhunt.png';
 import harddrive from '$lib/assets/events/harddrive.jpg'
-
+import webcraft from '$lib/assets/Event_cards/Webcraft_B.png'
 import seminar_1 from "$lib/assets/events/seminar_1.jpeg"
 import seminar_2 from "$lib/assets/events/seminar_2.jpeg"
 
@@ -13,6 +13,7 @@ export interface Event {
   name: string;
   desc: string;
   long_desc: string;
+  card_image: string;
   image: string;
   icon: string;
   amount: number[];
@@ -34,6 +35,7 @@ export const events: Event[] = [
     desc: "Finger-bots, type out…",
     amount: [50_00, 80_00], // 100.00
     image: autocoders,
+    card_image: webcraft,
     icon: "clarity:bar-code-line",
     date: "12ᵗʰ Nov 2022",
     players: [1, 2],
@@ -53,6 +55,7 @@ export const events: Event[] = [
     desc: "You can talk but, can you communix!?",
     amount: [40_00], // 100.00
     image: communix,
+    card_image: webcraft,
     icon: "clarity:bar-code-line",
     date: "12ᵗʰ Nov 2022",
     players: [1],
@@ -70,6 +73,7 @@ export const events: Event[] = [
     desc: "When you see a good move, look for better one",
     amount: [60_00, 100_00], // 100.00
     image: binarybishops,
+    card_image: webcraft,
     icon: "clarity:bar-code-line",
     date: "13ᵗʰ Nov 2022",
     players: [1, 2],
@@ -88,6 +92,7 @@ export const events: Event[] = [
     desc: "Let the hunt begin… !!!",
     amount: [200_00], // 100.00
     image: bountyhunt,
+    card_image: webcraft,
     icon: "clarity:bar-code-line",
     date: "12ᵗʰ & 13ᵗʰ Nov 2022",
     players: [4],
@@ -106,6 +111,7 @@ export const events: Event[] = [
     desc: "One life, one chance",
     amount: [200_00, 150_00, 30_00], // 100.00
     image: aceclutchers,
+    card_image: webcraft,
     icon: "clarity:bar-code-line",
     date: "12ᵗʰ & 13ᵗʰ Nov 2022",
     players: [5, 5, 1],
@@ -125,6 +131,7 @@ export const events: Event[] = [
     desc: "Don’t Rush But be Expeditious!?",
     amount: [40_00], // 100.00
     image: harddrive,
+    card_image: webcraft,
     icon: "clarity:bar-code-line",
     date: "13ᵗʰ Nov 2022",
     players: [1],
@@ -142,6 +149,7 @@ export const events: Event[] = [
     desc: "Don't miss this opportunity, it's going to be fun!!",
     amount: [0], // 100.00
     image: seminar_2,
+    card_image: webcraft,
     icon: "clarity:bar-code-line",
     date: "13ᵗʰ Nov 2022",
     players: [1],
@@ -159,6 +167,7 @@ export const events: Event[] = [
     desc: "Don't miss this opportunity, it's going to be fun!!",
     amount: [0], // 100.00
     image: seminar_1,
+    card_image: webcraft,
     icon: "clarity:bar-code-line",
     date: "12ᵗʰ Nov 2022",
     players: [1],
