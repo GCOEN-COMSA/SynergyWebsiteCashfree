@@ -10,6 +10,7 @@ import ACE_F from '$lib/assets/Event_cards/ACE_F.png';
 import COM_F from '$lib/assets/Event_cards/COM_F.png';
 import AUTO_F from '$lib/assets/Event_cards/AUTO_F.png';
 import SMASH_F from '$lib/assets/Event_cards/SMASH_F.png';
+import HD_F from '$lib/assets/Event_cards/HD_F.png';
 import seminar_1 from "$lib/assets/events/seminar_1.jpeg"
 import seminar_2 from "$lib/assets/events/seminar_2.jpeg"
 
@@ -36,8 +37,8 @@ export const events: Event[] = [
     id: "events-1",
     name: "Autocoders",
     long_desc:
-      "Coding is becoming an important tool one should have in their arsenal for a smooth sailing career in today's corporate world. Test your fingers in this exhilarating mind bending coding event. SO AUTOBOTS  READY, SET, CODING!",
-    desc: "Finger-bots, type out…",
+      "AutoCoders is a thrilling tech odyssey where minds ignite in a three-stage coding crescendo. Round 1 sets neurons racing with a grueling quiz, separating code warriors from the rest. Round 2 unfurls an epic battle in competitive coding, a realm where algorithms duel. Round 3 ups the ante, making only the sharpest minds emerge victorious, forging legends in the world of code.",
+    desc: "Roudn",
     amount: [50_00, 80_00], // 100.00
     image: autocoders,
     card_image: AUTO_F,
@@ -54,9 +55,9 @@ export const events: Event[] = [
   {
     hide: false,
     id: "events-0",
-    name: "Communix 4.0",
+    name: "Communix",
     long_desc:
-      "Verbal expression is an important aspect of our life and a strong communicator is always   articulate with the words. So here we are with an event that will provide you an opportunity to link your thoughts and show your caliber.",
+      "Communix, the battle of orators, unfolds in three captivating rounds. Round 1 unleashes 1v1 debate titans, where words become weapons. Round 2 tests wits with extempore speeches. In Round 3, competitors craft impromptu tales, weaving narratives on the spot using at least ten of the given twenty words. Communix is where great speech meets quick thinking, taking word-pirates on an exciting adventure into uncharted territory.",
     desc: "You can talk but, can you communix!?",
     amount: [40_00], // 100.00
     image: communix,
@@ -74,17 +75,18 @@ export const events: Event[] = [
     id: "events-2",
     name: "WebCraft",
     long_desc:
-      "Hello check-mates! We have a perfect platform for the ones competent enough to solve questions. But wait, here the crux is to show off your chess moves. So, get your pieces ready and Sygrayem;",
+      "Embark on a coding journey from grasshopper to apprentice and, ultimately, master! Our web development event offers challenges for all skill levels. Test your algorithmic skills, learn, and rise through the ranks. Seize this opportunity to prove your coding prowess and become a true web development master!",
     desc: "When you see a good move, look for better one",
     amount: [60_00, 100_00], // 100.00
     image: binarybishops,
     card_image: WEB_F,
     icon: "clarity:bar-code-line",
     date: "13ᵗʰ Nov 2022",
-    players: [1, 2],
+    players: [1, 2, 4],
     type:["", ""],
     payment_links: [
       'https://rzp.io/l/LPNQeJ1zt',
+      'https://rzp.io/l/IPGVIAOl2U',
       'https://rzp.io/l/IPGVIAOl2U',
     ]
   },
@@ -112,7 +114,7 @@ export const events: Event[] = [
     id: "events-4",
     name: "Ace Clutchers",
     long_desc:
-      "Hey gamers! We are here with a great opportunity for you to beat others and be the best in the field of gaming. So fasten your seat belts, clutch your moves, race in the ultimate automotive playground and conquer your rivals.",
+      "In Valorant, we're not just good; we're legendary! Our headshots are like poetry, and our strategies, works of art. In BGMI, our squad co-ordination wins us chicken dinners for fortnights in a row. We're also the Kings and Queens of Chess, and you're in for a royal beatdown! So, if you think you can step up to the big leagues, prepare to be schooled.",
     desc: "One life, one chance",
     amount: [200_00, 150_00, 30_00], // 100.00
     image: aceclutchers,
@@ -120,7 +122,7 @@ export const events: Event[] = [
     icon: "clarity:bar-code-line",
     date: "12ᵗʰ & 13ᵗʰ Nov 2022",
     players: [5, 5, 1],
-    type:["VALORANT", 'COD MOBILE', 'COD MOBILE (SOLO)'],
+    type:["VALORANT", 'BGMI(SOLO)', 'BGMI'],
     payment_links: [
       'https://rzp.io/l/u5LTH9kE5',
       'https://rzp.io/l/aDRCQH9',
@@ -132,11 +134,11 @@ export const events: Event[] = [
     id: "events-5",
     name: "Hard Drive",
     long_desc:
-      "Bots overpower humans or is it vice-versa? We’ve got a way to figure this out. We present ‘Hard-Drive’ which tests your ability to swiftly maneuver the bot. Get the grip on and exhibit your skills.",
+      "Join us in a galaxy far, far away for the ``Hard Drive: Galactic Cargo Run.`` You will first be trained in the Jedi temple to handle your robot, then you will go forth to complete your mission. Compete with other Jedis using provided working robots to move eight precious cargo boxes to the center. Time is of the essence, and the fastest Jedi mechanic will claim victory. May the speediest droid-master win this interstellar challenge!",
     desc: "Don’t Rush But be Expeditious!?",
     amount: [40_00], // 100.00
     image: harddrive,
-    card_image: WEB_F,
+    card_image: HD_F,
     icon: "clarity:bar-code-line",
     date: "13ᵗʰ Nov 2022",
     players: [1],
@@ -148,7 +150,7 @@ export const events: Event[] = [
     {
     hide: false,
     id: "events-6",
-    name: "Seminar on Aero-modeling",
+    name: "SMASH",
     long_desc:
       "For the one's having a knack of exploring the visionary domain of Aeromodelling  we've got a great talk awaiting for y'all! ✈ With us we'll be having Dr. Rajesh Joshi, the director of Aerovision India. Sir will be hosting a seminar on Aeromodelling.",
     desc: "Don't miss this opportunity, it's going to be fun!!",
