@@ -8,7 +8,8 @@ import WEB_F from '$lib/assets/Event_cards/WEB_F.png';
 import BH_F from '$lib/assets/Event_cards/BH_F.png';
 import ACE_F from '$lib/assets/Event_cards/ACE_F.png';
 import COM_F from '$lib/assets/Event_cards/COM_F.png';
-import AUTO_F from '$lib/assets/Event_cards/AUTO_F.png'
+import AUTO_F from '$lib/assets/Event_cards/AUTO_F.png';
+import SMASH_F from '$lib/assets/Event_cards/SMASH_F.png';
 import seminar_1 from "$lib/assets/events/seminar_1.jpeg"
 import seminar_2 from "$lib/assets/events/seminar_2.jpeg"
 
@@ -144,24 +145,24 @@ export const events: Event[] = [
       'https://rzp.io/l/3ELT4ABmn',
     ]
   },
-  //   {
-  //   hide: false,
-  //   id: "events-6",
-  //   name: "Seminar on Aero-modeling",
-  //   long_desc:
-  //     "For the one's having a knack of exploring the visionary domain of Aeromodelling  we've got a great talk awaiting for y'all! ✈ With us we'll be having Dr. Rajesh Joshi, the director of Aerovision India. Sir will be hosting a seminar on Aeromodelling.",
-  //   desc: "Don't miss this opportunity, it's going to be fun!!",
-  //   amount: [0], // 100.00
-  //   image: seminar_2,
-  //   card_image: WEB_F,
-  //   icon: "clarity:bar-code-line",
-  //   date: "13ᵗʰ Nov 2022",
-  //   players: [1],
-  //   type:[""],
-  //   payment_links: [
-  //     'https://chat.whatsapp.com/CdapqnwhvY3E8MJhw7jmHw',
-  //   ]
-  // },
+    {
+    hide: false,
+    id: "events-6",
+    name: "Seminar on Aero-modeling",
+    long_desc:
+      "For the one's having a knack of exploring the visionary domain of Aeromodelling  we've got a great talk awaiting for y'all! ✈ With us we'll be having Dr. Rajesh Joshi, the director of Aerovision India. Sir will be hosting a seminar on Aeromodelling.",
+    desc: "Don't miss this opportunity, it's going to be fun!!",
+    amount: [0], // 100.00
+    image: seminar_2,
+    card_image: SMASH_F,
+    icon: "clarity:bar-code-line",
+    date: "13ᵗʰ Nov 2022",
+    players: [1],
+    type:[""],
+    payment_links: [
+      'https://chat.whatsapp.com/CdapqnwhvY3E8MJhw7jmHw',
+    ]
+  },
   // {
   //   hide: false,
   //   id: "events-7",
