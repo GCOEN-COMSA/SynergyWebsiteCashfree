@@ -65,10 +65,10 @@
     <div id="hero-half" class="flex-grow flex flex-col">
       <span
         class="mt-auto mb-4 xl:mb-10 xl:ml-16 2xl:ml-32 mx-auto text-4xl 2xl:text-[10rem]  xl:text-[5rem] xl:[line-height=9.5rem] text-base-content vimh"
-        >SYNERGY</span
+        ></span
       ><span
         class="mt-2 mx-auto xl:ml-16 2xl:ml-32 lg:mb-36 text-base-content text-xl xl:text-2xl 2xl:text-4xl"
-        >The Nexus of All Innovations</span
+        ></span
       >
     </div>
     <div id="hero-cube" class="flex-grow flex justify-center items-center pl-20">
@@ -118,7 +118,7 @@
 <style lang="postcss">
   .hero-bg {
     background: no-repeat top right;
-    background-image: linear-gradient(#00000050, #000000dd), var(--bg-url);
+    background-image: var(--bg-url);
     background-blend-mode: multiply, normal;
     background-size: cover;
   }

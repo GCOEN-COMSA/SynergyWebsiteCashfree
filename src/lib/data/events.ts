@@ -3,8 +3,12 @@ import autocoders from '$lib/assets/events/autocoders.jpg';
 import binarybishops from '$lib/assets/events/binarybishops.jpg';
 import communix from '$lib/assets/events/communix.jpg';
 import bountyhunt from '$lib/assets/events/bountyhunt.png';
-import harddrive from '$lib/assets/events/harddrive.jpg'
-import webcraft from '$lib/assets/Event_cards/Webcraft_B.png'
+import harddrive from '$lib/assets/events/harddrive.jpg';
+import WEB_F from '$lib/assets/Event_cards/WEB_F.png';
+import BH_F from '$lib/assets/Event_cards/BH_F.png';
+import ACE_F from '$lib/assets/Event_cards/ACE_F.png';
+import COM_F from '$lib/assets/Event_cards/COM_F.png';
+import AUTO_F from '$lib/assets/Event_cards/AUTO_F.png'
 import seminar_1 from "$lib/assets/events/seminar_1.jpeg"
 import seminar_2 from "$lib/assets/events/seminar_2.jpeg"
 
@@ -35,7 +39,7 @@ export const events: Event[] = [
     desc: "Finger-bots, type out…",
     amount: [50_00, 80_00], // 100.00
     image: autocoders,
-    card_image: webcraft,
+    card_image: AUTO_F,
     icon: "clarity:bar-code-line",
     date: "12ᵗʰ Nov 2022",
     players: [1, 2],
@@ -55,7 +59,7 @@ export const events: Event[] = [
     desc: "You can talk but, can you communix!?",
     amount: [40_00], // 100.00
     image: communix,
-    card_image: webcraft,
+    card_image: COM_F,
     icon: "clarity:bar-code-line",
     date: "12ᵗʰ Nov 2022",
     players: [1],
@@ -67,13 +71,13 @@ export const events: Event[] = [
   {
     hide: false,
     id: "events-2",
-    name: "Binary Bishops",
+    name: "WebCraft",
     long_desc:
       "Hello check-mates! We have a perfect platform for the ones competent enough to solve questions. But wait, here the crux is to show off your chess moves. So, get your pieces ready and Sygrayem;",
     desc: "When you see a good move, look for better one",
     amount: [60_00, 100_00], // 100.00
     image: binarybishops,
-    card_image: webcraft,
+    card_image: WEB_F,
     icon: "clarity:bar-code-line",
     date: "13ᵗʰ Nov 2022",
     players: [1, 2],
@@ -92,7 +96,7 @@ export const events: Event[] = [
     desc: "Let the hunt begin… !!!",
     amount: [200_00], // 100.00
     image: bountyhunt,
-    card_image: webcraft,
+    card_image: BH_F,
     icon: "clarity:bar-code-line",
     date: "12ᵗʰ & 13ᵗʰ Nov 2022",
     players: [4],
@@ -111,7 +115,7 @@ export const events: Event[] = [
     desc: "One life, one chance",
     amount: [200_00, 150_00, 30_00], // 100.00
     image: aceclutchers,
-    card_image: webcraft,
+    card_image: ACE_F,
     icon: "clarity:bar-code-line",
     date: "12ᵗʰ & 13ᵗʰ Nov 2022",
     players: [5, 5, 1],
@@ -131,7 +135,7 @@ export const events: Event[] = [
     desc: "Don’t Rush But be Expeditious!?",
     amount: [40_00], // 100.00
     image: harddrive,
-    card_image: webcraft,
+    card_image: WEB_F,
     icon: "clarity:bar-code-line",
     date: "13ᵗʰ Nov 2022",
     players: [1],
@@ -140,42 +144,42 @@ export const events: Event[] = [
       'https://rzp.io/l/3ELT4ABmn',
     ]
   },
-    {
-    hide: false,
-    id: "events-6",
-    name: "Seminar on Aero-modeling",
-    long_desc:
-      "For the one's having a knack of exploring the visionary domain of Aeromodelling  we've got a great talk awaiting for y'all! ✈ With us we'll be having Dr. Rajesh Joshi, the director of Aerovision India. Sir will be hosting a seminar on Aeromodelling.",
-    desc: "Don't miss this opportunity, it's going to be fun!!",
-    amount: [0], // 100.00
-    image: seminar_2,
-    card_image: webcraft,
-    icon: "clarity:bar-code-line",
-    date: "13ᵗʰ Nov 2022",
-    players: [1],
-    type:[""],
-    payment_links: [
-      'https://chat.whatsapp.com/CdapqnwhvY3E8MJhw7jmHw',
-    ]
-  },
-  {
-    hide: false,
-    id: "events-7",
-    name: "Seminar on Data Science & Machine Learning",
-    long_desc:
-      "For the one's having a knack of exploring the visionary domain of 𝗗𝗮𝘁𝗮 𝘀𝗰𝗶𝗲𝗻𝗰𝗲 𝗮𝗻𝗱 𝗠𝗮𝗰𝗵𝗶𝗻𝗲 𝗹𝗲𝗮𝗿𝗻𝗶𝗻𝗴 .we've got a great talk awaiting for y'all! ✈ With us we'll be having Mr. Hemant Surjuse, BSC in computer science and MCA ,who has served for IBM and currently a part of Bombay stock Exchange. Sir will be hosting a webinar on data science and machine learning. ",
-    desc: "Don't miss this opportunity, it's going to be fun!!",
-    amount: [0], // 100.00
-    image: seminar_1,
-    card_image: webcraft,
-    icon: "clarity:bar-code-line",
-    date: "12ᵗʰ Nov 2022",
-    players: [1],
-    type:[""],
-    payment_links: [
-      'https://chat.whatsapp.com/E5iuCRmduqx3efCbzHByMf',
-    ]
-  },
+  //   {
+  //   hide: false,
+  //   id: "events-6",
+  //   name: "Seminar on Aero-modeling",
+  //   long_desc:
+  //     "For the one's having a knack of exploring the visionary domain of Aeromodelling  we've got a great talk awaiting for y'all! ✈ With us we'll be having Dr. Rajesh Joshi, the director of Aerovision India. Sir will be hosting a seminar on Aeromodelling.",
+  //   desc: "Don't miss this opportunity, it's going to be fun!!",
+  //   amount: [0], // 100.00
+  //   image: seminar_2,
+  //   card_image: WEB_F,
+  //   icon: "clarity:bar-code-line",
+  //   date: "13ᵗʰ Nov 2022",
+  //   players: [1],
+  //   type:[""],
+  //   payment_links: [
+  //     'https://chat.whatsapp.com/CdapqnwhvY3E8MJhw7jmHw',
+  //   ]
+  // },
+  // {
+  //   hide: false,
+  //   id: "events-7",
+  //   name: "Seminar on Data Science & Machine Learning",
+  //   long_desc:
+  //     "For the one's having a knack of exploring the visionary domain of 𝗗𝗮𝘁𝗮 𝘀𝗰𝗶𝗲𝗻𝗰𝗲 𝗮𝗻𝗱 𝗠𝗮𝗰𝗵𝗶𝗻𝗲 𝗹𝗲𝗮𝗿𝗻𝗶𝗻𝗴 .we've got a great talk awaiting for y'all! ✈ With us we'll be having Mr. Hemant Surjuse, BSC in computer science and MCA ,who has served for IBM and currently a part of Bombay stock Exchange. Sir will be hosting a webinar on data science and machine learning. ",
+  //   desc: "Don't miss this opportunity, it's going to be fun!!",
+  //   amount: [0], // 100.00
+  //   image: seminar_1,
+  //   card_image: webcraft,
+  //   icon: "clarity:bar-code-line",
+  //   date: "12ᵗʰ Nov 2022",
+  //   players: [1],
+  //   type:[""],
+  //   payment_links: [
+  //     'https://chat.whatsapp.com/E5iuCRmduqx3efCbzHByMf',
+  //   ]
+  // },
   // {
   //   id: "events-6",
   //   name: "Seminar",

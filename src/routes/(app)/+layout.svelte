@@ -190,7 +190,7 @@ import {page} from "$app/stores";
   }
 
   .bg-content {
-    background: linear-gradient(to left bottom, #fc354c, #0abfbc);
+    background: linear-gradient(27deg, rgb(195, 67, 129) 8%, rgb(90, 43, 186) 40%);
     /* background-attachment: scroll ; */
     /* @apply bg-[rgb(30,64,175)] bg-opacity-100; */
   }
