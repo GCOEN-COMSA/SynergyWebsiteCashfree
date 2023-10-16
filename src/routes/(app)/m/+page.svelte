@@ -62,9 +62,9 @@ let is_transparent = true;
     <div id="hero-half" class="mt-10 flex flex-col text-white">
       <span
         class="mt-auto lg:-mb-10 lg:ml-32 mx-auto lg:text-[10rem] text-[5rem] lg:[line-height=9.5rem] text-base-content vimh"
-        >SYNERGY</span
+        ></span
       ><span class=" text-center mt-2 mx-auto lg:ml-32 lg:mb-36 text-base-content text-4xl"
-        >The Nexus of All Innovations</span
+        ></span
       >
     </div>
     <div id="hero-cube" class="flex-grow flex justify-center items-center overflow-clip">
@@ -104,7 +104,7 @@ let is_transparent = true;
 <style lang="postcss">
   .hero-bg {
     background: no-repeat top center;
-    background-image: linear-gradient(to top, #00000050, #000000aa), var(--bg-url);
+    background-image: var(--bg-url);
     background-blend-mode: multiply, normal;
     background-size: cover;
   }

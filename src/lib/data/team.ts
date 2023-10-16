@@ -161,8 +161,8 @@ export const team1 = [
         role: "Event Coordinator",
         decor: "border-fuchsia-500",
         socials: [
-            { link: " https://www.instagram.com/rohitwagh.jpg/" },
-            { link: "https://www.linkedin.com/in/rohit-wagh-b475a5219/" },
+            { link: " https://www.instagram.com/rohitwagh.jpg/", icon: "bi:instagram" },
+            { link: "https://www.linkedin.com/in/rohit-wagh-b475a5219/",icon: "bi:linkedin" },
         ],
     },
     {
@@ -193,7 +193,7 @@ export const team1 = [
         role: "Executive Committee Member",
         decor: "border-fuchsia-500",
         socials: [
-            { link: "" },
+            { link: "" , icon: "bi:instagram"},
             { link: "", icon: "bi:linkedin" },
         ],
     },
@@ -204,7 +204,7 @@ export const team1 = [
         role: "Executive Committee Member",
         decor: "border-fuchsia-500",
         socials: [
-            { link: "https://instagram.com/saket_31" },
+            { link: "https://instagram.com/saket_31", icon: "bi:instagram" },
             { link: "https://www.linkedin.com/in/saket-tabhane-587ab3267?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", icon: "bi:linkedin" },
         ],
     },
