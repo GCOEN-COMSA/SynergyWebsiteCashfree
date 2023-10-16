@@ -27,7 +27,7 @@
     />
   </div>
   <div class="text-container flex flex-col py-2 justify-center items-center">
-    <div class="name text-4xl py-1 self-stretch text-center">{name}</div>
+    <div class="name text-[2.15rem] leading-9 py-1 self-stretch text-center">{name}</div>
     <div class="position text-lg py-1">{role}</div>
   </div>
   <div class="bottom-text flex flex-row items-center justify-center gap-2 py-4">

@@ -18,15 +18,15 @@ import rutuja from '$lib/assets/team/RutujaDekhane.png';
 import sahils from '$lib/assets/team/SahilShrikhande.png';
 import sachin from '$lib/assets/team/sachinPatel.png';
 
-import saher from '$lib/assets/team/saher.jpg';
-import sayalim from '$lib/assets/team/sayalim.jpg';
-import purva from '$lib/assets/team/purva.jpg';
-import prachi from '$lib/assets/team/prachi.jpg';
-import rishika from '$lib/assets/team/rishika.jpg';
-import yuvraj from '$lib/assets/team/yuvraj.jpg';
-import kunal from '$lib/assets/team/kunal.jpg';
-import mohit from '$lib/assets/team/mohit.jpg';
-import sukrut from '$lib/assets/team/sukrut.jpg';
+// import saher from '$lib/assets/team/saher.jpg';
+// import sayalim from '$lib/assets/team/sayalim.jpg';
+// import purva from '$lib/assets/team/purva.jpg';
+// import prachi from '$lib/assets/team/prachi.jpg';
+// import rishika from '$lib/assets/team/rishika.jpg';
+// import yuvraj from '$lib/assets/team/yuvraj.jpg';
+// import kunal from '$lib/assets/team/kunal.jpg';
+// import mohit from '$lib/assets/team/mohit.jpg';
+// import sukrut from '$lib/assets/team/sukrut.jpg';
 
 
 

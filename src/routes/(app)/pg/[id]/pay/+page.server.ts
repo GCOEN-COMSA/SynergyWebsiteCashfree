@@ -4,7 +4,7 @@ import { error, json, redirect } from "@sveltejs/kit";
 import { slugify } from "$lib/util";
 import { supabaseClient } from "$lib/db";
 import { dev } from "$app/environment";
-import { CF_API_KEY, CF_SECRET_KEY } from "$env/static/private";
+// import { CF_API_KEY, CF_SECRET_KEY } from "$env/static/private";
 
 // TODO: const PG_URL = (dev) ? 'https://sandbox.cashfree.com/pg/orders':""
 const PG_URL = "https://sandbox.cashfree.com/pg/orders";
@@ -26,8 +26,8 @@ export const load: PageServerLoad = async (event) => {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
-        "x-client-id": CF_API_KEY,
-        "x-client-secret": CF_SECRET_KEY,
+        "x-client-id": "",//CF_API_KEY,
+        "x-client-secret": "",//CF_SECRET_KEY,
         "x-api-version": "2022-01-01",
       },
     });

@@ -77,7 +77,7 @@ let is_transparent = true;
     </div>
     <div class="mt-16 flex flex-row flex-wrap justify-evenly align-middle mx-auto w-[calc(100%-4rem)] " id="about-us">
       <!-- <div class="flex flex-col lg:flex-row flex-wrap items-stretch justify-around gap-10"> -->
-				<h1 id="events" class="text-[6rem] mx-auto text-center text-base-content w-screen vimh">EVENTS</h1>
+				<h1 id="events" class="text-[6rem] mx-auto text-center text-base-content w-full vimh">EVENTS</h1>
 				{#each events as event}
 				<EventCard {event}/>
 				{/each}

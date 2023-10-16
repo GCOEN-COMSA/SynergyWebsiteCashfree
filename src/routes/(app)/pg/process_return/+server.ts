@@ -1,4 +1,4 @@
-import { CF_API_KEY, CF_SECRET_KEY } from "$env/static/private";
+// import { CF_API_KEY, CF_SECRET_KEY } from "$env/static/private";
 import { error, redirect } from "@sveltejs/kit";
 import type { RequestHandler } from "./$types";
 import { supabaseClient } from "$lib/db";
@@ -15,8 +15,8 @@ export const GET: RequestHandler = async ({ url }) => {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
-        "x-client-id": CF_API_KEY,
-        "x-client-secret": CF_SECRET_KEY,
+        "x-client-id": "",
+        "x-client-secret": "",
         "x-api-version": "2022-01-01",
       },
     });
@@ -44,7 +44,7 @@ export const GET: RequestHandler = async ({ url }) => {
   throw error(500, "Missing cf_token and cf_id");
 };
 
-export const sample = {
+export const _sample = {
   cf_order_id: 594193729,
   created_at: "2021-09-22T13:46:51+05:30",
   customer_details: {
