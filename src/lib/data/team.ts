@@ -1,20 +1,22 @@
-import ved from '$lib/assets/team/ved.png';
-import madhur from '$lib/assets/team/madhur.png';
-import abhishek from '$lib/assets/team/abhishek.png';
-import aryan from '$lib/assets/team/aryan.png';
-import naresh from '$lib/assets/team/naresh.png';
-import tamanna from '$lib/assets/team/tamanaah.png';
-import sayali from '$lib/assets/team/sayali.png';
-import saurabh from '$lib/assets/team/saurabh.png';
-import devansh from '$lib/assets/team/devansh.png';
-import kinjal from '$lib/assets/team/kinjal.png';
-import vishal from '$lib/assets/team/vishal.png';
-import tushar from '$lib/assets/team/tushar.png';
-import mrudula from '$lib/assets/team/mrudula.png';
-import jay from '$lib/assets/team/jay.png';
-import sahil from '$lib/assets/team/sahil.png';
-import priya from '$lib/assets/team/priya.png';
-import gayatri from '$lib/assets/team/gayatri.png';
+import ved from '$lib/assets/team/VedNande.png';
+import abhishek from '$lib/assets/team/AbhiskehKhond.png';
+import priya from '$lib/assets/team/PriyaNandanwar.png';
+import devansh from '$lib/assets/team/DevanshParapalli.png';
+import sahilk from '$lib/assets/team/SahilKhulikar.png';
+import rush from '$lib/assets/team/RushikeshGhawghawe.png';
+import ketan from '$lib/assets/team/KetanBaitule.png';
+import chinmayi from '$lib/assets/team/ChinmayiGhatbandhe.png';
+import vedant from '$lib/assets/team/VedantSarate.png';
+import hitanshu from '$lib/assets/team/HitanshuGedam.png';
+import ishad from '$lib/assets/team/IshadPande.png';
+import yashasvi from '$lib/assets/team/YashasviSherke.png';
+import rohit from '$lib/assets/team/RohitWagh.png';
+import paras from '$lib/assets/team/ParasShorte.png';
+import sanika from '$lib/assets/team/SanikaJaolker.png';
+import saket from '$lib/assets/team/SaketTabhane.png';
+import rutuja from '$lib/assets/team/RutujaDekhane.png';
+import sahils from '$lib/assets/team/SahilShrikhande.png';
+import sachin from '$lib/assets/team/sachinPatel.png';
 
 import saher from '$lib/assets/team/saher.jpg';
 import sayalim from '$lib/assets/team/sayalim.jpg';
@@ -31,7 +33,7 @@ import sukrut from '$lib/assets/team/sukrut.jpg';
 export const team1 = [
     {
         name: "Ved Nande",
-        role: "President",
+        role: "Adivisor",
         decor: "border-orange-500",
         image: ved,
         socials: [
@@ -40,19 +42,39 @@ export const team1 = [
         ],
     },
     {
-        name: "Madhur Manekar",
-        role: "Vice President",
-        image: madhur,
-        decor: "border-amber-500",
+        name: "ABhishek Khonde",
+        role: "Adivisor",
+        decor: "border-orange-500",
+        image: abhishek,
         socials: [
-            { link: "https://www.instagram.com/lord_mm_69/", icon: "bi:instagram" },
-            { link: "https://www.linkedin.com/in/madhur-manekar-76ab4a22b/", icon: "bi:linkedin" },
+            { link: "https://www.instagram.com/vednande/", icon: "skill-icons:instagram" },
+            { link: "https://www.linkedin.com/in/ved-nande-b86248203/", icon: "bi:linkedin" },
         ],
     },
     {
-        name: "Abhishek Khond",
+        name: "Priya Nandanwar",
+        role: "President",
+        decor: "border-orange-500",
+        image: priya,
+        socials: [
+            { link: "https://www.instagram.com/vednande/", icon: "skill-icons:instagram" },
+            { link: "https://www.linkedin.com/in/ved-nande-b86248203/", icon: "bi:linkedin" },
+        ],
+    },
+    {
+        name: "Devansh Parapalli",
+        role: "Vice President",
+        image: devansh,
+        decor: "border-amber-500",
+        socials: [
+            { link: "https://www.linkedin.com/in/devparapalli/", icon: "bi:instagram" },
+            { link: "https://www.instagram.com/dev_parapalli/", icon: "bi:linkedin" },
+        ],
+    },
+    {
+        name: "Sahil Kuhikar",
         role: "Secretary",
-        image: abhishek,
+        image: sahilk,
 
         decor: "border-cyan-500",
         socials: [
@@ -61,8 +83,8 @@ export const team1 = [
         ],
     },
     {
-        name: "Aryan Waghmare",
-        image: aryan,
+        name: "Rushikesh Ghawghawe",
+        image: rush,
         role: "Treasurer",
         decor: "border-blue-500",
         socials: [
@@ -71,18 +93,18 @@ export const team1 = [
         ],
     },
     {
-        name: "Naresh Chandanbatve",
-        image: naresh,
+        name: "Ketan Baitule",
+        image: ketan,
         role: "Technical Head",
         decor: "border-indigo-500",
         socials: [
-            { link: "https://instagram.com/naresh_chandanbatve", icon: "bi:instagram" },
-            { link: "https://www.linkedin.com/in/naresh-chandanbatve/", icon: "bi:linkedin" },
+            { link: "https://instagram.com/chinmayig_?igshid=OGQ5ZDc2ODk2ZA==", icon: "bi:instagram" },
+            { link: "https://www.linkedin.com/in/chinmayighatbandhe", icon: "bi:linkedin" },
         ],
     },
     {
-        name: "Tamanna Kartari",
-        image: tamanna,
+        name: "Chinmayi Ghatbandhe",
+        image: chinmayi,
         role: "Lady Representative",
         decor: "border-pink-500",
         socials: [
@@ -91,9 +113,9 @@ export const team1 = [
         ],
     },
     {
-        name: "Sayali Warkhade",
+        name: "Vedant Sarate",
         role: "Sports Co-ordinator",
-        image: sayali,
+        image: vedant,
 
         decor: "border-lime-500",
         socials: [
@@ -102,18 +124,8 @@ export const team1 = [
         ],
     },
     {
-        name: "Saurabh Yadav",
-        role: "Sports Co-ordinator",
-        image: saurabh,
-        decor: "border-lime-500",
-        socials: [
-            // { link: "https://www.instagram.com/comsa_gcoen/", icon: "bi:instagram" },
-            { link: "https://www.linkedin.com/in/saurabh-yadav-469323208/", icon: "bi:linkedin" },
-        ],
-    },
-    {
-        name: "Devansh Parapalli",
-        image: devansh,
+        name: "Hitanshu Gedam",
+        image: hitanshu,
         role: "Technical Co-Head",
         decor: "border-emerald-500",
         socials: [
@@ -122,8 +134,8 @@ export const team1 = [
         ],
     },
     {
-        name: "Kinjal Tiwari",
-        image: kinjal,
+        name: "Ishad Pande",
+        image: ishad,
         role: "Technical Co-Head",
         decor: "border-emerald-500",
         socials: [
@@ -132,9 +144,10 @@ export const team1 = [
         ],
     },
     {
-        image: vishal,
-        name: "Vishal Kesharwani",
-        role: "Sr. Executive Committee Member",
+        
+        name: "Yashasvi Sherke",
+        image: yashasvi,
+        role: "Event Coordinator",
         decor: "border-fuchsia-500",
         socials: [
             { link: "https://www.instagram.com/dev.vishalvsk/", icon: "bi:instagram" },
@@ -142,9 +155,10 @@ export const team1 = [
         ],
     },
     {
-        image: tushar,
-        name: "Tushar Nagare",
-        role: "Sr. Executive Committee Member",
+        
+        name: "Rohit Wagh",
+        image: rohit,
+        role: "Event Coordinator",
         decor: "border-fuchsia-500",
         socials: [
             { link: "https://www.instagram.com/__tushar.88___/", icon: "bi:instagram" },
@@ -152,8 +166,8 @@ export const team1 = [
         ],
     },
     {
-        image: mrudula,
-        name: "Mrudula Wankar",
+        name: "Paras Shorte",
+        image: paras,
         role: "Executive Committee Member",
         decor: "border-fuchsia-500",
         socials: [
@@ -162,8 +176,9 @@ export const team1 = [
         ],
     },
     {
-        image: jay,
-        name: "Jay Bele",
+        
+        name: "Sanika Jaolekar",
+        image: sanika,
         role: "Executive Committee Member",
         decor: "border-fuchsia-500",
         socials: [
@@ -172,8 +187,9 @@ export const team1 = [
         ],
     },
     {
-        image: sahil,
-        name: "Sahil Kuhikar",
+        
+        name: "Sahil Shrikhande",
+        image: sahils,
         role: "Executive Committee Member",
         decor: "border-fuchsia-500",
         socials: [
@@ -182,8 +198,9 @@ export const team1 = [
         ],
     },
     {
-        image: priya,
-        name: "Priya Nandanwar",
+        
+        name: "Saket Tabhane",
+        image: saket,
         role: "Executive Committee Member",
         decor: "border-fuchsia-500",
         socials: [
@@ -192,8 +209,20 @@ export const team1 = [
         ],
     },
     {
-        image: gayatri,
-        name: "Gayatri Deshkar",
+        
+        name: "Rutuja Dekhane",
+        image: rutuja,
+        role: "Executive Committee Member",
+        decor: "border-fuchsia-500",
+        socials: [
+            { link: "https://www.instagram.com/_gayatri__10_/", icon: "bi:instagram" },
+            { link: "https://www.linkedin.com/in/gayatri-deshkar-43500422a/", icon: "bi:linkedin" },  
+        ],
+    },
+    {
+        
+        name: "Sachin Patel",
+        image: sachin,
         role: "Executive Committee Member",
         decor: "border-fuchsia-500",
         socials: [
@@ -204,121 +233,121 @@ export const team1 = [
 ];
 
 export const team2 = [
-    {
-        name: "Saher Pathan",
-        role: "Organization Head",
-        image: saher,
-        decor: "border-rose-500",
-        socials: [
-            { link: "https://www.instagram.com/sahergpathan/", icon: "bi:instagram" },
-            { link: "https://www.linkedin.com/in/saher-pathan", icon: "bi:linkedin" },
-        ],
-    },
-    {
-        name: "Sayali Moghe",
-        role: "Organization Co-Head",
-        image: sayalim,
-        decor: "border-rose-500",
-        socials: [
-            { link: "https://www.instagram.com/sayalimoghe15?r=nametag", icon: "bi:instagram" },
-            { link: "https://www.linkedin.com/in/sayali-moghe-15079621b", icon: "bi:linkedin" },
-        ],
-    },
-    {
-        name: "Purva Waghmare",
-        role: "CnD Head",
-        image: purva,
-        decor: "border-orange-500",
-        socials: [
-            { link: "https://www.instagram.com/_.purva_waghmare._?r=nametag", icon: "bi:instagram" },
-            { link: "https://www.linkedin.com/in/purva-waghmare-73884622b/", icon: "bi:linkedin" },
-        ],
-    },
-    {
-        name: "Prachi Munne",
-        role: "CnD Co-Head",
-        image: prachi,
-        decor: "border-orange-500",
-        socials: [
-            {
-                link: "https://www.instagram.com/_p_ra_chi_/",
-                icon: "bi:instagram",
-            },
-            { link: "https://www.linkedin.com/in/prachi-munne-235bb5207", icon: "bi:linkedin" },
-        ],
-    },
-    // {
-    //     name: "Hrishikesh Ghule",
-    //     role: "Event Coordinator",
-    //     image: (await import("$lib/assets/team/hrishikesh.jpg")).default,
-    //     decor: "border-orange-500",
-    //     socials: [
-    //         { link: "https://www.instagram.com/hrishikesh_23/", icon: "bi:instagram" },
-    //         { link: "https://www.linkedin.com/in/hrishikesh-ghule-16b09822a", icon: "bi:linkedin" },
-    //     ],
-    // },
-    // {
-    //     name: "Hardik Thackery",
-    //     role: "Event Coordinator",
-    //     image: (await import("$lib/assets/team/hardik.jpg")).default,
-    //     decor: "border-orange-500",
-    //     socials: [
-    //         { link: "https://www.instagram.com/_hardik.thakre_/", icon: "bi:instagram" },
-    //         { link: "https://www.instagram.com/comsa_gcoen/", icon: "bi:linkedin" },
-    //     ],
-    // },
-    {
-        name: "Rishika Deshmukh",
-        role: "Publicity Head",
-        image: rishika,
-        decor: "border-purple-500",
-        socials: [
-            {
-                link: "https://www.instagram.com/rishikaa.08/",
-                icon: "bi:instagram",
-            },
-            { link: "https://www.linkedin.com/in/rishika-deshmukh-558a2222a/", icon: "bi:linkedin" },
-        ],
-    },
-    {
-        name: "Yuvraj Totade",
-        role: "Publicity Co-Head",
-        image: yuvraj,
-        decor: "border-purple-500",
-        socials: [
-            { link: "https://instagram.com/totadeyuvraj44?igshid=YmMyMTA2M2Y=", icon: "bi:instagram" },
-            { link: "http://www.linkedin.com/in/yuvraj-totade-737aaa207", icon: "bi:linkedin" },
-        ],
-    },
-    {
-        name: "Kunal Gohane",
-        role: "Sponsorship Head",
-        image: kunal,
-        decor: "border-fuchsia-500",
-        socials: [
-            { link: "https://instagram.com/the_bad_captain.33?igshid=YmMyMTA2M2Y=", icon: "bi:instagram" },
-            { link: "https://www.linkedin.com/in/kunal-gohane-a46324235", icon: "bi:linkedin" },
-        ],
-    },
-    {
-        name: "Mohit Tumane",
-        role: "H&D Head",
-        image: mohit,
-        decor: "border-cyan-500",
-        socials: [
-            { link: "https://www.instagram.com/mohit._1108/", icon: "bi:instagram" },
-            { link: "https://www.linkedin.com/in/mohit-tumane-a83592251", icon: "bi:linkedin" },
-        ],
-    },
-    {
-        name: "Sukrut Bhoot",
-        role: "H&D Co-Head",
-        image: sukrut,
-        decor: "border-cyan-500",
-        socials: [
-            { link: "https://www.instagram.com/comsa_gcoen/", icon: "bi:instagram" },
-            { link: "https://www.instagram.com/comsa_gcoen/", icon: "bi:linkedin" },
-        ],
-    },
+//     {
+//         name: "Saher Pathan",
+//         role: "Organization Head",
+//         image: saher,
+//         decor: "border-rose-500",
+//         socials: [
+//             { link: "https://www.instagram.com/sahergpathan/", icon: "bi:instagram" },
+//             { link: "https://www.linkedin.com/in/saher-pathan", icon: "bi:linkedin" },
+//         ],
+//     },
+//     {
+//         name: "Sayali Moghe",
+//         role: "Organization Co-Head",
+//         image: sayalim,
+//         decor: "border-rose-500",
+//         socials: [
+//             { link: "https://www.instagram.com/sayalimoghe15?r=nametag", icon: "bi:instagram" },
+//             { link: "https://www.linkedin.com/in/sayali-moghe-15079621b", icon: "bi:linkedin" },
+//         ],
+//     },
+//     {
+//         name: "Purva Waghmare",
+//         role: "CnD Head",
+//         image: purva,
+//         decor: "border-orange-500",
+//         socials: [
+//             { link: "https://www.instagram.com/_.purva_waghmare._?r=nametag", icon: "bi:instagram" },
+//             { link: "https://www.linkedin.com/in/purva-waghmare-73884622b/", icon: "bi:linkedin" },
+//         ],
+//     },
+//     {
+//         name: "Prachi Munne",
+//         role: "CnD Co-Head",
+//         image: prachi,
+//         decor: "border-orange-500",
+//         socials: [
+//             {
+//                 link: "https://www.instagram.com/_p_ra_chi_/",
+//                 icon: "bi:instagram",
+//             },
+//             { link: "https://www.linkedin.com/in/prachi-munne-235bb5207", icon: "bi:linkedin" },
+//         ],
+//     },
+//     // {
+//     //     name: "Hrishikesh Ghule",
+//     //     role: "Event Coordinator",
+//     //     image: (await import("$lib/assets/team/hrishikesh.jpg")).default,
+//     //     decor: "border-orange-500",
+//     //     socials: [
+//     //         { link: "https://www.instagram.com/hrishikesh_23/", icon: "bi:instagram" },
+//     //         { link: "https://www.linkedin.com/in/hrishikesh-ghule-16b09822a", icon: "bi:linkedin" },
+//     //     ],
+//     // },
+//     // {
+//     //     name: "Hardik Thackery",
+//     //     role: "Event Coordinator",
+//     //     image: (await import("$lib/assets/team/hardik.jpg")).default,
+//     //     decor: "border-orange-500",
+//     //     socials: [
+//     //         { link: "https://www.instagram.com/_hardik.thakre_/", icon: "bi:instagram" },
+//     //         { link: "https://www.instagram.com/comsa_gcoen/", icon: "bi:linkedin" },
+//     //     ],
+//     // },
+//     {
+//         name: "Rishika Deshmukh",
+//         role: "Publicity Head",
+//         image: rishika,
+//         decor: "border-purple-500",
+//         socials: [
+//             {
+//                 link: "https://www.instagram.com/rishikaa.08/",
+//                 icon: "bi:instagram",
+//             },
+//             { link: "https://www.linkedin.com/in/rishika-deshmukh-558a2222a/", icon: "bi:linkedin" },
+//         ],
+//     },
+//     {
+//         name: "Yuvraj Totade",
+//         role: "Publicity Co-Head",
+//         image: yuvraj,
+//         decor: "border-purple-500",
+//         socials: [
+//             { link: "https://instagram.com/totadeyuvraj44?igshid=YmMyMTA2M2Y=", icon: "bi:instagram" },
+//             { link: "http://www.linkedin.com/in/yuvraj-totade-737aaa207", icon: "bi:linkedin" },
+//         ],
+//     },
+//     {
+//         name: "Kunal Gohane",
+//         role: "Sponsorship Head",
+//         image: kunal,
+//         decor: "border-fuchsia-500",
+//         socials: [
+//             { link: "https://instagram.com/the_bad_captain.33?igshid=YmMyMTA2M2Y=", icon: "bi:instagram" },
+//             { link: "https://www.linkedin.com/in/kunal-gohane-a46324235", icon: "bi:linkedin" },
+//         ],
+//     },
+//     {
+//         name: "Mohit Tumane",
+//         role: "H&D Head",
+//         image: mohit,
+//         decor: "border-cyan-500",
+//         socials: [
+//             { link: "https://www.instagram.com/mohit._1108/", icon: "bi:instagram" },
+//             { link: "https://www.linkedin.com/in/mohit-tumane-a83592251", icon: "bi:linkedin" },
+//         ],
+//     },
+//     {
+//         name: "Sukrut Bhoot",
+//         role: "H&D Co-Head",
+//         image: sukrut,
+//         decor: "border-cyan-500",
+//         socials: [
+//             { link: "https://www.instagram.com/comsa_gcoen/", icon: "bi:instagram" },
+//             { link: "https://www.instagram.com/comsa_gcoen/", icon: "bi:linkedin" },
+//         ],
+//     },
 
 ];

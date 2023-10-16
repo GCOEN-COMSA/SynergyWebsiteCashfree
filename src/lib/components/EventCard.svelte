@@ -27,7 +27,7 @@
       <div class="card-actions justify-end">
         <!-- <button on:click={()=>{goto(`/register/${id}`)}} class="btn btn-primary">Register</button> -->
         {#if !event.hide}
-        <button on:click|stopPropagation={onLearnMore} class="visible bottom-0 left-0 w-full btn border-none backdrop-blur-sm bg-opacity-5 !hover:bg-opacity-10 absolute rounded-2xl rounded-t-none active:scale-y-90 !scale-x-100">Explore</button>
+        <button on:click|stopPropagation={onLearnMore} class="visible bottom-0 left-0 w-full btn border-none backdrop-blur-sm bg-opacity-5 !group-hover:bg-opacity-10 absolute rounded-2xl rounded-t-none active:scale-y-90 !scale-x-100">Explore</button>
         {/if}
       </div>
     </div>
