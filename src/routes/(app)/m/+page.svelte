@@ -56,7 +56,7 @@ let is_transparent = true;
 {:then value} -->
   <div
     style="--bg-url: url({MobileHero});"
-    class="  pb-10 hero-bg min-h-screen flex flex-col lg:flex-row bg-base-100 overflow-x-hidden "
+    class="  pb-10 hero-bg min-h-screen flex flex-col lg:flex-row bg-base-100 overflow-x-hidden object-contain"
     id="hero"
   >
     <div id="hero-half" class="mt-10 flex flex-col text-white">
